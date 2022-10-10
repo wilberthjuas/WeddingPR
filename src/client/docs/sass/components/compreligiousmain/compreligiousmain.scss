@@ -1,0 +1,734 @@
+[component="compreligiousmainmov"] {
+    @media (max-width : 1024px) {
+
+        margin-bottom: (20/16)+rem;
+        /*padding-bottom: 11.5px;*/
+        font-family: OpenSans;
+
+        .singletab {
+            height: (115/16)+rem;
+            position: relative;
+            overflow: hidden;
+            background-color: var(--light-gray);
+            img {
+                position: static;
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width:320px) and (max-width:767px) {
+
+            /* CSS rules here */
+            .tabtitle {
+                top:30% 
+            }
+
+            .tabtitlecollapse{
+                top: 70%
+            }
+         
+         }
+
+        @media only screen and (min-width:768px) and (max-width:1024px) { 
+            /* CSS rules here */
+            .tabtitle {
+                top:20%
+            }
+
+            .tabtitlecollapse{
+                top: 80% 
+            }
+         }
+
+         @media only screen and (max-width: 767px) and (min-width: 414px) and (orientation: landscape){
+            .tabtitle {
+                top:20%
+            }
+         }
+
+         @media only screen and (max-width: 1023px) and (min-width: 768px) and (orientation: landscape){
+            .tabtitle {
+                top:17%
+            }
+         }
+
+        
+        .tabtitle {
+            background-color: var(--light-melon-op8);
+            color: var(--white);
+            position: absolute;
+            padding-left: (10/16)+rem;
+            padding-right: (10/16)+rem;
+            cursor: pointer;
+            transition-duration: 1000ms;
+            transition-property: top;
+            display: inline-flex;
+            left: 0px;
+            padding-top: (5/16)+rem;
+        }
+
+        .tabtitlecollapse{
+            background-color: var(--white);
+            color: var(--light-melon);
+            position: absolute;
+            padding-left: (10/16)+rem;
+            padding-right: (10/16)+rem;
+            cursor: pointer;
+            transition-duration: 1000ms;
+            transition-property: top;
+            display: inline-flex;
+            left: 0px;
+            padding-top: (5/16)+rem;
+        }
+
+        .singletabcollapse {
+            background-color: var(--light-gray);
+        }
+
+        .moveBefore {
+            width: auto;
+            height: auto;
+        }
+
+        .controlArrow {
+            display: inline-flex;
+            font-size: (58/16)+rem;
+            height: auto;
+            /* letter-spacing: 50px; */
+            line-height: 0px;
+            width: 100%;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            position: absolute !important;
+        }
+
+        .separadorGaleryPoints {
+            height: 10px;
+            width: 100%;
+        }
+
+        .content-tabs {
+            padding-left: (12/16)+rem;
+            padding-right: (16/16)+rem;
+            text-align: left;
+        }
+
+        .titlebenefit {
+            font-size: (18/16)+rem;
+            font-weight: bold;
+            font-style: normal;
+            line-height: normal;
+           // letter-spacing: -(0.5/16)+rem;
+            text-align: left;
+            color: #323232;
+            text-transform: uppercase;
+            color: var(--dark-gray);
+            margin: unset;
+        }
+
+        .titlebenefit2 {
+            font-size: (18/16)+rem;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+           // letter-spacing: -(0.35/16)+rem;
+            text-align: left;
+            color: var(--dark-gray);
+        }
+
+        .contentbenefit {
+            font-weight: normal;
+            font-size: (16/16)+rem;
+        }
+
+        .tabquestion {
+            font-size: (15/16)+rem;
+            padding-left: (10/16)+rem;
+            padding-bottom: (20/16)+rem;
+
+            span {
+                padding-right: (10/16)+rem;
+            }
+        }
+
+        .tabstermscollapsable {
+            font-size: (12/16)+rem;
+            color: var(--light-melon);
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .tabstermscontent {
+            padding-left: (17.5/16)+rem;
+            width: 70%;
+            height: (185/16)+rem;
+            overflow: scroll;
+            font-family: OpenSans;
+            font-size: (12/16)+rem;
+        }
+
+        .tabstermsbuttons {
+            float: right;
+            width: 20%;
+            display: grid;
+            position: relative;
+            margin-top: -(80/16)+rem;
+        }
+
+        .tabsDesk {
+            display: none !important;
+        }
+
+        .controlArrow {
+            display: none;
+        }
+        .content{
+            width: 95%;
+            margin: auto;
+        }
+    }
+}
+
+[component="compreligiousmain"] {
+    @media (min-width: 1025px) {
+
+        [component="titlesection"]{
+           margin-bottom: 40px;
+        }
+
+      
+            .Compreligioustabs{
+            ul.All-inclusive{
+                li:first-child{
+                    clear: both;
+                    list-style: none;
+                    margin-left: -26px;
+                    margin-bottom: 11px;
+                }
+            }
+            ul.listCollapse.An.unforgettable.Honeymoon{
+                li{
+                    list-style: none;
+                    margin-left: -26px;
+                    margin-bottom: 11px;
+                }
+            }
+
+            ul.Complimentary{
+                li:nth-child(odd){
+                    list-style: none;
+                    margin-left: -26px;
+                }
+                li:nth-child(1){
+                    list-style: none;
+                    margin-left: -26px;
+                }
+                li:nth-child(2){
+                    list-style: none;
+                    margin-left: -26px;
+                }
+            }
+        
+    }
+
+        .flex {
+            display: flex !important;
+            flex-wrap: wrap;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        .movil {
+            display: none;
+        }
+
+        .divicion-section {
+            height: 60px;
+        }
+
+        .container {
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .forceWidth {
+            width: 100% !important;
+        }
+
+        .ReligiousTabs {
+            float: left;
+            width: 100%;
+            margin: 10px 0px;
+        }
+
+        /*Collapse */
+        .collapselink {
+            font-family: Avenir;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+           // letter-spacing: 0.6px;
+            text-align: left;
+            color: var(--light-melon);
+            color: var(--rosy-pink);
+            margin-top: 20px;
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 21px;
+        }
+
+
+        .ToolTipgl b {
+            color: var(--dark-gray)
+        }
+
+        .tool-tip:hover {
+            .ToolTipgl {
+                opacity: 1;
+                z-index: 1;
+            }
+        }
+
+        .ToolTipgl {
+            opacity: 0;
+            position: absolute;
+            top: 41px;
+            padding: 20px;
+            width: 316px;
+            left: -120px;
+            font-size: 18px;
+            font-weight: 400;
+            background-color: var(--white);
+            box-shadow: 1.7px -1px 30px 0 rgba(110, 110, 110, 0.2);
+            text-align: right;
+            transition: .5s;
+            z-index: -1;
+        }
+
+        .ToolTipgl a {
+            color: var(--rosy-pink)
+        }
+
+        .flecha-down {
+            width: 20px;
+            height: 20px;
+            transform: rotate(45deg);
+            background-color: white;
+            font-size: 0px;
+            line-height: 0px;
+            position: absolute;
+            top: -7px;
+            left: 45%;
+            box-shadow: -2.3px -2px 6px 0 rgba(110, 110, 110, 0.3);
+        }
+
+        .tool-tip {
+            color: var(--rosy-pink);
+            font-weight: bold;
+            position: relative;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .title {
+            height: 55px;
+        }
+
+        .arrow {
+            float: left;
+            width: 70px !important;
+        }
+
+        img {
+            max-width: none;
+            height: auto;
+        }
+
+        .text23 {
+            font-family: Avenir;
+            font-size: 21px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: condensed;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #323232;
+            color: var(--dark-gray);
+        }
+
+        .contRel {
+            position: relative;
+            /*background: linear-gradient(to left, var(--light-melon) 85%, transparent 0);*/
+            background-position: center;
+            height: 99%;
+        }
+
+        .bg-caption {
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--white);
+            position: absolute;
+            top: 24px;
+            height: 40px;
+            padding-right: 20px;
+            padding-left: 20px;
+            background-color: var(--light-melon-op8);
+            margin: unset;
+            font-family: PlayfairDisplay; //Miso
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        .circle {
+            width: 24px;
+            height: 24px;
+            background-color: var(--light-melon);
+            background-color: var(--rosy-pink);
+            color: #ffffff !important;
+            color: var(--white) !important;
+            border-radius: 50%;
+            font-size: 21px !important;
+            font-family: PlayfairDisplay; //Miso
+            padding-left: 9px;
+            padding-right: 8px;
+            line-height: 1.1;
+            position: relative;
+            right: 10px;
+        }
+
+    
+        .separator-ttl-sbttl {
+            height: 31px;
+        }
+
+        .back {
+            font-size: 39px;
+            position: relative;
+            top: -21px;
+            left: 5px;
+            color: var(--rosy-pink);
+        }
+
+        .separadorwemake-ttl-cont {
+            height: 63px;
+        }
+        .inputweddundefined{
+            padding-top:14px;
+        }
+
+        .flex {
+            display: flex !important;
+            flex-wrap: wrap;
+        }
+
+        .realign {
+            margin-left: 40px;
+        }
+
+        .description-galery {
+            width: 618px;
+            // padding-top:20px;
+        }
+
+        .division-galery {
+            height: 60px;
+            width: 100%;
+        }
+
+        .content-1 {
+            float: left;
+            margin-left: 70px;
+            padding-left: 9.45%;
+            background-image: linear-gradient(450deg, var(--light-gray), var(--light-gray), var(--light-gray), #fff);
+            height: auto;
+            padding-bottom: 45px;
+
+        }
+
+        .content-2 {
+            height: auto;
+            background-image: linear-gradient(450deg, #fff, var(--light-gray), var(--light-gray), var(--light-gray));
+            padding-bottom: 45px;
+            padding-right: 9.45%;
+            float: left;
+            width: 100%;
+        }
+
+        .content-2 .bg-caption {
+            text-align: center;
+        }
+
+        .separation-title-description-gl {
+            height: 24px;
+            width: 100%
+        }
+
+        .footer-One {
+            width: 42%;
+            color: var(--rosy-pink);
+        }
+
+        .separation-one {
+            height: 35px;
+        }
+
+        .footer-Two {
+            text-align: center;
+            width: 33%;
+        }
+
+        .color {
+            height: 96px;
+            background-color: var(--rosy-pink);
+            margin-top: -6px;
+            margin-left: 122px;
+            width: fit-content;
+            width: 400px;
+            opacity: .2;
+        }
+
+        .kind{
+            margin: unset;
+        }
+    }
+
+    @media (max-width: 1024px) and (min-width: 0px) {
+        [component="titlesection"]{
+            .description{
+                margin-top: 1rem;
+                /* margin: auto; */
+                margin-bottom: 1rem;
+            }
+        }
+        section.desktop {
+            display: none;
+        }
+
+        .separator-ttl-sbttl {
+            height: 4.375vw;
+            width: 100%;
+        }
+
+        .separadorwemake {
+            width: 100%;
+            height: 8.90625vw;
+        }
+
+        /*****************/
+
+
+
+        .flex {
+            display: flex !important;
+            flex-wrap: wrap;
+        }
+
+        .item-img-galery {
+            width: 95.625vw;
+            height: 40.625vw;
+        }
+
+        .container {
+            margin-left: 2.1875vw;
+            margin-right: 2.1875vw;
+        }
+
+        .rspink b {
+            color: var(--rosy-pink);
+            font-family: PlayfairDisplay; //Miso
+            font-size: 5vw;
+        }
+
+        .Grid-Row {
+            position: relative;
+        }
+
+        .bg-caption {
+            position: absolute;
+            top: 30.625vw;
+            left: 18.75vw;
+        }
+
+        .description-galery {
+            margin-top: 5.625vw;
+        }
+
+        .description-galery {
+            color: var(--dark-gray);
+            width: 87.03125vw;
+            //letter-spacing: 0.10937499999999999vw;
+            margin-left: 4.21875vw;
+            text-align: justify;
+        }
+
+        .circle {
+            background-color: var(--rosy-pink);
+            color: var(--white) !important;
+            border-radius: 50%;
+            padding-left: 1.8vw;
+            padding-right: 1.8vw;
+            position: relative;
+            right: 1.1904761904761905vw;
+        }
+
+        .ToolTipgl b {
+            color: var(--dark-gray)
+        }
+
+        .tool-tip:hover {
+            .ToolTipgl {
+                opacity: 1;
+                z-index: 1;
+            }
+        }
+
+        .ToolTipgl {
+            opacity: 0;
+            position: absolute;
+            top: 7.8125vw;
+            padding: 2vw;
+            width: 56.75vw;
+            left: -13.5vw;
+            font-size: 3.6vw;
+            font-weight: 400;
+            background-color: #ffffff;
+            background-color: var(--white);
+            box-shadow: 1.7px -1px 30px 0 rgba(110, 110, 110, 0.2);
+            text-align: right;
+            transition: .5s;
+            z-index: -1;
+        }
+
+        .ToolTipgl a {
+            color: var(--rosy-pink)
+        }
+
+        .flecha-down {
+            width: 3.25vw;
+            height: 3.25vw;
+            transform: rotate(45deg);
+            background-color: white;
+            font-size: 0px;
+            line-height: 0px;
+            position: absolute;
+            top: -1.1875vw;
+            left: 30%;
+            box-shadow: -0.818vw -0.725vw 3vw 0 rgba(110, 110, 110, 0.3);
+        }
+
+        .tool-tip {
+            color: var(--rosy-pink);
+            font-weight: bold;
+            position: relative;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .footer-galr-mov {
+            width: 77.5vw;
+        }
+
+        .footer-Two {
+            text-align: center;
+            font-size: 4.375vw;
+        }
+
+        .footer-One {
+            color: var(--rosy-pink);
+        }
+
+        .separation-one {
+            height: 7.8125vw;
+        }
+
+        .ReligiousTabs {
+            width: 100%;
+            margin: (15/16)+rem 0px;
+        }
+
+        .aling-center-tabs span,
+        .aling-center-tabs div {
+            width: max-content;
+            margin: 11/3.2+vw auto;
+            display: grid;
+        }
+
+        .cont-mainnov {
+
+            width: 100%;
+            height: auto;
+            margin-top: 25px;
+        }
+
+        .text3 {
+            font-family: Parisienne;
+            font-size: (24/16)+rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.25;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--black);
+        }
+
+        .text5 {
+            font-size: (30/16)+rem;
+            font-family: PlayfairDisplay; //Miso  
+        }
+
+        .desc-p-movil {
+            font-family: Avenir;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            //letter-spacing: 0.3px;
+            margin: 10px auto 0px auto;
+            text-align: center;
+            color: var(--dark-gray);
+            font-size: (16/16)+rem !important;
+        }
+
+        .p-intro {
+            width: 220.5px;
+            font-size: (18/16)+rem;
+        }
+
+        .p-intro2 {
+            width: 90%;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        /*Collapse */
+        .collapselink {
+            font-family: Avenir;
+            font-size: (16/16)+rem;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            //letter-spacing: 0.6px;
+            text-align: left;
+            color: var(--light-melon);
+            color: var(--rosy-pink);
+            margin-top: 20px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+    }
+}

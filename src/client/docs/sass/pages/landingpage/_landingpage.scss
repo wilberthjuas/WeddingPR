@@ -1,0 +1,49 @@
+[page = "LandingWeddings"]{
+
+    @media (max-width : 1024px) { 
+
+        [component="titlesection"]{
+           .description {
+                width: (240/3.2)+vw !important;
+                text-align: center;
+            }
+
+            p.description > strong {
+                font-weight: 400;
+            }
+        }
+
+        [component="more-than"]{
+            h2 > strong {
+                font-size: (24/3.2)+vw;
+            }
+
+           
+            .year-experience {
+                padding-top: 1.5vw;
+                padding-left: 0 !important; 
+                height: 6.25vw;
+            }
+            
+            .year-of-exp {
+                width: 100%;
+                margin-right: (20/3.2)+vw !important;
+               
+            }
+
+        }
+        
+        
+
+        
+
+        
+
+
+    }
+
+    @media (min-width : 1025px) { 
+
+        
+    }
+}

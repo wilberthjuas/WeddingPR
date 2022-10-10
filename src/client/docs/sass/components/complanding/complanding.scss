@@ -1,0 +1,196 @@
+[component = "complandingpage"]{
+
+	@media (min-width: 1025px){ 
+    
+    
+    }
+
+    @media (max-width: 1024px) and (min-width: 0px){
+        
+        .buttons {
+            width: (280/3.2)+vw;
+            margin: auto;
+            display: flex;
+            margin-bottom: (43.5/3.2)+vw;
+            
+        }
+
+        .buttons .button-white {
+            width: (130/3.2)+vw;
+            padding: (10/3.2)+vw (13/3.2)+vw;
+            margin-right: (30/3.2)+vw;
+            border-radius: 2px;
+            border: solid 1px var(--rosy-pink);
+            background-color: var(--white);
+            font-family: OpenSans;
+            font-size: (14/3.2)+vw;
+            font-weight: bold;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--rosy-pink);
+            cursor: pointer;
+        }
+
+        .buttons .button-pink {
+            width: (130/3.2)+vw;
+            padding: (10/3.2)+vw (13/3.2)+vw;
+            border-radius: 2px;
+            border: solid 1px var(--rosy-pink);
+            background-color: var(--rosy-pink);
+            font-family: OpenSans;
+            font-size: (14/3.2)+vw;
+            font-weight: bold;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--white);
+            cursor: pointer;
+        }
+        
+        .palace-header {
+            margin-bottom: (32/3.2)+vw !important;
+        }
+
+        .cintilla {
+            margin-bottom: (20/3.2)+vw !important;
+        }
+
+        .controlArrow {
+            display: block !important;
+        }
+
+        .slider-landing {
+            width: 100%;
+            margin: auto;
+        }
+
+        div#landing-offers {
+            width: (250/3.2)+vw;
+            height: auto;
+        }
+
+        .ItemSlider {
+            width: (250/3.2)+vw;
+        }
+
+        .landing-item {
+            display: inline-flex;
+            flex-wrap: wrap;
+            padding: unset;
+        }
+
+        .landing-info {
+            width: 100%;
+            border: solid 1px var(--rosy-pink);
+            background-color: var(--white);
+            
+        }
+
+        .landing-list {
+            width: 100%;
+        }
+
+        .landing-list li {
+            font-family: OpenSans;
+            font-size: (12/3.2)+vw;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+          //  letter-spacing: 0.3px;
+            padding: unset;
+            color: var(--dark-gray);
+        }
+
+        .content-controller {
+            width: 100%;
+            display: inline-flex;
+            background-color: #f8f8f8;
+            padding: (14/3.2)+vw;
+        }
+
+        .terms-txt {
+            
+            width: (101/3.2)+vw;
+            margin-right: (14/3.2)+vw;
+        }
+
+        .share-txt {
+            
+            width: (67/3.2)+vw;
+            margin-left: (30/3.2)+vw;
+        }
+
+        section.terms-content {
+            width: 100%;
+            height: auto;
+            background-color:#efefef;
+            float: left;
+        }
+
+        
+        .fade {
+            float: left;
+            width: (158.5/3.2)+vw;
+            height: (167/3.2)+vw;
+            float: left;
+            font-family: OpenSans;
+            font-size: 3.75vw;
+            overflow: scroll;
+            text-align: left;
+            background-image: linear-gradient(to bottom, rgba(254, 223, 217,0)73%, rgba(254, 223, 217,1)103%);
+        }
+
+        .tabstermsbuttons.movil {
+            width: (30/3.2)+vw;
+            
+        }
+
+        .share-content {
+            padding: (16/3.2)+vw;
+        }
+
+        .collapse {
+            display: none;
+        }
+
+        .uncollapse {
+            display:block;
+        }
+
+        span.txts {
+            font-family: OpenSans;
+            font-size: (12/3.2)+vw;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: 2.5;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--rosy-pink);
+        }
+
+        .chevorn-gral {
+            width: (7/3.2)+vw !important;
+            height: (5/3.2)+vw !important;
+            margin-left: (8/3.2)+vw !important;
+        }
+
+        
+
+        .controlPoints.landing-offers {
+            display: none !important;
+        }
+
+        .chevron-carousel-left, .chevron-carousel-right {
+            width: 20px !important;
+            height: 20px !important;
+        }
+
+
+    }
+}

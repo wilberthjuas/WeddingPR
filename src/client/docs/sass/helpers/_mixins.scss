@@ -1,0 +1,56 @@
+@mixin clearfix() {
+
+   &:before,
+   &:after {
+      display: table; // 2
+      content: " "; // 1
+   }
+
+   &:after {
+      clear: both;
+   }
+}
+
+@mixin gradient-classes($position, $color1, $color2, $color3) {
+   background: -moz-linear-gradient($position, $color1 0%, $color2 76%, $color3 100%);
+   background: -webkit-linear-gradient($position, $color1 0%, $color2 76%, $color3 100%);
+   background: linear-gradient(to $position, $color1 0%, $color2 76%, $color3 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00969696', GradientType=1);
+}
+
+@mixin shadow-classes($type, $offset, $blur, $spread, $color) {
+   -webkit-box-shadow: $type $offset $blur $spread $color;
+   -moz-box-shadow: $type $offset $blur $spread $color;
+   box-shadow: $type $offset $blur $spread $color;
+}
+
+@mixin btnAll($wdth, $hght, $brdrRds, $bxshadw, $bgcolor) {
+   width: $wdth;
+   height: $hght;
+   border-radius: $brdrRds;
+   box-shadow: $bxshadw;
+   background-color: $bgcolor;
+   border-width: 0px;
+   cursor: pointer;
+}
+
+@mixin allFont($family, $size, $weight, $style, $stretch, $lnheight, $spacing, $align, $color) {
+   font-family: $family;
+   font-size: $size;
+   font-weight: $weight;
+   font-style: $style;
+   font-stretch: $stretch;
+   line-height: $lnheight;
+   //letter-spacing: $spacing;
+   text-align: $align;
+   color: $color;
+}
+
+@mixin vwvh($property, $size, $important:"") {
+   //@media (orientation: landscape) {
+      #{$property}: ($size/16) + rem +" "+ $important;
+   //}
+   /*@media (orientation: portrait) {
+      #{$property}: ($size/3.2) + vw +" "+ $important;
+   }*/
+}

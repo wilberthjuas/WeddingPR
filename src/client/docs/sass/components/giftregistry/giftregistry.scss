@@ -1,0 +1,54 @@
+[component="giftregistry"]{
+@media (max-width: 1024px){
+    .description{
+    font-size: (10/3.2)+vw !important;
+    text-align: left !important;
+    padding-left: (20/3.2)+vw;
+    padding-right: (20/3.2)+vw;
+    padding-top: (10/3.2)+vw;
+    padding-bottom: (10/3.2)+vw;
+    color: var(light-gray-dream);
+    font-family: OpenSans;
+    font-size: (14/3.2)+vw !important;
+    font-weight: 300;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: normal;
+   // letter-spacing: 0.35px;
+    text-align: left;
+    color: var(--dark-gray);   
+    
+    }.secondDesciption{
+        background-color: var(--light-gray);
+    }.printButton{
+        margin-top: (25/3.2)+vw;
+        margin-bottom: (70/3.2)+vw;
+    }p{
+        font-family: OpenSans;
+        font-size:(14/3.2)+vw;
+    }
+}
+/*Desktop*/
+@media (min-width: 1025px){
+    .description{
+    font-size: 28px!important;
+    text-align: left !important;
+    color: var(light-gray-dream);
+    font-family: OpenSans;
+    font-weight: 300;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: normal;
+    //letter-spacing: 0.35px;
+    text-align: left;
+    color: var(--dark-gray);   
+    width: 644px;
+    height: 129px;
+    padding-top: 23px;
+    }.secondDesciption{
+        background-color: var(--light-gray);
+        height: 240px;
+        padding-left: 16px;
+    }
+}
+}

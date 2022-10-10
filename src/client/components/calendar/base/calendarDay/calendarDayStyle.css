@@ -1,0 +1,225 @@
+/* Estilos para el componente CalendarDay del calendario de eventos */
+
+/* #region : DÍA DEL CALENDARIO */
+.clever-calendar .calendar-day {
+   font-size: 1em;
+   cursor: default;
+   height: 12vh;
+   border: 1px ridge wheat;
+   /*vertical-align: top;*/
+}
+
+.clever-calendar table tr:nth-child(even) {
+   background-color: #f3f8fd;
+}
+
+.clever-calendar .summary-info-container {
+   color: #2f5251;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: pre;
+   width: 100%;
+   margin-bottom: .8em;
+}
+
+.clever-calendar .summary-info-container p {
+   margin: 0;
+}
+
+/* #region : INDICADOR DE NÚMERO DE DIA */
+.clever-calendar .calendar-day .day-number {
+   font-size: 1.2em;
+   font-weight: normal;
+   text-align: center;
+}
+
+.clever-calendar .calendar-day:not([disabled]):hover {
+   background-color: #f9f9bf;
+   animation: bgcolor .5s ease;
+}
+
+.clever-calendar .calendar-day:not([disabled]) .day-number {
+   color: #04918d;
+}
+
+.clever-calendar .calendar-day:not([disabled]):hover .day-number {
+   font-size: 1.2em;
+   /* font-weight: bold; */
+}
+
+/* #endregion / INDICADOR DE NÚMERO DE DIA */
+
+/* #region : DÍAS DEL CALENDARIO DEL MES SELECCIONADO */
+.clever-calendar .calendar-day:not(.today) {}
+
+
+/* #endregion / DÍAS DEL CALENDARIO DEL MES SELECCIONADO */
+
+
+/* #region : DÍAS DEL CALENDARIO DE OTRO MES */
+.clever-calendar .calendar-day[disabled],
+.clever-calendar .calendar-day[disabled]:hover {
+   background-color: rgba(165,42,42,.2);
+   color: #ffffff;
+   border: none;
+}
+
+.clever-calendar .calendar-day[disabled] .day-number span {
+   background-color: transparent
+}
+
+/* #endregion / DÍAS DEL CALENDARIO DE OTRO MES */
+
+/* #region : DÍA DE HOY */
+.clever-calendar .today {
+   font-weight: bold;
+   background: #faebd7;
+}
+
+.clever-calendar-day .today:hover {}
+
+/* #endregion / DÍA DE HOY */
+
+/* #region : ANIMACIONES */
+/* #region : bgcolor */
+@keyframes bgcolor {
+   from {
+      background-color: inherit;
+   }
+
+   to {
+      background-color: #f5f5c6;
+   }
+}
+
+/* #endregion / bgcolor */
+
+/* #region : ANIMACIONES */
+/* Botón_ Ver información */
+.clever-calendar .event-item-container .view-info {
+   cursor: pointer;
+}
+
+.clever-calendar .controls-container {}
+
+.clever-calendar .group-info {
+   padding-bottom: 1.5px;
+   margin-bottom: 3px;
+   /* color: #FFF; */
+   /* text-shadow: #015 0 0 2px; */
+}
+
+.clever-calendar .group-info:hover {
+   padding-bottom: 1.5px;
+   margin: 1px;
+}
+
+.clever-calendar .group-info span {
+   /* background: rgba(255, 255, 255, .6); */
+   width: 100%;
+   display: inline-block;
+   border-radius: 0 0 15px 0;
+}
+
+/* #region : DETALLES DEL EVENTO */
+.clever-calendar .detail-view {
+   height: 80vh;
+   width: 70vw;
+   max-height: 80vh;
+   max-width: 70vw;
+}
+
+.clever-calendar .detail-view .grid {
+   height: 100%;
+   width: 100%;
+   display: inline-grid;
+}
+
+.clever-calendar .detail-view header {
+   box-shadow: #c8d0cf 0 8px 13px -6px;
+   display: table-cell;
+   width: 100%;
+}
+
+.clever-calendar .detail-view main {
+   overflow-y: auto;
+   padding: 10px;
+   width: 100%;
+   display: table-cell;
+}
+
+.clever-calendar .detail-view footer {
+   width: 100%;
+   display: table-cell;
+   box-shadow: #c8d0cf 0 -8px 13px -6px;
+}
+
+/* #region / DETALLES DEL EVENTO */
+
+/**
+ * Icono de anillo de boda
+ */
+.clever-wedding-ring {
+   display: inline-block;
+   height: 16px;
+   width: 16px;
+   background-size: cover;
+   /* background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTM3MS43NjksMTc2LjM2NGwzMC40Ny0zMC40N2wtMjEuNzEtMjUuMjY1aC01Mi4zMDVsLTIxLjcxLDI1LjI2NWwzMC40NywzMC40NyAgICBjLTI5LjU1NywzLjI3OS01Ny42NTgsMTQuODYzLTgwLjk4MiwzMy41MDdjLTIzLjMyNC0xOC42NDQtNTEuNDI1LTMwLjIyOC04MC45ODItMzMuNTA3bDMwLjQ3LTMwLjQ3bC0yMS43MS0yNS4yNjVoLTUyLjMwNSAgICBsLTIxLjcxLDI1LjI2NWwzMC40NywzMC40N0M2MS40NzEsMTg1LjA0OSwwLDI1MS45ODgsMCwzMzMuMDI0YzAsODYuOTE0LDcwLjcxLDE1Ny42MjUsMTU3LjYyNSwxNTcuNjI1ICAgIGMzNS44MzQsMCw3MC41MTMtMTIuMiw5OC4zNzUtMzQuNDcyYzI3Ljg2MiwyMi4yNzIsNjIuNTQyLDM0LjQ3Miw5OC4zNzUsMzQuNDcyQzQ0MS4yOSw0OTAuNjQ5LDUxMiw0MTkuOTM4LDUxMiwzMzMuMDI0ICAgIEM1MTIsMjUxLjk4OCw0NTAuNTI5LDE4NS4wNDksMzcxLjc2OSwxNzYuMzY0eiBNMzI3LjIzNywxNDUuMTFsNy45Ny05LjI3NWgzOC4zMzdsNy45NjksOS4yNzVsLTI3LjEzOCwyNy4xMzhMMzI3LjIzNywxNDUuMTF6ICAgICBNMTMwLjQ4NiwxNDUuMTFsNy45Ny05LjI3NWgzOC4zMzdsNy45NjksOS4yNzVsLTI3LjEzOCwyNy4xMzhMMTMwLjQ4NiwxNDUuMTF6IE0xNTcuNjI1LDQ3NS40NDEgICAgYy03OC41MjksMC0xNDIuNDE3LTYzLjg4OC0xNDIuNDE3LTE0Mi40MTdzNjMuODg4LTE0Mi40MTcsMTQyLjQxNy0xNDIuNDE3YzM0LjMzNywwLDY3LjUwMywxMi4zOTIsOTMuMzg3LDM0Ljg5NCAgICBjOC4wMzUsNi45ODQsMTUuMzA4LDE0Ljg5OCwyMS42MTgsMjMuNTIyYzE3LjkzMywyNC41MDgsMjcuNDEyLDUzLjU1NSwyNy40MTIsODQuMDAyYzAsMjcuNTczLTcuNzc1LDU0LTIyLjU2Myw3Ni45NDYgICAgYy0wLjE5Mi0wLjE5Mi0wLjM3Ni0wLjM5LTAuNTY2LTAuNTgzYy0wLjgzNC0wLjg0Ny0xLjY1OS0xLjcwMi0yLjQ2NS0yLjU3NGMtMC4zNTctMC4zODYtMC43MDUtMC43ODEtMS4wNTUtMS4xNzIgICAgYy0wLjY2MS0wLjczNi0xLjMxNS0xLjQ3OS0xLjk1NS0yLjIzM2MtMC4zNjgtMC40MzMtMC43MzEtMC44NjktMS4wOTItMS4zMDhjLTAuNjE4LTAuNzUxLTEuMjI1LTEuNTEzLTEuODIzLTIuMjggICAgYy0wLjMzNy0wLjQzMi0wLjY3NS0wLjg2My0xLjAwNS0xLjNjLTAuNjU1LTAuODY3LTEuMjkzLTEuNzQ4LTEuOTIxLTIuNjM2Yy0wLjE5NS0wLjI3NS0wLjM5Ni0wLjU0NS0wLjU4OS0wLjgyMyAgICBjMTAuODg3LTE4LjgxLDE2LjYxOS00MC4xNTMsMTYuNjE5LTYyLjAzN2MwLTIxLjkyNS01Ljc1OS00My4zMDEtMTYuNjg1LTYyLjEzN2wwLjA2MS0wLjA5NmwtMi41OC00LjA3MiAgICBjLTQuOTgzLTcuODU5LTEwLjgxNy0xNS4xMTctMTcuNDA3LTIxLjY2MmMtMi4xOTctMi4xODItNC40NzgtNC4yODUtNi44MzktNi4zMDRsLTYuMjM0LTUuMzMybC0wLjE2MSwwLjIyICAgIGMtMjEuMzM5LTE1LjkyOS00Ny4zNy0yNC42Mi03NC4xNTYtMjQuNjJjLTY4LjM3NSwwLTEyNC4wMDIsNTUuNjI4LTEyNC4wMDIsMTI0LjAwMnM1NS42MjcsMTI0LjAwMSwxMjQuMDAyLDEyNC4wMDEgICAgYzI2Ljg1MywwLDUyLjk0Ny04LjczMyw3NC4zMTUtMjQuNzM3YzAuMDk1LDAuMTE4LDAuMTk2LDAuMjMxLDAuMjkxLDAuMzQ4YzAuNTM5LDAuNjYxLDEuMDkyLDEuMzExLDEuNjQxLDEuOTY0ICAgIGMwLjQyMywwLjUwMSwwLjg0MSwxLjAwNywxLjI2OSwxLjUwM2MwLjU4NiwwLjY3NywxLjE4NSwxLjM0MiwxLjc4MiwyLjAxYzAuNDA5LDAuNDU3LDAuODEyLDAuOTIsMS4yMjYsMS4zNzIgICAgYzAuNjU2LDAuNzE2LDEuMzI2LDEuNDE4LDEuOTk1LDIuMTIyYzAuMzcsMC4zODksMC43MzQsMC43ODcsMS4xMDgsMS4xNzJjMC44MTUsMC44NDEsMS42NDYsMS42NjYsMi40OCwyLjQ4OCAgICBjMC4yMjgsMC4yMjUsMC40NDksMC40NTYsMC42NzcsMC42OEMyMTkuNjA2LDQ2NS4wMjIsMTg5LjEwNyw0NzUuNDQxLDE1Ny42MjUsNDc1LjQ0MXogTTI4OS4wNzcsMjQ2LjA0ICAgIGMxOC43NjctMTQuMDk1LDQxLjY4OS0yMS44MSw2NS4yOTgtMjEuODFjNTkuOTg5LDAsMTA4Ljc5NCw0OC44MDUsMTA4Ljc5NCwxMDguNzk0YzAsNTkuOTg5LTQ4LjgwNSwxMDguNzkyLTEwOC43OTQsMTA4Ljc5MiAgICBjLTIzLjYwOCwwLTQ2LjUzMS03LjcxNS02NS4yOTgtMjEuODFjMTcuMTQyLTI1LjgxOSwyNi4xNzItNTUuNzM1LDI2LjE3Mi04Ni45ODRDMzE1LjI0OSwzMDEuNzc1LDMwNi4yMiwyNzEuODU4LDI4OS4wNzcsMjQ2LjA0eiAgICAgTTI1NiwzNzkuNDg5Yy02LjgzNC0xNC40NTQtMTAuNDE4LTMwLjI4NS0xMC40MTgtNDYuNDY1YzAtMTYuMTgsMy41ODQtMzIuMDEyLDEwLjQxOC00Ni40NjUgICAgYzYuODM0LDE0LjQ1NCwxMC40MTgsMzAuMjg1LDEwLjQxOCw0Ni40NjVDMjY2LjQxOCwzNDkuMjA0LDI2Mi44MzQsMzY1LjAzNSwyNTYsMzc5LjQ4OXogTTIyMi45MjMsMjQ2LjA0ICAgIGMtMTcuMTQyLDI1LjgxOS0yNi4xNzIsNTUuNzM1LTI2LjE3Miw4Ni45ODRjMCwzMS4yNDgsOS4wMjksNjEuMTY1LDI2LjE3Miw4Ni45ODRjLTE4Ljc2NywxNC4wOTUtNDEuNjksMjEuODEtNjUuMjk4LDIxLjgxICAgIGMtNTkuOTg5LDAtMTA4Ljc5NC00OC44MDQtMTA4Ljc5NC0xMDguNzkzUzk3LjYzNiwyMjQuMjMsMTU3LjYyNSwyMjQuMjNDMTgxLjIzNCwyMjQuMjMsMjA0LjE1NiwyMzEuOTQ1LDIyMi45MjMsMjQ2LjA0eiAgICAgTTM1NC4zNzUsNDc1LjQ0MWMtMzQuMzM3LDAtNjcuNTAzLTEyLjM5Mi05My4zODctMzQuODk0Yy04LjAzNC02Ljk4My0xNS4zMDgtMTQuODk4LTIxLjYxOC0yMy41MjIgICAgYy0xNy45MzMtMjQuNTA4LTI3LjQxMi01My41NTUtMjcuNDEyLTg0LjAwMWMwLTI3LjU3Myw3Ljc3NS01NC4wMDEsMjIuNTYyLTc2Ljk0NmMwLjE5NCwwLjE5NCwwLjM4LDAuMzk0LDAuNTcyLDAuNTg5ICAgIGMwLjgzMywwLjg0NSwxLjY1NiwxLjY5OCwyLjQ2LDIuNTY5YzAuMzU1LDAuMzg0LDAuNzAxLDAuNzc4LDEuMDUsMS4xNjdjMC42NjQsMC43MzksMS4zMiwxLjQ4NSwxLjk2NCwyLjI0MyAgICBjMC4zNjQsMC40MjksMC43MjQsMC44NjIsMS4wODIsMS4yOTZjMC42MjIsMC43NTYsMS4yMzMsMS41MjIsMS44MzUsMi4yOTRjMC4zMzQsMC40MjgsMC42NjksMC44NTUsMC45OTcsMS4yODkgICAgYzAuNjU1LDAuODY3LDEuMjkyLDEuNzQ4LDEuOTIxLDIuNjM1YzAuMTk2LDAuMjc3LDAuMzk4LDAuNTQ4LDAuNTkxLDAuODI3Yy0xMC44ODcsMTguODEtMTYuNjE5LDQwLjE1My0xNi42MTksNjIuMDM4ICAgIGMwLDIxLjkyNSw1Ljc1OSw0My4zLDE2LjY4NSw2Mi4xMzZsLTAuMDYyLDAuMDk2bDIuNTgxLDQuMDcyYzYuNjQzLDEwLjQ3OCwxNC44LDE5Ljg4OCwyNC4yNDUsMjcuOTY2bDYuMjM0LDUuMzMybDAuMTYxLTAuMjIxICAgIGMyMS4zNCwxNS45MjksNDcuMzY5LDI0LjYyLDc0LjE1NiwyNC42MmM2OC4zNzUsMCwxMjQuMDAyLTU1LjYyNiwxMjQuMDAyLTEyNC4wMDFzLTU1LjYyNi0xMjQuMDAxLTEyNC4wMDItMTI0LjAwMSAgICBjLTI2Ljg1MywwLTUyLjk0Nyw4LjczMy03NC4zMTUsMjQuNzM4Yy0wLjA5NS0wLjExOC0wLjE5Ni0wLjIzMS0wLjI5MS0wLjM0OGMtMC41MzgtMC42Ni0xLjA4OS0xLjMwOS0xLjYzOC0xLjk2ICAgIGMtMC40MjQtMC41MDMtMC44NDQtMS4wMTEtMS4yNzQtMS41MDhjLTAuNTgtMC42Ny0xLjE3My0xLjMyOS0xLjc2NC0xLjk4OWMtMC40MTYtMC40NjQtMC44MjUtMC45MzUtMS4yNDYtMS4zOTQgICAgYy0wLjY0Mi0wLjcwMS0xLjI5OC0xLjM4Ny0xLjk1MS0yLjA3NWMtMC4zODUtMC40MDYtMC43NjMtMC44MTgtMS4xNTMtMS4yMjFjLTAuNzgxLTAuODA1LTEuNTc3LTEuNTk0LTIuMzczLTIuMzgyICAgIGMtMC4yNjItMC4yNTktMC41MTYtMC41MjUtMC43OC0wLjc4M2MyNC44MDQtMTkuMDc1LDU1LjMwMi0yOS40OTMsODYuNzg2LTI5LjQ5M2M3OC41MjksMCwxNDIuNDE3LDYzLjg4OCwxNDIuNDE3LDE0Mi40MTcgICAgQzQ5Ni43OTIsNDExLjU1NCw0MzIuOTA0LDQ3NS40NDEsMzU0LjM3NSw0NzUuNDQxeiIgZmlsbD0iIzc4NzY0OSIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHJlY3QgeD0iMjQ4LjM5NiIgeT0iMjEuMzUxIiB3aWR0aD0iMTUuMjA4IiBoZWlnaHQ9IjQ3LjM0NCIgZmlsbD0iIzc4NzY0OSIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJCgkJCTxyZWN0IHg9IjI5NC45ODMiIHk9IjUyLjIxNyIgdHJhbnNmb3JtPSJtYXRyaXgoMC40MTk4IC0wLjkwNzYgMC45MDc2IDAuNDE5OCAxMzAuNTg3MyAzMjMuOTIyNCkiIHdpZHRoPSI0Ny4zNDMiIGhlaWdodD0iMTUuMjA3IiBmaWxsPSIjNzg3NjQ5Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIxODUuNzM4IiB5PSIzNi4xNTYiIHRyYW5zZm9ybT0ibWF0cml4KDAuOTA3NiAtMC40MTk4IDAuNDE5OCAwLjkwNzYgLTcuMjUzNyA4Ni42OTMyKSIgd2lkdGg9IjE1LjIwNyIgaGVpZ2h0PSI0Ny4zNDMiIGZpbGw9IiM3ODc2NDkiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K); */
+   background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9Ii03MCAwIDUxMiA1MTIuMDAwMDEiIHdpZHRoPSIyNHB4Ij48cGF0aCBkPSJtMjAxLjY4MzU5NCA4MC40Mjk2ODh2ODkuODM1OTM3YzExLjUyMzQzNyAxLjA5Mzc1IDE0LjM5NDUzMSAyLjQyNTc4MSAxNy43NSAyLjQyNTc4MSA1LjYwMTU2MiAwIDEwLjg1OTM3NS0zLjEwNTQ2OCAxMy41MTk1MzEtOC4yMjI2NTYgMzcuOTI5Njg3LTczLjE3OTY4OCA0Mi45OTYwOTQtODIuOTU3MDMxIDQzLjUwMzkwNi04My45MzM1OTQtLjAwMzkwNi4wMDc4MTMtLjAwNzgxMi4wMTU2MjUtLjAxMTcxOS4wMTk1MzIuMDAzOTA3LS4wMDc4MTMuMDExNzE5LS4wMjM0MzguMDE5NTMyLS4wMzkwNjMuMDU4NTk0LS4xMDU0NjkuMDQ2ODc1LS4wODU5MzcuMDE5NTMxLS4wMzkwNjMuMDExNzE5LS4wMTU2MjQuMDE1NjI1LS4wMjczNDMuMDI3MzQ0LS4wNDY4NzR6bTAgMCIgZmlsbD0iIzAwOTVmZiIvPjxwYXRoIGQ9Im0yNzYuNDQ1MzEyIDgwLjU1NDY4OGMtLjAwMzkwNi4wMDc4MTItLjAwNzgxMi4wMDc4MTItLjAwNzgxMi4wMTU2MjQgMC0uMDAzOTA2LjAwMzkwNi0uMDExNzE4LjAwNzgxMi0uMDE1NjI0em0wIDAiIGZpbGw9IiMwMDk1ZmYiLz48cGF0aCBkPSJtMjc2LjQyNTc4MSA4MC41ODk4NDRjLS4wMDM5MDYuMDA3ODEyLS4wMDM5MDYuMDA3ODEyIDAgMHptMCAwIiBmaWxsPSIjMDA5NWZmIi8+PHBhdGggZD0ibTI3Ni40Mzc1IDgwLjU3MDMxMmMtLjAwMzkwNi4wMDc4MTMtLjAwNzgxMi4wMTU2MjYtLjAxMTcxOS4wMTk1MzIgMCAwIC4wMDM5MDctLjAwNzgxMy4wMTE3MTktLjAxOTUzMnptMCAwIiBmaWxsPSIjMDA5NWZmIi8+PHBhdGggZD0ibTIzOC42OTUzMTIgNS42NTIzNDRjLTIuODkwNjI0LTMuNTcwMzEzLTcuMjQ2MDkzLTUuNjUyMzQ0LTExLjg0Mzc1LTUuNjUyMzQ0aC04MC43ODEyNWMtNC41OTc2NTYgMC04Ljk1MzEyNCAyLjA4MjAzMS0xMS44NDM3NSA1LjY1MjM0NGwtMzUuODM1OTM3IDQ0LjMyODEyNWgxNzYuMTQwNjI1em0wIDAiIGZpbGw9IiMwMDk1ZmYiLz48cGF0aCBkPSJtMjcwLjExNzE4OCAxNTguOTE3OTY5LTEwLjE0MDYyNiAxOS41NjY0MDZjLTYuNDAyMzQzIDEyLjM1OTM3NS0xNy44Nzg5MDYgMjAuOTI1NzgxLTMxLjE1NjI1IDIzLjY4NzUgNTEuMTkxNDA3IDE3LjYyODkwNiA4OC4wNzAzMTMgNjYuMjY5NTMxIDg4LjA3MDMxMyAxMjMuMzU1NDY5IDAgNzEuOTI1NzgxLTU4LjUxNTYyNSAxMzAuNDMzNTk0LTEzMC40Mjk2ODcgMTMwLjQzMzU5NC03MS45MTQwNjMgMC0xMzAuNDI5Njg4LTU4LjUwNzgxMy0xMzAuNDI5Njg4LTEzMC40MzM1OTQgMC01Ny4wODU5MzggMzYuODc4OTA2LTEwNS43MjY1NjMgODguMDcwMzEyLTEyMy4zNTU0NjktMTMuMjczNDM3LTIuNzYxNzE5LTI0Ljc1MzkwNi0xMS4zMjgxMjUtMzEuMTU2MjUtMjMuNjg3NWwtMTAuMTQwNjI0LTE5LjU2NjQwNmMtNjAuOTIxODc2IDMwLjY5OTIxOS0xMDIuODA0Njg4IDkzLjg1NTQ2OS0xMDIuODA0Njg4IDE2Ni42MDkzNzUgMCAxMDIuODI4MTI1IDgzLjY0NDUzMSAxODYuNDcyNjU2IDE4Ni40NjA5MzggMTg2LjQ3MjY1NiAxMDIuODE2NDA2IDAgMTg2LjQ2MDkzNy04My42NDQ1MzEgMTg2LjQ2MDkzNy0xODYuNDcyNjU2IDAtNzIuNzUzOTA2LTQxLjg4MjgxMy0xMzUuOTEwMTU2LTEwMi44MDQ2ODctMTY2LjYwOTM3NXptMCAwIiBmaWxsPSIjMDA5NWZmIi8+PHBhdGggZD0ibTk2LjQxNzk2OSA4MC40Mzc1YzAtLjAwMzkwNi4wMDM5MDYuMDExNzE5LjAxNTYyNS4wMzEyNS0uMDAzOTA2LS4wMDM5MDYtLjAwMzkwNi0uMDA3ODEyLS4wMDM5MDYtLjAxMTcxOS0uMDAzOTA3LS4wMDM5MDYtLjAwNzgxMy0uMDExNzE5LS4wMTE3MTktLjAxOTUzMXptMCAwIiBmaWxsPSIjMDA5NWZmIi8+PHBhdGggZD0ibTk2LjQyNTc4MSA4MC40NTcwMzFjLjAwMzkwNy4wMDc4MTMuMDA3ODEzLjAxNTYyNS4wMTE3MTkuMDE5NTMxLS4wMDM5MDYtLjAwMzkwNi0uMDAzOTA2LS4wMDM5MDYtLjAwNzgxMi0uMDA3ODEyLjAwNzgxMi4wMTE3MTkuMDE1NjI0LjAyNzM0NC4wMjczNDMuMDQ2ODc1LjAxOTUzMS4wMzkwNjMuMDMxMjUuMDU4NTk0LjAzNTE1Ny4wNzAzMTMtLjAwMzkwNy0uMDExNzE5LS4wMTU2MjYtLjAyNzM0NC0uMDI3MzQ0LS4wNTA3ODIuMDExNzE4LjAxNTYyNS4wMTk1MzEuMDM1MTU2LjAzMTI1LjA1ODU5NC42Njc5NjggMS4yODUxNTYgNi4yMTg3NSAxMS45OTYwOTQgNDMuNDcyNjU2IDgzLjg3NSAzLjE2MDE1NiA2LjA3ODEyNSA5LjkwMjM0NCA5LjIyMjY1NiAxNi40NjA5MzggNy45Mzc1IDQuNzUtLjkzMzU5NCA5LjczNDM3NC0xLjY1MjM0NCAxNC44MDg1OTMtMi4xMzI4MTJ2LTg5Ljg0Mzc1aC03NC44MjgxMjVjLjAwMzkwNi4wMDM5MDYuMDAzOTA2LjAwMzkwNi4wMDc4MTMuMDA3ODEyIDAgLjAwMzkwNi4wMDM5MDYuMDExNzE5LjAwNzgxMi4wMTk1MzF6bTAgMCIgZmlsbD0iIzAwOTVmZiIvPjxwYXRoIGQ9Im05Ni40OTYwOTQgODAuNTg1OTM4YzAgLjAwMzkwNi4wMDM5MDYuMDA3ODEyLjAwMzkwNi4wMDc4MTJzLS4wMDM5MDYtLjAwMzkwNi0uMDAzOTA2LS4wMDM5MDYgMCAwIDAtLjAwMzkwNnptMCAwIiBmaWxsPSIjMDA5NWZmIi8+PC9zdmc+Cg==);
+}
+
+.wedding-ring-icon-1,
+.wedding-ring-icon-2 {
+   display: inline-block;
+   font-size: 1.8em;
+   color: #daa520;
+   text-shadow: 3px 2px 1px #daa520a6;
+}
+
+.wedding-ring-icon-1 {
+   transform: rotateX(29deg);
+}
+
+.wedding-ring-icon-2 {
+   transform: rotateX(40deg);
+   margin-left: -10px;
+}
+
+/* #endregion / ANIMACIONES */
+
+/* #endregion : DIALOGO DE DETALLE DE EVENTO */
+.clever-calendar dialog[open] {
+   border: none;
+   box-shadow: 0 0 10px #8e8e8e;
+   border-radius: 3px;
+   position: fixed;
+}
+
+.clever-calendar dialog::backdrop {
+   background: rgba(188, 192, 195, 0.4);
+}
+
+.clever-calendar .calendar-day:hover {
+   filter: drop-shadow(1px 1px 3px rgb(230, 211, 211));
+}
+
+/* #endregion / DIALOGO DE DETALLE DE EVENTO */
+
+/* #region / BOTÓN DE VER DETALLE */
+.clever-calendar .calendar-day .view-details {
+   border-radius: 50%;
+   font-size: 1.8em;
+   font-weight: bolder;
+   color: #fff;
+   text-align: center;
+   cursor: pointer;
+   margin-left: auto;
+   margin-right: auto;
+   width: 0.8em !important;
+   height: 0.8em !important;
+   display: block;
+   line-height: 0.9em;
+   text-align: center;
+}
+
+/* #endregion / BOTÓN DE VER DETALLE */

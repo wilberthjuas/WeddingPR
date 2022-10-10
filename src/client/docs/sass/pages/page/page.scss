@@ -1,0 +1,217 @@
+[component="personalizeyoureedding"],
+[page="destination"],
+[page="home"],
+[page="whydestination"],
+[component="navbar"],
+[page="personaliyourday"],
+[page="personalizeyourcatalog"],
+[page="palaceresortzquiz"],
+[page="Planning"],
+[page="StepByStep"],
+[page="CheckList"],
+[page="GiftRegistry"],
+[page="HelpfulPlanning"],
+[page="compbenefits"],
+[page="GalleryWeddings"],
+[page="ReligiousCultural"],
+[page="Offers"],
+[page="checkl"],
+[page="downloadbrochure"],
+[page="LandingWeddings"],
+[page="OffersInterna"],
+[page="faq"],
+[page="sample"],
+[page="blog"],
+[page="blogdetail"],
+[page="contactus"],
+[page="Videos"],
+[page="Photos"],
+[page="destinationweddings"],
+[page="Destination"],
+[page="resort"],
+[page="Testimonials"],
+[page="tour"],
+[page="NextStep"],
+[page="AmazingCollection"],
+[page="quizresorts"],
+[page="sitemap"],
+[component="Footer"],
+[page="contactus_landing"],
+[page="resourcecenter"],
+[page="landingmainscreen"],
+[page="error404"]{
+
+  [component="inputwedd"]{
+    a.btn{display: flex;}
+  }
+  ._space_calendar{
+    overflow: hidden;
+    transition: .5s;
+    /*position: absolute;
+    z-index: 1;*/
+  }
+  @media (max-width: 1024px) and (min-width: 0px) {
+    .desktop {
+      display: none;
+    }
+    a.btn.movil {
+      display: flex;
+    }
+    a.btn.desktop {
+      display: none;
+    }
+    .container {
+      position: relative;
+    }
+
+    .container-movil {
+      display: block;
+      position: relative;
+    }
+
+    .container-movil {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .container-movil {
+      @media only screen and (min-width:0px) and (max-width:767px) {
+        @media (orientation: landscape) {
+          @include vwvh("max-width", 320, "!important");
+        }
+
+        @media (orientation: portrait) {
+          max-width: 100%;
+        }
+      }
+
+      @media only screen and (min-width:768px) and (max-width:1024px) {
+        @include vwvh("max-width", 320, "!important");
+      }
+    }
+  }
+
+  @media (min-width: 1025px) {
+
+    form label,
+    label p {
+      font-size: 21px !important;
+      font-family: Avenir !important;
+    }
+
+    .movil {
+      display: none;
+    }
+    a.btn.desktop {
+      display: flex;
+    }
+    a.btn.movil {
+      display: none;
+    }
+    .container {
+      display: block;
+      position: relative;
+    }
+
+    .container {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (min-width: 1200px) {
+      .container {
+        max-width: 1366px;
+      }
+    }
+  }
+}
+
+[page="NextStep"]{
+  .container {
+    max-width: 100% !important;
+  }
+
+  .check-box {
+    position: relative;
+    display: flex;
+
+    .real-label{
+      padding-top: 0 !important;
+    }
+    a{
+      display: inline;
+    }
+  }
+
+
+
+}
+
+
+[page="error404"]{
+
+  section.title404 {
+    width: 60%;
+    margin: 0px auto;
+    background-image: url(https://e-commercepr.s3.amazonaws.com/assets/images/404/bg-404-desktop.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 210px;
+}
+
+@media (max-width: 1200px) { 
+  section.title404 {
+   
+      width: 100%;
+      margin: 0px auto;
+      background-position: -100% 0%;
+      background-image: url(https://e-commercepr.s3.amazonaws.com/assets/images/404/bg-404-movil.jpg);
+      background-position: -20% 0%;
+      background-repeat: no-repeat;
+      background-size: 120px 120px;
+      height: 120px;
+  
+}
+
+}
+
+
+
+  .section404 {
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    text-align: center; 
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  
+  .section404 span{
+    color: var(--light-melon);
+    font-size: 80px;
+    @media (max-width: 1200px) {
+      font-size: 40px;
+    }
+    font-family: Avenir;
+    font-weight: bold;
+  }
+
+
+   [component="sliderprincipal"] .ItemSlider  {
+      height: 80px;
+      @media (max-width: 1200px) {
+        height: 80px;
+      }
+  }
+
+  [component="sliderprincipal"] .ItemSlider  img{
+    display: none ;
+  }
+}

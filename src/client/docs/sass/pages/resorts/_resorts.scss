@@ -1,0 +1,144 @@
+[page="resort"]{
+    [component="floatingMenu"]{
+        //display: none;
+    }
+    @media (max-width: 1024px) and (min-width: 0px) {
+        [component="tabstwo"]{
+        .tabs-5 {
+            width: 25%;
+        }}
+
+        .iframeMovil{
+            height: (210/16)+rem;
+        }
+
+        .fade{
+            width: 100%;
+            height: 44px;
+            margin-top: -44px;
+            z-index: 5;
+            position: absolute;
+            /* background: aqua; */
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) -12%, #ffffff 75%)
+        }
+
+        
+      }
+      @media (min-width: 1025px) {
+
+        .overflow-tab {
+            overflow: unset !important;
+          }
+        .items{
+            position: relative;
+        }
+
+        .fade{
+            width: 100%;
+            height: 44px;
+            margin-top: -44px;
+            z-index: 5;
+            position: absolute;
+            /* background: aqua; */
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) -12%, #ffffff 75%)
+        }
+
+        .subcontainer{
+          float: right;
+          width: 80%;
+        }
+        [component="titlesection"]{
+           .title{
+            width: 80%;
+            float: right;
+            margin-top:0px;
+           }
+
+           .subtitle{
+            width: 80%;
+            float: right;
+           }
+
+           .description{
+            width: 80%;
+            float: right;
+            margin-bottom: 0px;
+           }
+       }
+
+       [component="Footer"]{
+           clear: both;
+       }
+
+       [component="tabstwo"]{
+        position: absolute;
+        top: 40px;
+        width: 18%;
+        z-index: 15;
+        .head-tabs{
+            display: grid;  
+
+            li {
+                margin-bottom: 3px;
+                padding: unset;
+
+                a{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    padding:16px 10px 10px 10px;
+                }
+            }
+        }
+        .tabs-4 {
+            width: 100%;
+        }
+        .head-tabs > section {
+            margin-bottom: 3px;
+            width: 245px;
+        }
+        .active .tabs-arrow {
+            transform: rotate(-135deg);
+            top: -20%;
+            margin: auto;
+            left: 97%;
+        }
+        .tab-max-width{
+            width: 100% !important;
+        }
+
+        h1{
+            font-family: Avenir;
+            font-size: 18px;
+            font-weight: bold;
+            width: 100%;
+            display: block;
+            padding:17px 64px
+           }
+
+           .active  h1 {
+            font-family: Avenir;
+            font-size: 18px;
+            font-weight: bold;
+            width: 100%;
+            display: block;
+            padding:17px 64px
+           }
+
+       }
+
+       .position{
+        position: absolute;
+        top: 0px;
+        right: -948px;
+        width: 50px;
+        height: 50px;
+        background-color: var(--pale-pink);
+        border-radius: 50%;
+       }
+       [component="bookingwidget"]
+       .active .tabs-arrow {
+        margin-top: -4px !important;
+       }
+      }
+}

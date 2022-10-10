@@ -1,0 +1,441 @@
+[component="cakeDetail"] {
+    .list_package {
+        padding-left: unset;
+    }
+
+    .margin_title {
+        [component="titlesection"] {
+            margin-bottom: unset !important;
+
+            .subtitle {
+                font-family: PlayfairDisplay !important;
+                color: var(--light-melon);
+            }
+        }
+    }
+
+    .ttl_dsc {
+        text-align: left;
+    }
+
+    .list_package .description {
+        margin-top: unset;
+        margin-bottom: unset;
+        text-align: left;
+        list-style: none;
+        text-align: left;
+    }
+
+
+    @media (max-width : 1024px) {
+
+
+        #quant_ {
+            max-width: 100%;
+            width: max-content;
+            background-color: var(--light-melon-full);
+            margin-bottom: 15px !important;
+
+            .ItemSlider {
+                width: max-content; //width: 170px;
+                padding: 20px 20px;
+            }
+
+            section>img {
+                height: 80px;
+            }
+        }
+
+        p.description.quantum  {
+
+            font-size: 16px !important;
+            font-style: italic !important;
+
+            a {
+               color: var(--dark-melon) !important;
+               font-weight: bold !important;
+            }
+         }
+
+
+        h2.subtitle {
+            font-family: PlayfairDisplay;
+            font-size: 25px !important;
+            text-transform: capitalize !important;
+        }
+
+
+        ._description_detail {
+            font-family: Avenir;
+            font-size: 16px !important;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            //letter-spacing: 0.9px;
+            text-align: center;
+            color: var(--dark-gray);
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px !important;
+        }
+
+
+
+
+
+        //height: 478px;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-flow: column;
+
+        .bor-top {
+            height: -webkit-fill-available;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider-quant_ {
+            width: 100%;
+            .controlArrow {
+                z-index: 4;
+
+                display: block;
+                .moveBefore,
+                .moveAfter {
+                    z-index: 2;
+                    .chevron-carousel-right,.chevron-carousel-left{
+                        height: 4rem;
+                        width: 1.2rem;
+                    }
+                }
+            }
+            /* .controlPoints{
+                display: none;
+            }*/
+
+            .ItemSlider {
+                padding-left: 10/16+rem;
+                padding-right: 10/16+rem;
+                width: max-content;
+                max-width: 100%;
+            }
+
+            .contentSlider {
+                display: flex;
+                background-color: var(--light-melon-full); //#f4f4f4ed;
+                padding: 15/16+rem 0px 15/16+rem 0px;
+                width: 100%;
+            }
+        }
+
+        margin-top: 2.8125rem;
+
+        .list_package .description {
+            margin-left: 10/16+rem;
+        }
+
+        .ttl_dsc {
+            margin-left: 10/16+rem;
+        }
+
+
+        ._card_detail {
+            display: flex;
+            align-items: center;
+        }
+
+        ._content_detail {
+            [component="titlesection"] {
+                h2 {
+                    font-size: 1.1rem;
+                    word-break: break-word;
+                }
+            }
+        }
+    }
+
+    @media (min-width : 1025px) {
+
+        .up-banner{
+            border-top: 1px solid rgb(254, 223, 217);
+            border-right: 1px solid rgb(254,223,217);
+            border-bottom: 1px solid rgb(254, 223, 217);
+            border-left: 1px solid rgb(254, 223, 217);
+            border-image: initial;
+        }
+
+        h2.subtitle {
+            font-family: PlayfairDisplay;
+            font-size: 25px !important;
+            text-transform: capitalize !important;
+        }
+
+        ._description_detail {
+            font-family: Avenir;
+            font-size: 16px !important;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            //letter-spacing: 0.9px;
+            text-align: center;
+            color: var(--dark-gray);
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px !important;
+        }
+
+        p.description.quantum  {
+
+              font-size: 16px !important;
+            font-style: italic !important;
+
+            a {
+               color: var(--dark-melon) !important;
+               font-weight: bold !important;
+            }
+         }
+
+
+        min-height: 500px;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-flow: column;
+        margin-bottom: 60px;
+
+        .content_foot {
+            width: 60% !important;
+        }
+
+        .footer_info {
+            margin: 20px auto;
+
+            .description {
+                width: 60%;
+                margin: 20px auto;
+            }
+        }
+
+        .slider.container.slider-quant_ {
+            background-color: var(--light-melon-full);
+        }
+
+        #quant_ {
+            max-width: 100%;
+            width: max-content;
+            background-color: var(--light-melon-full);
+            margin-bottom: 15px !important;
+
+            .ItemSlider {
+                width: max-content; //width: 170px;
+                padding: 50px 20px;
+            }
+
+            section>img {
+                height: 120px;
+            }
+        }
+
+        .controlPoints.quant_ {
+            display: none;
+        }
+
+        .slider-quant_ .controlArrow {
+            //top: 27.5px !important;
+            z-index: 1;
+        }
+
+        .slider-quant_ .controlArrow {
+            //display: none;
+        }
+
+        ._card_detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 225px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    #nav {
+        nav {
+            width: 100%;
+            padding: 20px;
+            border-bottom: 2px solid var(--gray-weddings);
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+
+                li {
+                    float: left;
+
+                    a {
+                        display: block;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    ._photo_left {
+        width: 100%;
+        text-align: center;
+        float: left;
+    }
+
+
+
+    .content-detail-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+    }
+
+    .media-detail-cont {
+        width: 55%;
+    }
+
+
+
+    ._logo_detail {
+        width: 80%;
+        margin: auto;
+    }
+
+    ._media_detail {
+        height: 100%;
+    }
+
+    ._content_detail {
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+
+        .divider {
+            border: 1px solid var(--dark-gray-opct);
+            width: 65%;
+        }
+    }
+
+
+
+    .padding-9em-0 {
+        padding: 9em 0;
+    }
+
+    .border-20-20-f2f2f2 {
+        /*padding: 20px 20px;*/
+        border: solid 1px var(--light-gray);
+        text-align: center;
+
+        &.bor-right {
+            border-right: 0px;
+        }
+
+        &.bor-top {
+            border-top: 0px;
+            height: 100%;
+
+        }
+    }
+
+    .grid-flex-20-20-f2f2f2 {
+        justify-items: flex-end;
+        display: grid;
+        padding: 20px 20px;
+        border: solid 1px var(--light-gray);
+    }
+
+    div a {
+
+        left: 0;
+        top: 0;
+        display: block;
+    }
+
+}
+
+
+// [component="cakeDetail"]{
+//     ._photo_left {
+//         width: 100%;
+//         text-align: center;
+//         float: left;
+//     }
+
+//     ._card_detail ._photo_left img {
+//         max-height: 100%;
+//     }
+
+//     ._logo_detail {
+//         width: 25%;
+//         margin: auto;
+//     }
+
+//     ._media_detail {
+//     display: flex;
+//     align-items: flex-start;
+//     }
+
+//     .padding-9em-0 {
+//         padding: 9em 0;
+//     }
+
+//     ._description_detail{
+//         font-family: OpenSans;
+//         font-size: 1.5em;
+//         font-weight: 300;
+//         font-stretch: condensed;
+//         font-style: normal;
+//         line-height: normal;
+//         letter-spacing: 0.9px;
+//         text-align: center;
+//         color: var(--dark-gray);
+//         color: var(--dark-gray);
+//         margin: auto;
+//         margin-top: 10px;
+//         margin-bottom: 10px !important;
+//         }
+//         ._content_detail {
+//             align-items: center;
+//             justify-items: center;
+//             align-content: center;
+//             text-align: center;
+//             .divider {
+//                 border: 1px solid rgba(214, 206, 206, 0.24);
+//                 width: 65%;
+//             }
+//         }
+
+//     .border-20-20-f2f2f2 {
+//         padding: 20px 20px;
+//         border: solid 1px var(--light-gray);
+//         text-align: center;
+//         &.bor-right {
+//             border-right: 0px;
+//         }
+//         &.bor-top {
+//             border-top: 0px;
+//         }
+//     }
+//     .grid-flex-20-20-f2f2f2 {
+//         justify-items: flex-end;
+//         display: grid;
+//         padding: 20px 20px;
+//         border: solid 1px var(--light-gray);
+//     }
+
+// }

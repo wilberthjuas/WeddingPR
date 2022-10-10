@@ -1,0 +1,147 @@
+[component="previewbox"] {
+
+  @media (min-width: 1025px) {
+    [component="titlesection"] {
+
+      .title,
+      .description {
+        margin: auto !important;
+      }      
+    }
+
+    /*  .center-section-real-gallery {
+      width: 1292px;
+      margin: 0px auto;
+      height: auto;
+      display: flex;
+    }
+
+    .real-short {
+      float: left;
+      width: 320px;
+      margin-right: 20px;
+
+    }
+
+    .real-large {
+      float: left;
+      width: 612px;
+
+    }
+
+
+
+    .itemsGalery {
+      height: 100%;
+      background-color: var(--light-gray);
+      width: 320px;
+      position: relative;
+    }
+
+    .itemsGalery-large {
+      height: 517px;
+      background-color: var(--light-gray);
+      width: 612px;
+      position: relative;
+    }
+
+    .compliments-palace-resorts {
+      width: 100%;
+
+      object-fit: contain;
+    }
+
+    .seprator-itemsg {
+      height: (29/3.2)+vw;
+    }
+
+    .text-style-1 {
+      font-family: Parisienne;
+      font-size: 42px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: var(--dark-gray);
+
+    }
+
+    .description-item {
+      font-family: OpenSans;
+      font-size: 28px;
+      font-weight: 300;
+      font-stretch: condensed;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      width: 251px;
+      margin: 0px auto 11.5px auto;
+    }
+
+
+*/
+  }
+
+
+  @media (max-width: 1024px) and (min-width: 0px) {
+    /* .itemsGalery {
+      height: (270/3.2)+vw;
+      background-color: var(--light-gray);
+      width: (150/3.2)+vw;
+      position: relative;
+      margin-left: (6/3.2)+vw;
+      margin-right: (6/3.2)+vw;
+    }
+
+    .compliments-palace-resorts {
+      width: (150/3.2)+vw;
+      height: (120/3.2)+vw;
+      object-fit: contain;
+    }
+
+    .seprator-itemsg {
+      height: (29/3.2)+vw;
+    }
+
+    .text-style-1 {
+      font-family: Parisienne;
+      font-size: (21/3.2)+vw;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: var(--dark-gray);
+      padding-top: (8/3.2)+vw;
+      padding-bottom: (8/3.2)+vw;
+    }
+
+    .description-item {
+      font-family: OpenSans;
+      font-size: (14/3.2)+vw;
+      font-weight: 300;
+      font-stretch: condensed;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      width: (125/3.2)+vw;
+      margin: 0px auto 11.5px auto;
+    }*/
+    .itemsGalery{
+      a{
+        text-decoration: none;
+      }
+      [component="iconwedd"]{
+        .chevron-right{
+          width: (12/16)+rem;
+          height: (13/16)+rem;
+      }
+      }
+    }
+  }
+}

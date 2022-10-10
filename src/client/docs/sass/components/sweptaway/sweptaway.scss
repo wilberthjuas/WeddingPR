@@ -1,0 +1,164 @@
+[component="sweptaway"] {
+
+    @media (min-width: 1025px) {
+        .slider {
+            .contentSlider {
+                width: 1175px;
+                height: 570px;
+            }
+
+            .ItemSlider.active {
+                width: 425px;
+                margin-bottom: 0px;
+                height: 567px;
+                padding-top: 0px;
+            }
+
+            .ItemSlider * {
+                transition: .5s;
+            }
+
+            .ItemSlider img {
+                width: 100%;
+            }
+
+            .ItemSlider {
+                width: 375px;
+                padding-left: 15px;
+                padding-right: 15px;
+                height: 479px;
+                padding-top: 66px;
+            }
+
+            .active .content-article {
+                height: 249px;
+                top: 297px;
+                width: 395px;
+                background-color: var(--light-melon-full);
+            }
+
+            .content-article {
+                background: var(--light-melon-full);
+                height: 223px;
+                top: 323px;
+                width: 345px;
+                position: absolute;
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            .slider .description {
+                line-height: normal;
+                width: auto;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            .ItemSlider {
+                [component="titlesection"] .description {
+                    font-size: 21px;
+                   // letter-spacing: 0.1px;
+                    width: 80%;
+                }
+            }
+
+            /*.ItemSlider.active {
+                [component="titlesection"] .description {
+                    font-size: 28px;
+                    letter-spacing: 0.7px;
+                }
+
+                [component="titlesection"] .subtitle {
+                    font-size: 30px;
+                }
+
+                [component="titlesection"] .title {
+                    font-size: 30px;
+                }
+            }*/
+
+            [component="titlesection"] .title {
+                margin-top: 0px;
+                //height: 44px;
+                font-size: 30px;
+            }
+
+            [component="titlesection"] .subtitle {
+                margin-bottom: 0px;
+                //height: 47px;
+                font-size: 30px;
+            }
+
+            .ItemSlider.active {
+                [component="inputwedd"] {
+                    bottom: -195px;
+                    opacity: 1;
+                }
+
+            }
+
+            .ItemSlider {
+                [component="inputwedd"] {
+                    position: relative;
+                    bottom: -170px;
+                    opacity: 0;
+                }
+            }
+
+            .separadorGaleryPoints {
+                height: 40px;
+            }
+
+            div.divicion-section {
+                height: 16px;
+            }
+        }
+
+        .gallery {
+            position: relative;
+        }
+
+        .gallery-bg {
+            height: 300px;
+            width: 64%;
+            position: absolute;
+            margin: auto;
+            left: 253px;
+            top: 138px;
+            background-color: var(--dark-gray);
+        }
+
+        .header {
+            [component="titlesection"] {
+                width: 780px;
+                //margin-bottom: 31px;
+
+                .divicion-section {
+                    height: 31px;
+                }
+            }
+        }
+
+        .divicion-section {
+            height: 60px;
+        }
+    }
+
+    /****Movil****/
+    @media (max-width: 1024px) and (min-width: 0px) {}
+
+    /**********************************************/
+}
+
+[component="sweptaway"] .slider.slider-slider-swept-away-pdf .ItemSlider.active [component="inputwedd"] {
+    position: relative !important;
+    bottom: -175px !important;
+    opacity: 1 !important;
+}
+
+
+[component="sweptaway"] .slider.slider-slider-swept-away-pdf .ItemSlider [component="inputwedd"] {
+    position: relative !important;
+    bottom: -150px !important;
+    opacity: 1 !important;
+}

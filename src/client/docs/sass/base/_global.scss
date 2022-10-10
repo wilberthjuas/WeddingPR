@@ -1,0 +1,429 @@
+//Default styles
+
+html {
+   box-sizing: border-box;
+
+   .margin-none {
+      margin: unset
+   }
+
+   font-variant-numeric: lining-nums;
+}
+
+@media only screen and (min-width:319px) and (max-width:359px) {
+
+   /* CSS rules here */
+   html {
+      font-size: 16px;
+   }
+}
+
+@media only screen and (min-width:360px) and (max-width:374px) {
+
+   /* CSS rules here */
+   html {
+      font-size: 18px;
+   }
+}
+
+@media only screen and (min-width:375px) and (max-width:413px) {
+   html {
+      font-size: 18px;
+   }
+}
+
+@media only screen and (min-width:414px) and (max-width:767px) {
+
+   /* CSS rules here */
+   html {
+      font-size: 18px;
+   }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1024px) { 
+   /* CSS rules here */
+   html {
+      font-size: 24px;
+   }
+}
+
+@media only screen and (min-width:414px) and (max-width:767px) and (orientation:landscape) { 
+   /* CSS rules here */
+   html{
+      font-size: 19px;
+   }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) and (orientation:landscape) { 
+   /* CSS rules here */
+   html{
+      font-size: 18px;
+   }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1359px) and (orientation:landscape) { 
+   /* CSS rules here */
+   html{
+      font-size: 24px;
+   }
+}
+
+
+*,
+:before,
+*:after {
+   box-sizing: inherit;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+.slide-to-left {
+   animation: 1s slide-to-left;
+}
+
+.slide-to-right {
+   animation: 1s slide-to-right;
+}
+
+// No Text Select
+.no-select {
+   user-select: none;
+ }
+button:disabled,input:disabled[type=button],input:disabled[type=submit]{
+   color: #ffffff3b  !important;
+   &:hover{
+      background-color: var(--light-melon) !important;
+   }
+}
+   @media screen and (min-width:319px) and (max-width:1024px) {   
+      h1.title {
+         font-family: PlayfairDisplay;
+         @include vwvh("font-size", 30);
+         font-weight: 300;
+         color: var(--dark-melon);
+         text-align: center;
+         @include vwvh("margin", 2.5);
+         margin-left: auto !important;
+         margin-right: auto !important;
+        // letter-spacing: 0.001rem;
+      }
+   
+      h2.title {
+         font-family: PlayfairDisplay  ;
+         @include vwvh("font-size", 24);
+         font-weight: 300;
+         color: var(--dark-melon);
+         margin: unset;
+         font-stretch: normal;
+         font-style: normal;
+         letter-spacing: normal;
+         
+      }
+
+
+      h2.subtitle {
+         font-family: Avenir;
+         @include vwvh("font-size", 24);
+         font-weight: 300;
+         color: var(--dark-melon);
+         font-stretch: normal;
+         font-style: normal;
+         letter-spacing: normal;
+         text-align: center;
+      }
+   
+      p.description {
+         font-family: Avenir;
+         @include vwvh("font-size", 16);
+         font-weight: 300;
+         color: var(--dark-melon);
+   
+         font-stretch: condensed;
+         font-style: normal;
+         line-height: normal;
+         /*@include vwvh("letter-spacing", .45);*/
+         text-align: center;
+      }
+
+      p.paragraph{
+         font-family: Avenir;
+         @include vwvh("font-size",16);
+         font-weight: 300;
+         color: var(--dark-melon);
+      }
+
+      label {
+         font-family: Avenir;
+         @include vwvh("font-size", 16);
+         color: var(--dark-melon);
+      }
+      input.btn{
+         font-family: Avenir;
+         @include vwvh("font-size",16);
+         font-weight: bold;
+         /*color: var(--light-melon);*/
+      }
+
+      input.btnalt{
+         font-family: Avenir;
+         @include vwvh("font-size",16);
+         font-weight: bold;
+         color: var(--white);
+      }
+
+      h2.imgcaptions{
+         font-family: PlayfairDisplay;
+         @include vwvh("font-size",16);
+         font-weight: 300;
+         margin: unset;
+      }
+
+      h1.imgcaptionsalt{
+         font-family: PlayfairDisplay;
+         @include vwvh("font-size",16);
+         font-weight: 300;
+         color: var(--white);
+      }
+
+      li.tab-title{
+         font-family: Avenir;
+         @include vwvh("font-size",18);
+         font-weight: bold;
+         color: var(--white);
+      }
+
+      li.tabtitlealt{
+         font-family: Avenir;
+         @include vwvh("font-size",18);
+         font-weight: bold;
+         color: var(--light-melon);
+      }
+
+      li.description{
+         font-family: Avenir;
+         @include vwvh("font-size",16);
+         font-weight: 300;
+         color: var(--dark-melon);
+      }
+
+      input.inputweddings{
+         font-family: Avenir;
+         @include vwvh("font-size",16);
+         font-weight: bold;
+         color: var(--white);
+      }
+
+      a.link{
+         font-family: Avenir;
+         @include vwvh("font-size",14);
+         color: var(--light-melon);
+         font-weight: bold;
+      }
+      a.linkalt{
+         font-family: Avenir;
+         @include vwvh("font-size",16);
+         color: var(--light-melon);
+         font-weight: bold;
+      }
+      label a{
+         color: var(--light-melon);
+      }
+      input,textarea{
+         color: var(--dark-melon);
+      }
+
+      input{
+         font-family: Avenir;
+      }
+      details{
+         font-family: Avenir;
+         font-size: 21px;
+         font-weight: 300;
+         color: var(--dark-melon);
+      }
+   }
+
+   @media screen and (min-width:1025px)
+    {   
+      h1.title {
+         font-family: PlayfairDisplay;
+         font-size: 48px;
+         font-weight: 300;
+         color: var(--dark-melon);
+         text-align: center;
+         margin-left: auto !important;
+         margin-right: auto !important;
+        // letter-spacing: 0.001rem;
+      }
+   
+      h2.title {
+         font-family: PlayfairDisplay  ;
+         font-size: 30px;
+         font-weight: 300;
+         color: var(--dark-melon);
+         margin: unset;
+         font-stretch: normal;
+         font-style: normal;
+         letter-spacing: normal;
+         
+      }
+
+
+      h2.subtitle {
+         font-family: Avenir;
+         font-size: 30px;
+         font-weight: 300;
+         color: var(--dark-melon);
+         font-stretch: normal;
+         font-style: normal;
+         letter-spacing: normal;
+         text-align: center;
+      }
+   
+      p.description {
+         font-family: Avenir;
+         font-size: 21px;
+         font-weight: 300;
+         color: var(--dark-melon);
+   
+         font-stretch: condensed;
+         font-style: normal;
+         line-height: normal;
+         /*@include vwvh("letter-spacing", .45);*/
+         text-align: center;
+      }
+
+      p.paragraph{
+         font-family: Avenir;
+         font-size: 21px;
+         font-weight: 300;
+         color: var(--dark-melon);
+      }
+
+      label {
+         font-family: Avenir;
+         font-size: 21px;
+         color: var(--dark-melon);
+      }
+      input.btn,button{
+         font-family: Avenir;
+        font-size: 16px;
+         font-weight: bold;
+         cursor: pointer;
+         /*color: var(--light-melon);*/
+      }
+
+      input.btnalt{
+         font-family: Avenir;
+         font-size: 18px;
+         font-weight: bold;
+         color: var(--white);
+      }
+
+      h2.imgcaptions{
+         font-family: PlayfairDisplay;
+         font-size: 24px;
+         font-weight: 300;
+         margin: unset;
+      }
+
+      h1.imgcaptionsalt{
+         font-family: PlayfairDisplay;
+         font-size: 24px;
+         font-weight: 300;
+         color: var(--white);
+      }
+
+      li.tab-title{
+         font-family: Avenir;
+         font-size: 24px;
+         font-weight: bold;
+         color: var(--white);
+      }
+
+      li.tabtitlealt{
+         font-family: Avenir;
+         font-size: 24px;
+         font-weight: bold;
+         color: var(--light-melon);
+      }
+
+      li.description{
+         font-family: Avenir;
+         font-size: 21px;
+         font-weight: 300;
+         color: var(--dark-melon);
+      }
+
+      input.inputweddings{
+         font-family: Avenir;
+         font-size: 18px;
+         font-weight: bold;
+         color: var(--white);
+      }
+
+      a.link{
+         font-family: Avenir;
+         font-size: 18px;
+         color: var(--light-melon);
+         font-weight: bold;
+      }
+      a.linkalt{
+         font-family: Avenir;
+         font-size: 21px;
+         color: var(--light-melon);
+         font-weight: bold;
+      }
+      label a{
+         color: var(--light-melon);
+      }
+      input,textarea{
+         color: var(--dark-melon);
+      }
+      details{
+         font-family: Avenir;
+         font-size: 21px;
+         font-weight: 300;
+         color: var(--dark-melon);
+      }
+   }
+.txt-light{
+   color: var(--light-melon) !important;
+}
+.txt-dark{
+   color: var(--dark-melon) !important;
+}
+
+.loader {
+   border: 16px solid var(--light-melon-full);
+   border-radius: 50%;
+   border-top: 16px solid var(--light-melon);
+   width: 120px;
+   height: 120px;
+   -webkit-animation: spin 2s linear infinite; /* Safari */
+   animation: spin 2s linear infinite;
+ }
+ 
+ /* Safari */
+ @-webkit-keyframes spin {
+   0% { -webkit-transform: rotate(0deg); }
+   100% { -webkit-transform: rotate(360deg); }
+ }
+ 
+ @keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+ }
+ .content-load{
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   height: 0px;
+   transition: .5s;
+   margin-top: 50px;
+ }

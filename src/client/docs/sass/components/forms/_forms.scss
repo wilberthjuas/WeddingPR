@@ -1,0 +1,17 @@
+// Remove Focus Boxes
+select:focus {
+  outline: $select-focus;
+}
+
+button:focus {
+  outline: none;
+//  background-color: $secondary-color;
+}
+@import 'input-fields';
+@import 'radio-buttons';
+@import 'checkboxes';
+@import 'switches';
+@import 'select';
+@import 'file-input';
+@import 'range';
+@import 'button';

@@ -1,0 +1,211 @@
+[component="more-than"] {
+    .uppercase {
+        text-transform: uppercase;
+    }
+
+    @media (min-width: 1025px) {
+        .divicion-section {
+            height: 60px;
+        }
+
+        .lista-div>div,
+        .lista-div>b {
+            float: left;
+        }
+
+        .lista-div>div {
+            padding-right: 0px;
+        }
+
+        .Banner-Bg {
+            background-image: linear-gradient(450deg, #fff, var(--light-gray), var(--light-gray), #fff);
+            height: 200px;
+            padding-top: 20px;
+        }
+
+        .rings {
+            position: relative;
+            top: 35px;
+            left: 255px;
+            width: 180px;
+        }
+
+        .more-than {
+            /*margin-top: 20px;*/
+            font-family: Parisienne !important;
+            margin-left: 68px;
+            font-family: PlayfairDisplay;//Miso
+            font-size: 48px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: left;
+            padding-left: 404px;
+        }
+
+        .year-of-exp {
+            height: 115px;
+            padding-left: 550px;
+        }
+
+        .years25 {
+            margin-left: 140px;
+            margin-top: 0px;
+        }
+
+        .year-experience {
+            padding-top: 8px;
+            padding-left: 65px;
+        }
+
+        .making-dream {
+            margin-left: 70px;
+            margin-top: -20px;
+        }
+
+        .than-yearof {
+            max-width: 95% !important;
+            width: 100% !important;
+        }
+
+        .text-right-ring {
+            margin-left: -150px;
+        }
+    }
+
+    /****Movil****/
+    @media (max-width: 1024px) and (min-width: 0px) {
+
+        .lista-div>div,
+        .lista-div>b {
+            float: left;
+        }
+
+        .Banner-Bg {
+            background-image: linear-gradient(450deg, var(--light-gray), var(--light-gray), #fff);
+            @include vwvh("height", 92);
+            @include vwvh("margin", 0);
+        }
+
+        .rings {
+            position: relative;
+            @include vwvh("top", 28);
+            @include vwvh("left", 6);
+            @include vwvh("width", 72);
+        }
+
+        .more-than {
+            @include vwvh("margin-top", -45);
+            @include vwvh("margin-left", -83.2);
+            font-family: Parisienne;
+            @include vwvh("font-size", 21);
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--dark-gray);
+        }
+
+        .year-of-exp {
+            position: relative;
+            @include vwvh("top", -3.84);
+            height: 55%;
+            @include vwvh("left", 124);
+            @include vwvh("width", 356)
+        }
+
+        .year-experience {
+            @include vwvh("padding-top", 4.8);
+            @include vwvh("padding-left", 10);
+            @include vwvh("height", 20);
+
+            @media only screen and (orientation: landscape) {
+                @include vwvh("height", 26);
+            }
+        }
+
+        .making-dream {
+            @include vwvh("padding-left", 26.5);
+            position: relative;
+        }
+
+        .br-moreThan {
+            display: none;
+        }
+
+        .lista-div>b {
+            float: left;
+        }
+
+        .divicion-section {
+            @include vwvh("height", 30);
+        }
+    }
+
+    /**********************************************/
+
+
+}
+
+
+[component="cintilla"] {
+    @media (min-width: 1025px) {
+        .cintilla {
+            width: 100%;
+            padding: 6px 0px 6px 15px;
+            background-image: linear-gradient(450deg, var(--light-gray), #fff);
+        }
+
+        .txt1 {
+            font-family: Parisienne;
+            font-size: (21/3.2)+vw;
+            color: var(--dark-gray);
+        }
+
+        .txt2 {
+            font-family: PlayfairDisplay;//Miso
+            font-size: (16/3.2)+vw;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: var(--light-melon);
+            text-transform: uppercase;
+        }
+
+
+    }
+
+    @media (max-width: 1024px) and (min-width: 0px) {
+
+        .cintilla {
+            width: 100%;
+            padding: 6px 0px 6px 15px;
+            background-image: linear-gradient(450deg, var(--light-gray), #fff);
+        }
+
+        .txt1 {
+            font-family: Parisienne;
+            font-size: (21/3.2)+vw;
+            color: var(--dark-gray);
+        }
+
+        .txt2 {
+            font-family: PlayfairDisplay;//Miso
+            font-size: (16/3.2)+vw;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: var(--light-melon);
+            text-transform: uppercase;
+        }
+
+    }
+}

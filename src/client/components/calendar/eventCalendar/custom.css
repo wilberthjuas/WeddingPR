@@ -1,0 +1,42 @@
+/**
+** Estilos para las tarjetas de detalle de evento y de boda
+*/
+[eventcalendar="wedding-detail"],
+[eventcalendar="wedding-detail"] {}
+
+/**
+** Estilos para las tarjetas de detalle de boda
+*/
+[eventcalendar="wedding-detail"] {}
+
+[eventcalendar="wedding-detail-card-content"] {
+   /* background-image: url('images/sample-1.jpg'); */
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 0 25%;
+}
+
+[eventcalendar="wedding-detail-card-content"] .card-action {
+   padding: 0.2em 0.5em !important;
+}
+
+[eventcalendar="wedding-detail-card-content"] .card-content {
+   background-color: rgba(255, 255, 255, 0.6);
+}
+
+[eventcalendar="wedding-detail-card-title"] {
+   font-size: 1.2em;
+   font-weight: bold;
+   line-height: 0.4em;
+}
+
+[eventcalendar="wedding-detail-description"] {
+   font-size: 80%;
+}
+
+/**
+** Estilos para las tarjetas de detalle de evento
+*/
+[eventcalendar="group-detail-card-content"] {
+   background-color: #ffe4c4;
+}

@@ -1,0 +1,76 @@
+
+[page="resourcecenter"]{
+    [component="swepslider"]{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .elementSwep{
+        margin-right: 5px;
+        margin-left: 5px;
+        width: 327px;
+        margin-bottom: 0px;
+        height: 567px;
+        padding-top: 0px;
+    }
+
+    .content-article{
+        text-align: center;
+        font-family: Avenir;
+       
+        font-size: 20px;
+        background: var(--light-melon-full);
+        height: 254px;
+        margin-top: -12px;
+        width: 327px;
+        padding-left: 12px;
+        padding-right: 12px;
+        a{
+            text-decoration: underline;
+            color:var(--light-melon);
+        }
+        [component="titlesection"]{
+            min-height: 90px;
+            margin-bottom: 5px;
+             .description {
+                font-size: 21px;
+                width: 80%;
+             }
+        
+        .title{
+            margin-top: 0px;
+            font-size: 25px;
+            }
+         }
+         [component="inputwedd"]{
+             a{
+                 display: block;
+                 margin: auto;
+                 text-decoration: none;
+                    color: white;
+             }
+
+         }
+    }
+
+    .contInspirations{
+        h2{
+            cursor: pointer;
+            padding: 2.37333rem 0 1.424rem 0;
+            margin: 0;
+            z-index: 1;
+            [component="iconwedd"]{
+                z-index: -1;
+                position: relative;
+            }
+        }
+    }
+
+    .contDocs{
+        transition: 1s;
+    }
+   
+
+      a.linkalt{
+          cursor: pointer;
+      }   
+   }

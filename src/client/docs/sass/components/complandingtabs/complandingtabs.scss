@@ -1,0 +1,544 @@
+
+[component = "complandingtabs"]{
+
+[component="iconwedd"] {
+  display: inline-flex;
+}
+
+	@media (min-width: 1025px){ 
+    margin-top: 60px;
+    .tabs {
+         margin: 0px auto;
+         height: auto;
+         display: flex;
+          cursor: pointer;
+       }
+
+   .tab {
+       //height: 70px;
+       background-color: var(--rosy-pink);
+       float: left;
+       margin-right: 1px;
+       padding: 24px 38px;
+       text-align: center;
+       list-style: none;
+   }
+   .tab-last {
+     margin-right: 0px;
+   }
+
+   ul.tab.active {
+     background-color: var(--white);
+       border-left: solid 1px var(--light-melon-full);
+         border-right: solid 1px var(--light-melon-full);
+         border-top: solid 1px var(--light-melon-full);
+         li {
+           color:var(--rosy-pink);;
+          }
+      }
+
+     .tabs-body {
+      height: auto;
+      border-left: solid 1px var(--light-melon-full);
+      border-right: solid 1px var(--light-melon-full);
+      position: relative;
+      margin-top: -16px;
+    }
+
+    .bottom-uncollapse{
+        padding-bottom: (150/16)+rem;
+    }
+
+
+  .tabs-content {
+     width: 100%;
+    height: auto;
+    display: inline-flex;
+  }
+
+  .generalcontent{
+    display: flex;
+
+    img{
+      height: fit-content;
+    }
+  }
+
+    section.deactivate {
+      display: block;
+    }
+
+    section.deactivate {
+      display: none;
+      border: none;
+    }
+
+
+    .item-content {
+      margin: 0px 0px 0px 22px;
+    }
+
+    .desc-p-movil {
+      width: 100%;
+      font-family: OpenSans;
+      font-weight: 300;
+      font-stretch: condensed;
+      font-style: normal;
+      line-height: normal;
+      //letter-spacing: 0.3px;
+      color: var(--dark-gray);
+      font-size: 28px;
+     
+    }
+
+ ul.list-items.uncollapse {
+    overflow: hidden;
+  }
+
+  ul.list-items.collapse {
+    height: auto;
+    
+  }
+
+  .windows{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .bookingwindow{
+    margin-left: 50px;
+  }
+
+  .collapselink {
+
+  font-family: Avenir;//Miso
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: normal;
+  //letter-spacing: 0.6px;
+  text-align: left;
+  color: var(--rosy-pink);
+  cursor: pointer;
+}
+.terms {
+  width: 100%;
+  height: 80px;
+  background-color: #f8f8f8;
+  border-left: solid 1px #ffc6da;
+  border-right: solid 1px #ffc6da;
+
+  [component="inputwedd"] {
+    margin-right: 19px;
+    float: left;
+    margin-top: 21px;
+    margin-left: 19px;
+  }
+}
+
+.terms-nav1 {
+  margin-right: 50.5px;
+  
+  margin-top: 31px;
+}
+
+.terms-nav2 {
+  margin-right: 50.5px;
+  
+  margin-top: 31px;
+}
+
+.terms-content {
+  width: 100%;
+  height: auto;
+  border-left: solid 1px #ffc6da;
+  border-right: solid 1px #ffc6da;
+  border-bottom: solid 1px #ffc6da;
+}
+
+.share-content{
+  width: 100%;
+  height: auto;
+  border-left: solid 1px #ffc6da;
+  border-right: solid 1px #ffc6da;
+  border-bottom: solid 1px #ffc6da;
+  background-color: #efefef;
+  padding-top:49px;
+}
+
+.labelTitle{
+  margin: auto;
+  width: fit-content;
+  font-family: PlayfairDisplay;//Miso
+  font-size: 48px;
+  color:var(--dark-melon)
+}
+
+.inputshare{
+  width: 70%;
+  margin: auto;
+  [component="inputwedd"]{
+    margin-top:10px;
+  }
+  div{
+    input{
+      width: 100%;
+    }
+  }
+}
+
+.shareButtons{
+  display: flex;
+  div {
+    input{
+      width: 140px;
+      margin-left: 198px;
+      margin-top: 15px;
+    }
+  }
+}
+
+.tabstermscontent{
+  padding:20px;
+  text-align: justify;
+  word-break: break-word;
+  p{
+    margin: unset;
+  }
+
+      p.offersTerms{
+        font-family: Avenir;
+        font-size: 16px !important;
+        color: var(--dark-melon);
+        font-stretch: condensed;
+        font-style: normal;
+        line-height: normal;
+    }
+
+}
+
+.separator{
+  height: 30px;
+    margin-left: 207px;
+    width: 72%;
+}
+
+.throughsocial{
+     margin-left: auto;
+     color: var(--dark-melon);
+     font-family: Avenir;//Miso
+     font-size: 30px;
+     display: -webkit-box;
+     display: flex;
+     margin-right: 180px;
+     width: fit-content;
+    .text{
+      margin-top: -3px;
+    }
+    [component="iconwedd"] {
+      width: 28px;
+        height: 50px;
+        margin-left: 4px;
+        margin-bottom: 10px;
+      }
+
+  span{
+    font-size: 21px;
+  }
+}
+.tabs-body {
+  width: 100%;			    
+  height: auto;
+  border-left: solid 1px #ffc6da;
+  border-right: solid 1px #ffc6da;
+  position: relative;
+  [component="inputwedd"]{
+   display: none;
+  }
+}
+
+[component="bookingwidget"]{
+  z-index: 13;
+  margin-left: 177px;
+    bottom: 12px;
+}
+
+.position{
+  position: absolute;
+  top: -54px;
+  left: 1179px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffc6da;
+  background-color: #ffc6da;
+  background-color: #ffc6da;
+  background-color: var(--pale-pink);
+  border-radius: 50%;
+  z-index: 14;
+ }
+
+ .active .tabs-arrow {
+  margin-top: 2px !important;
+ }
+
+ .group{
+  float: right;
+  width: max-content;
+  display: flex;
+ }
+}
+	
+
+	@media (max-width: 1024px) and (min-width: 0px){
+		.tabs-container {
+			width: 100% !important;
+			margin: (10/16)+rem auto 0 auto;
+      height: auto;
+    }
+
+      	.tabs {
+			    width: 100%;
+      		margin: 0px auto;
+      		height: auto;
+          display: flex;
+          margin-bottom: -(11/16)+rem;;
+          z-index: 1;
+      	}
+
+		.tab {
+			 width: 100%;
+  			background-color: var(--rosy-pink);
+  			float: left;
+  			margin-right: 1px;
+  			padding: (4/16)+rem (10/16)+rem;
+        text-align: center;
+        list-style: none;
+        margin-block-start: unset;
+        margin-block-end: unset;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: (40/16)+rem;
+		}
+
+		.tab-last {
+			margin-right: 0px;
+		}
+
+		ul.tab.active {
+			background-color: var(--white);
+  			border-left: solid 1px #ffc6da;
+      		border-right: solid 1px #ffc6da;
+      		border-top: solid 1px #ffc6da;
+  		}
+
+  		ul.tab.active li.tab-title {
+  			color: var(--light-melon);
+  		}
+
+  		.tabs-body {
+			    width: 100%;			    
+      		height: auto;
+      		border-left: solid 1px #ffc6da;
+          border-right: solid 1px #ffc6da;
+          position: relative;
+          [component="inputwedd"]{
+            input{
+              display: block;
+              margin: auto;
+              margin-top: 1rem;
+              margin-bottom: 1rem;
+            }
+
+            a{
+              display: block;
+              margin: auto;
+              margin-top: 1rem;
+              margin-bottom: 1rem;
+            }
+          }
+      	}
+
+        .bottom-uncollapse{
+            padding-bottom: (150/16)+rem;
+        }
+
+
+  		.tabs-content {
+			   width: 100%;
+			   margin: 0px auto (10/16)+rem auto;
+      	height: auto;
+        display: inline-flex;
+      }
+
+        section.deactivate {
+          display: block;
+        }
+
+        section.deactivate {
+          display: none;
+          border: none;
+        }
+  
+
+        .item-content {
+            width: 100%;
+          margin: 0px 0px 0px (11/16)+rem;
+        }
+
+        .desc-p-movil {
+          width: 100%;
+          font-family: OpenSans;
+          font-weight: 300;
+          font-stretch: condensed;
+          font-style: normal;
+          line-height: normal;
+         // letter-spacing: 0.3px;
+          color: var(--dark-gray);
+          font-size: (18/16)+rem;
+         
+        }
+
+     ul.list-items.uncollapse {
+        height: (60/16)+rem;
+        overflow: hidden;
+      }
+
+      ul.list-items.collapse {
+        height: auto;
+        
+      }
+
+      .collapselink {
+        font-family: Avenir;//Miso
+        font-size: (16/16)+rem;
+        font-weight: 300;
+        font-stretch: condensed;
+        font-style: normal;
+        line-height: normal;
+        //letter-spacing: 0.6px;
+        text-align: left;
+        color: var(--rosy-pink);
+    }
+    .terms {
+      width: 100%;
+      bottom: 0px;
+      padding: (10/16)+rem (12.5/16)+rem;
+      background-color: #f8f8f8;
+      border-left: solid 1px #ffc6da;
+      border-right: solid 1px #ffc6da;
+      display: flex;
+    }
+
+    .terms-nav1 {
+      width: 60%;
+      text-align: center;
+    }
+
+    .terms-nav2{
+      width: 40%;
+      text-align: center;
+    }
+
+    .terms-content {
+      width: 100%;
+      height: auto;
+      border-left: solid 1px #ffc6da;
+      border-right: solid 1px #ffc6da;
+      border-bottom: solid 1px #ffc6da;
+    }
+
+    .tabstermscontent{
+      margin-bottom: 1.25rem;
+      padding-left: 0.875rem;
+
+      p.offersTerms{
+        font-family: Avenir;
+        font-size: 0.75rem !important;
+        color: var(--dark-melon);
+        font-stretch: condensed;
+        font-style: normal;
+        line-height: normal;
+    }
+
+
+    }
+
+    .share-content{
+      width: 100%;
+      height: auto;
+      border-left: solid 1px #ffc6da;
+      border-right: solid 1px #ffc6da;
+      border-bottom: solid 1px #ffc6da;
+      background-color: #efefef;
+      margin-top:-(2/16)+rem
+    }
+
+    .labelTitle{
+      margin: auto;
+      width: fit-content;
+      font-family: PlayfairDisplay;//Miso
+      font-size: (30/16)+rem;
+      padding-top:(15/16)+rem;
+    }
+
+    .inputshare{
+      margin: (32/16)+rem;
+      div{
+        input{
+          width:100%;
+          margin-top: (10/16)+rem
+        }
+      }
+    }
+
+    .shareButtons{
+      display: flex;
+      margin-left:(32/16)+rem;
+      div {
+        input{
+          width: (110/16)+rem;
+          margin-right: (18/16)+rem;
+          margin-top: (10/16)+rem
+        }
+      }
+    }
+
+    .separator{
+      margin-left:(32/16)+rem;
+      margin-right:(32/16)+rem;
+      border-bottom: solid 2px var(--rosy-pink);
+      height: (30/16)+rem;
+    }
+
+    .throughsocial{
+      margin-top: (30/16)+rem;
+      margin-left: (30/16)+rem;
+      margin-right: (30/16)+rem;
+      margin-bottom: (20/16)+rem;
+      font-family: PlayfairDisplay;//Miso
+      font-size: (16/16)+rem;
+      width: fit-content;
+      display: flex;
+      .text{
+        margin-top: (3/16)+rem;
+      }
+
+      span{
+        margin-right: (18/16)+rem;
+      }
+    }
+    [component="bookingwidgetmobile"]{ 
+      .staticmenu {
+        z-index: unset;
+      }
+    }
+
+    .group{
+      width: 100%;
+    display: flex;
+    }
+	}
+}
+

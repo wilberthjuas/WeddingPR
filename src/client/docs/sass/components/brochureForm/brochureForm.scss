@@ -1,0 +1,548 @@
+[component="brochureForm"] {
+    @media screen and (max-width: 1024px) {
+
+        .container {
+            @include vwvh("padding", 26);
+        }
+
+        .labelInput.sliderResorts {
+            float: left;
+            width: 100%;
+            text-align: center;
+            @include vwvh("margin-bottom", 20);
+        }
+
+        .slider.container.slider-destination {
+            @include vwvh("margin-top", 18);
+            @include vwvh("margin-bottom", 20);
+            padding: unset;
+        }
+
+        .input-text-block,
+        .content-select {
+            @include vwvh("margin-bottom", 20);
+        }
+
+        div.checkbox {
+            @include vwvh("margin-bottom", 20);
+        }
+
+        .input-text-block input {
+            width: 100% !important;
+        }
+
+        .inputweddnotsure {
+            text-align: center;
+        }
+
+        .buttonbrochure {
+            text-align: center;
+        }
+
+        .cont {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            label {
+                width: 45%;
+                text-align: left;
+                padding-left: 0.5rem;
+            }
+        }
+
+        .label {
+            color: var(--dark-gray);
+            position: relative;
+        }
+
+        .cont-conf {
+            padding-left: 0;
+        }
+
+        .labelInfo {
+            right: 0;
+            padding-left: 1rem;
+            width: 100%;
+        }
+
+        .labelInfo2 {
+            right: (100/16)+rem;
+        }
+
+        .labelAgent {
+            right: (86/16)+rem;
+        }
+
+        .labelConfirmed {
+            width: (270/16)+rem;
+            left: (15/16)+rem;
+        }
+
+        .travelRadio {
+            display: flex;
+            padding-top: (10/16)+rem;
+        }
+
+        .travelRadioYes {
+            position: relative;
+            left: (220/16)+rem;
+        }
+
+        .travelRadioNo {
+            position: relative;
+            left: (300/16)+rem;
+        }
+
+        .terms {
+            display: flex;
+        }
+
+        .textHelpful {
+            width: (280/16)+rem;
+            font-family: OpenSans;
+            font-size: (14/16)+rem;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+           // letter-spacing: (0.35/16)+rem;
+            text-align: left;
+            color: var(--dark-gray);
+            text-transform: capitalize;
+            padding-left: (15/16)+rem;
+            margin-top: (10/16)+rem;
+        }
+
+        .buttonbrochure {
+            padding-top: (20/16)+rem;
+            padding-bottom: (80/16)+rem;
+        }
+
+        .check-box {
+            p {
+                position: relative;
+                left: (4/16)+rem;
+                font-family: OpenSans;
+                bottom: (15/16)+rem;
+                width: (10/16)+rem;
+                height: (10/16)+rem;
+                font-family: OpenSans;
+                font-size: (14/16)+rem;
+                font-weight: 300;
+                font-stretch: condensed;
+                font-style: normal;
+                line-height: normal;
+               // letter-spacing: 0.35px;
+                text-align: left;
+                color: var(--dark-gray);
+            }
+        }
+
+        .contentSlider {
+            width: 100%;
+        }
+
+        .ItemSlider {
+            width: (200/16)+rem;
+            height: (200/16)+rem;
+            padding-right: (20/16)+rem;
+        }
+
+        .sureCont {
+            width: 20%;
+            margin: auto;
+            display: flex;
+            padding-top: (20/16)+rem;
+
+            .check-box {
+                p {
+                    position: relative;
+                    left: (4/16)+rem;
+                    font-family: OpenSans;
+                    bottom: (15/16)+rem;
+                    width: (90/16)+rem;
+                    height: (10/16)+rem;
+                    font-family: OpenSans;
+                    font-size: (14/16)+rem;
+                    font-weight: 300;
+                    font-stretch: condensed;
+                    font-style: normal;
+                    line-height: normal;
+                   // letter-spacing: 0.35px;
+                    text-align: left;
+                    color: var(--dark-gray);
+                }
+            }
+        }
+
+        .terms {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+
+            .check-box {
+                p {
+                    position: relative;
+                    left: (4/16)+rem;
+                    font-family: OpenSans;
+                    bottom: (15/16)+rem;
+                    width: (260/16)+rem;
+                    height: (10/16)+rem;
+                    font-family: OpenSans;
+                    font-size: (14/16)+rem;
+                    font-weight: 300;
+                    font-stretch: condensed;
+                    font-style: normal;
+                    line-height: normal;
+                   // letter-spacing: 0.35px;
+                    text-align: left;
+                    color: var(--dark-gray);
+                    margin-top: (12/16)+rem;
+                }
+            }
+        }
+
+        .thankYou {
+            font-size: (30/16)+rem;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0px;
+            margin-bottom: (20/16)+rem;
+            color: var(--light-melon);
+        }
+
+        .thankyouCont {
+            padding-bottom: (60/16)+rem;
+        }
+
+        .checkshadown {
+            box-shadow: inset 0px 115px 80px -95px var(--dark-gray), inset 0px -130px 70px -100px #000;
+            border-radius: (6/16)+rem;
+
+            img {
+                z-index: -1 !important;
+            }
+
+            border-radius: 6px;
+
+            [component="inputwedd"] .check-box {
+                display: grid;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        /*.cont {
+            label {
+                width: 60%;
+                padding-left: 0.5rem;
+            }
+        }
+        #firstName{
+            width: (127/16)+rem;
+        }
+        #gridFirst {
+            text-align: right;
+            padding-right: 1rem;
+        }
+        #gridLast {
+            text-align: left;
+            padding-left: 1rem;
+        }
+        #lastName{
+            width: (127/16)+rem;
+        }
+        .travelRadioYes{
+            left:(120/16)+rem;
+        }.travelRadioNo{
+            left: (200/16)+rem;
+        }
+        .sureCont{
+            width: 25%;
+        }*/
+    }
+
+    @media screen and (max-width: 414px) {
+        /*.cont {
+            label {
+                width: 80%;
+            }
+        }
+        #firstName{
+            width: (127/16)+rem;
+        }
+        #gridFirst {
+            text-align: right;
+            padding-right: 1rem;
+        }
+        #gridLast {
+            text-align: left;
+            padding-left: 1rem;
+        }
+        #lastName{
+            width: (127/16)+rem;
+        }
+        .travelRadioYes{
+            left:(50/16)+rem;
+        }.travelRadioNo{
+            left: (90/16)+rem;
+        }
+        .sureCont{
+            width: 35%;
+        }
+        .cont-conf {
+            left: 0;
+            label {
+                left: 0;
+                width: 100%;
+                padding-left: 0;
+            }
+        }*/
+    }
+
+    @media screen and (max-width: 375px) {
+        /* .cont {
+            label {
+                width: 95%;
+            }
+        }
+        .labelAgent {
+            padding-left: 2rem;
+        }
+        #firstName{
+            width: (127/16)+rem;
+        }
+        #gridFirst {
+            text-align: right;
+            padding-right: 1rem;
+        }
+        #gridLast {
+            text-align: left;
+            padding-left: 1rem;
+        }
+        #lastName{
+            width: (127/16)+rem;
+        }
+        .travelRadioYes{
+            left:(50/16)+rem;
+        }.travelRadioNo{
+            left: (90/16)+rem;
+        }
+        .sureCont{
+            width: 35%;
+        }
+        .cont-conf {
+            width: 80%;
+            label {
+                width: 100%;
+                padding-left: 0;
+            }
+        }
+        .terms {
+            width: 85%;
+        }*/
+    }
+
+    /*Desktop*/
+    @media (min-width: 1025px) {
+        #firstName {
+            width: 280px !important;
+            position: relative;
+            border-radius: 4px !important;
+        }
+
+        #lastName {
+            width: 280px !important;
+            right: (7/16)+rem;
+            position: relative;
+            border-radius: 4px !important;
+        }
+
+        #email {
+            width: 100% !important;
+            border-radius: 4px !important;
+        }
+
+        #phone {
+            width: 100% !important;
+            border-radius: 4px !important;
+        }
+
+        .info {
+            padding-bottom: 30px
+        }
+
+        .label {
+            position: relative;
+            font-family: OpenSans;
+            font-size: 28px;
+            color: var(--dark-gray);
+        }
+
+        .labelConfirmed {
+            width: 547px;
+        }
+
+        .travelRadio {
+            display: flex;
+            padding: 8px 0;
+            justify-content: start;
+
+            .checks {
+                padding-right: 8px;
+            }
+        }
+
+        .travelRadioYes {
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .travelRadioNo {
+            position: relative;
+            padding-left: 2.5rem;
+        }
+
+        .select-weddings {
+            width: 614px;
+        }
+
+        .ItemSlider {
+            width: 325px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .contentSlider {
+            width: 1200px;
+        }
+
+        .controlPoints {
+            margin-top: 40px;
+        }
+
+        .check-box {
+            p {
+                position: relative;
+                width: 24px;
+                height: 20px;
+                font-family: OpenSans;
+                font-size: 28px;
+                font-weight: 300;
+                font-stretch: condensed;
+                font-style: normal;
+                line-height: normal;
+              //  letter-spacing: 0.7px;
+                text-align: left;
+                color: var(--dark-gray);
+                bottom: 34px;
+                left: 12px;
+            }
+        }
+
+        .sureCont {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            padding-top: 40px;
+            justify-content: center;
+
+            .checks {
+                padding-right: 1rem;
+            }
+
+            p {
+                position: relative;
+                width: 130px;
+                height: 20px;
+                font-family: OpenSans;
+                font-size: 28px;
+                font-weight: 300;
+                font-stretch: condensed;
+                font-style: normal;
+                line-height: normal;
+              //  letter-spacing: 0.7px;
+                text-align: left;
+                color: var(--dark-gray);
+                bottom: 34px;
+                left: 12px;
+            }
+        }
+        .controlArrow{
+            top: 122.5px !important;
+        }
+        .terms {
+            //width: 55%;
+            margin: auto;
+            display: flex;
+            padding-top: 40px;
+            -webkit-box-pack: center;
+            justify-content: center;
+
+            p {
+                position: relative;
+                width: 668px;
+                height: 20px;
+                font-family: OpenSans;
+                font-size: 28px;
+                font-weight: 300;
+                font-stretch: condensed;
+                font-style: normal;
+                line-height: normal;
+             //   letter-spacing: 0.7px;
+                text-align: left;
+                color: var(--dark-gray);
+                bottom: 34px;
+                left: 12px;
+            }
+
+            .checks {
+                padding-right: 1rem;
+            }
+        }
+
+        .buttonbrochure {
+            padding-bottom: 120px;
+        }
+
+        .thankYou {
+            font-size: 60px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0px;
+            margin-bottom: 20px;
+            color: var(--light-melon);
+        }
+
+        .thankyouCont {
+            padding-bottom: 80px;
+
+            a{
+                margin-top: 25px;
+            }
+        }
+
+        .checkshadown {
+            box-shadow: inset 0px 115px 80px -95px var(--dark-gray), inset 0px -130px 70px -100px #000;
+            border-radius: 6px;
+
+            img {
+                z-index: -1 !important;
+            }
+
+
+        }
+    }
+}

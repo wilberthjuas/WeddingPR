@@ -1,0 +1,29 @@
+@mixin btnAll($wdth,$hght,$brdrRds,$bxshadw,$bgcolor,$border) {
+    width: $wdth;
+    height: $hght;
+    border-radius: $brdrRds;
+    box-shadow: $bxshadw;
+    background-color: $bgcolor;	
+    border: $border;
+    cursor: pointer;
+}
+/*Movil*/
+@media (min-width: 0px) and (max-width: 1024px) {
+    .btn{
+        font-family: Avenir;
+        @include vwvh("font-size", 16);
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: condensed;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white);
+    }
+}
+
+@media  (min-width: 1025px) {
+    .btn{
+        color: var(--white);
+    }
+}

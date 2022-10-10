@@ -1,0 +1,59 @@
+[component="dinamic-menu"]{
+   width: 100%;
+   display: flex;
+   user-select: none;
+
+   .menu{
+      position: relative;
+      text-transform: uppercase;
+      color: $menu-color;
+      display: table-cell;
+      /*letter-spacing: 1rem;*/
+      text-align: right;
+      white-space: nowrap;
+      padding: 0.42em 1em;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      word-break: break-all;
+      cursor: grab;
+
+      &.selected{
+         text-align: center;
+         color: $menu-active-color;
+         width: 50%;
+         min-width: 50%;
+         max-width: 50%;
+
+         &::after{
+            position: absolute;
+            bottom: 0;
+            content: "";
+            width: 0;
+            height: 0;
+            border-bottom: .6rem solid lighten($menu-active-color, 5%);
+            border-left: .6rem solid transparent;
+            border-right: .6rem solid transparent;
+            left: 50%;
+            margin-left: -1.2rem;
+         }
+      }
+
+      &.left,
+      &.right{
+         display: table-cell;
+         height: 100%;
+         width: 25%;
+         max-width: 25%;
+      }
+
+      &.left{
+         text-align: left;
+         @include gradient-classes(right, rgba(214, 206, 206, 0.65), rgba(114, 114, 114, 0), rgba(150, 150, 150, 0));
+      }
+
+      &.right{
+         text-align: right;
+         @include gradient-classes(left, rgba(214, 206, 206, 0.65), rgba(114, 114, 114, 0), rgba(150, 150, 150, 0));
+      }
+   }
+}

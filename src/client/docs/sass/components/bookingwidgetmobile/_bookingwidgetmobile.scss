@@ -1,0 +1,324 @@
+[component = "bookingwidgetmobile"]{
+    .staticmenu{
+        background-color: var(--rosy-pink);
+        @include vwvh("height",45);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 101;
+        display: flex;
+        padding-top:(8/16)+rem;
+        .btn-take-the-next-step{
+            font-family: Avenir;
+            color: var(--white);
+            @include vwvh("font-size",16);
+            background-color: var(--rosy-pink);
+            border-style: unset;
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: unset;
+            padding-top: (8/16)+rem;
+        }
+    
+        .icon-phone{
+            .phone-circled{
+              margin: auto;
+              display: block;
+          }
+        }
+
+        .icon-chat{
+           button{
+               border:unset;
+               background-color: var(--rosy-pink);
+           }
+        }
+        
+    }
+
+    .offers{
+        z-index: 101 !important;
+    }
+
+    [component="inputwedd"]{
+       .view-selec-arrow{
+           width: (39/16)+rem !important; 
+
+           .chevron-up{
+               left: 0.6375rem !important;
+           }
+
+
+           .chevron-down{
+            left: 0.6375rem !important;
+        }
+       } 
+    }
+
+    .dropdownairports{
+        list-style: none;
+        font-family: Avenir;
+        font-size: 0.875rem;
+        padding: unset;
+        border-radius: (2/16)+rem;
+        border-style: solid;
+        border-color: var(--light-melon);
+        @include vwvh("border-width", 1);
+        padding-left: 0.875rem;
+        margin-top: -(18/16)+rem;
+    }
+
+    .content-select{
+        margin-bottom: (20/16)+rem;
+    }
+
+    .airportsearch{
+        font-family: Avenir;
+        border-style: solid;
+        border-color: var(--light-melon);
+        font-weight: 300;
+        font-stretch: condensed;
+        font-style: normal;
+        line-height: normal;
+        @include vwvh("border-width", 1);
+        @include vwvh("height", 30);
+        @include vwvh("border-radius", 2);
+        @include vwvh("padding-left", 10);
+        @include vwvh("padding-right", 10);
+        @include vwvh("padding-top", 4);
+        font-size: 0.875rem;
+        /*@include vwvh("letter-spacing", 0.45);*/
+        width: 100%;
+        @include vwvh("margin-bottom", 20);
+        -webkit-appearance: none;
+    }
+
+    .datepicker{
+        display: flex;
+        span{
+            font-family: Avenir;
+            border-style: solid;
+            border-color: var(--light-melon);
+            @include vwvh("border-width", 1);
+            @include vwvh("padding-left", 11);
+            @include vwvh("padding-right", 11);
+            @include vwvh("padding-top", 6);
+            @include vwvh("padding-bottom", 0);
+            font-size: 0.875rem;
+            border-top-left-radius: (2/16)+rem;
+            border-bottom-left-radius: (2/16)+rem;
+            border-top-right-radius: unset;
+            border-bottom-right-radius: unset;
+        
+        }
+
+        [component="iconwedd"]{
+            border-top-left-radius: unset;
+            border-bottom-left-radius: unset;
+            border-top-right-radius: (2/16)+rem;
+            border-bottom-right-radius: (2/16)+rem;
+            border-left: unset;
+        }
+
+        @include vwvh("margin-bottom", 20);
+    }
+
+
+    .roomsandguests{
+        display: flex;
+        span{
+            border-style: solid;
+            border-color: var(--light-melon);
+            font-family: Avenir;
+            @include vwvh("border-width", 1);
+            @include vwvh("padding-left", 10);
+            @include vwvh("padding-right", 10);
+            @include vwvh("padding-top", 6);
+            @include vwvh("padding-bottom", 0);
+            font-size:  0.875rem;
+            border-top-left-radius: (2/16)+rem;
+            border-bottom-left-radius: (2/16)+rem;
+            border-top-right-radius: unset;
+            border-bottom-right-radius: unset;
+            .chevron-down{
+                width: 1.0625rem;
+                height: 0.75rem;
+            }
+
+            .chevron-up{
+                width: 1.0625rem;
+                height: 0.75rem;
+            }
+
+        }
+
+        [component="iconwedd"]{
+            border-top-left-radius: unset;
+            border-bottom-left-radius: unset;
+            border-top-right-radius: (2/16)+rem;
+            border-bottom-right-radius: (2/16)+rem;
+            border-left: unset;
+        }
+
+        @include vwvh("margin-bottom", -1);
+    }
+
+    .mainwidget{
+        position: fixed;
+        @include vwvh("bottom", 45);
+        background: white;
+        width: 100%;
+        @include vwvh("height", 0);
+        transition: .5s;
+        overflow: scroll;
+        z-index:100;
+        max-height: 0;
+    }
+
+    .collapse{
+        position: fixed;
+        @include vwvh("bottom", 45);
+        z-index: 12;
+        background: white;
+        width: 100%;
+        transition: .5s;
+        max-height: 100%;
+    }
+
+    .tabswidget{
+        height: (47/16)+rem;
+        background-color: var(--light-melon-full);
+        display: flex;
+        div{
+            background-color: var(--rosy-pink);
+            color: white;
+            margin-top: (7/16)+rem;
+            border-top-left-radius: (4/16)+rem;
+            border-top-right-radius: (4/16)+rem;
+            display: grid;
+            padding:0px (5/16)+rem;
+            span, svg{
+                margin: auto;
+                display: block;
+                text-align: center;
+            }
+            [component="iconwedd"]{
+                padding-top:(6/16)+rem;
+            }
+        }
+        
+        .active{
+            background-color: white;
+            color: var(--rosy-pink);
+        }
+
+        .HOTEL{
+            margin-left: 1rem;
+        }
+        .HOTEL-AIR{
+            margin: (7/16)+rem (1/16)+rem 0px;
+        }
+        .CLOSE{
+            margin-left: auto;
+            margin-right: 1rem;
+        }
+    }
+
+    .bodywidget {
+        padding: 30px;
+        overflow-y: scroll;
+    }
+
+    [component="roomsandguests"]{
+        border: solid 1px var(--rosy-pink);
+        font-family: Avenir;
+        @include vwvh("padding-bottom", 20);
+        .minuscontroller{
+          position: relative;
+        }
+
+        .pluscontroller{
+            position: relative;
+        }
+
+        .roomsadder{
+            padding-left: (20/16)+rem;
+            padding-right: (20/16)+rem;
+            margin-top: (10/16)+rem;
+            font-size:  0.875rem;
+        }
+    
+        .minuscontroller{
+        display: block;
+        background: var(--rosy-pink);
+        width: (20/16)+rem;
+        height: (20/16)+rem;
+        border-radius: (2/16)+rem;
+        margin-top: (12/16)+rem;
+        cursor: pointer;
+            span{
+                position: absolute;
+                display: table-cell;
+                font-weight: bold;
+                @include vwvh("margin-left", 5);
+                @include vwvh("margin-top", -8);
+                @include vwvh("font-size", 26);
+                color: var(--white);
+            }
+        }
+    
+        .adults{
+            padding-left: (7/16)+rem;
+            padding-right: (40/16)+rem;
+            margin-top: (10/16)+rem;
+            font-size:  0.875rem;
+        }
+        .normal{
+            padding-left: (7/16)+rem;
+            margin-top: (10/16)+rem;
+            font-size:  0.875rem;
+        }
+        .subindex{
+            margin-top: (12/16)+rem;
+            font-size: (12/16)+rem;
+            padding-right: (34/16)+rem;
+            padding-left: (8/16)+rem;
+        }
+        
+    
+        .number{
+            margin-top: (10/16)+rem;
+            padding: 0px (10/16)+rem;
+        }
+    
+        .pluscontroller{
+            display: block;
+            background: var(--rosy-pink);
+            width: (20/16)+rem;
+            height: (20/16)+rem;
+            /* text-align: center; */
+            border-radius: (2/16)+rem;
+            margin-top: (12/16)+rem;
+            cursor: pointer;
+                span{
+                    position: absolute;
+                    display: table-cell;
+                    font-weight: bold;
+                    @include vwvh("margin-top", -4.6);
+                    @include vwvh("margin-left", 2.5);
+                    @include vwvh("font-size", 22);
+                    color: var(--white);
+                }
+            }
+        
+  
+    }
+    
+
+
+    @media (min-width: 1025px){
+           display: none;
+           font-family: Avenir;
+     }
+}

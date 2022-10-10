@@ -1,0 +1,42 @@
+[component="paginator"] {
+    width: 100%;
+    margin: 2em auto;
+    user-select: none;
+    text-align: center;
+
+    [component="paginator-number"],
+    [component="paginator-first"],
+    [component="paginator-last"] {
+        font-weight: 500;
+        font-size: 1em;
+        color: hotpink;
+        background-color: #fff;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 2em;
+        text-align: center;
+        &:hover {
+            cursor: pointer;
+            border: 3px doted hotpink;
+            text-decoration: underline;
+        }
+    }
+
+    [component="paginator-last"],
+    [component="paginator-first"] {
+        font-size: 2em;
+    }
+
+    [component="paginator-number"] .active {
+        color: #fff;
+        background-color: hotpink;
+        cursor: default;
+    }
+
+    [component="paginator-first"],
+    [component="paginator-last"] {
+        color: #cbcbcb;
+    }
+}

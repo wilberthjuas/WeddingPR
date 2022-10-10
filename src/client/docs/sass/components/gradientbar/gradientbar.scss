@@ -1,0 +1,72 @@
+[component="GradientBar"] {
+   width: 100%;
+   //text-align: center;
+   margin: 0 auto;
+   background-color: white;
+
+   >big {
+      color: var(--dark-melon);
+      //font-family: PlayfairDisplayItalic;
+   }
+
+   >small {
+      font-family: Miso;
+      color: var(--light-melon);
+   }
+
+   >small,
+   >small {
+      display: inline-block;
+   }
+
+}
+
+[component="GradientBar"],
+.titleSlidetabs {
+   background-image: linear-gradient(450deg, var(--light-melon-full), #ffffff00);
+   //font-family: PlayfairDisplayItalic; //Parisienne;
+   font-size: 42px;
+   font-weight: normal;
+   color: var(--dark-melon);
+   text-transform: capitalize;
+}
+
+[component="GradientBar"] span,
+.titleSlidetabs span {
+   font-family: Miso;
+   font-size: 32px;
+   font-weight: 300;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: left;
+   // color: var(--rosy-pink);
+   text-transform: uppercase;
+}
+
+/*
+[component="GradientBar"],
+.titleSlidetabs {
+   background-image: linear-gradient(450deg, var(--light-gray), var(--light-gray), #fff, #fff, #fff);
+   font-family: Parisienne;
+   // font-size: (21/3.2)+vw;
+   font-weight: normal;
+   // color: #323232;
+   // color: var(--dark-gray);
+   text-transform: capitalize;
+   padding-left: (7/3.2)+vw;
+}*/
+
+.titleSlidetabs span,
+[component="GradientBar"] span {
+   font-family: Miso;
+   // font-size: (16/3.2)+vw;
+   font-weight: 300;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: left;
+   text-transform: uppercase;
+}

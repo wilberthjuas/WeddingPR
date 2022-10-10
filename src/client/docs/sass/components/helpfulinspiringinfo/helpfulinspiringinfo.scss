@@ -1,0 +1,252 @@
+[component="helpfulinspiringinfo"] {
+
+  .item-check {
+    background: var(--light-melon-full);
+    position: relative;
+    border-style: solid;
+    border-color: var(--light-melon);
+  }
+
+  .url-pdf {
+    position: absolute;
+  }
+
+  .title-pdf {
+    font-family: Avenir;
+    font-weight: 300;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.14;
+    text-align: left;
+    text-transform: capitalize;
+    position: relative;
+
+    p {
+      width: 100%;
+      color: var(--dark-melon);
+      cursor: pointer;
+    }
+  }
+
+  .max-height {
+    height: max-content;
+    display: flex;
+  }
+
+  .Send-them-to-this-e-mail-address {
+    font-family: Avenir;
+    color: var(--dark-melon);
+  }
+
+
+  .choose-as-many-pdf {
+    padding: 0px 16/16+rem;
+  }
+
+  .labelmail-address {
+    width: max-content;
+    margin: auto;
+    font-family: Avenir;
+    font-weight: 300;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--dark-melon);
+
+  }
+
+  .mailConfirm {
+    width: max-content;
+    margin: auto;
+    font-weight: 300;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  }
+
+  .fomr-send {
+    display: inline-flex;
+
+    [type="button"] {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+
+    [type="text"] {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+  }
+
+  @media (max-width: 1280px) and (min-width: 1025px) {
+    .title-pdf p {
+      width: unset !important;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    [component="callus"] .call button span{
+      //left: 180%;
+    }
+    [component="callus"] .call button:hover .arrow-up{
+      //left: 22%;
+    }
+    .fomr-send input {
+      padding-top: 4/16+rem !important;
+      padding-bottom: 2/16+rem !important;
+    }
+
+    @media (orientation:landscape) {
+      .max-height {
+        display: unset !important;
+      }
+
+      .item-check {
+        width: unset;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .max-height {
+        display: flex !important;
+      }
+
+      .item-check {
+        width: 50%;
+        margin: 10/16+rem !important;
+      }
+    }
+
+    label {
+      width: 65%;
+    }
+
+    .item-check {
+      margin: 18/16+rem;
+      padding: 5.5/16+rem;
+      border-radius: 2/16+rem;
+      border-width: 1/16+rem;
+    }
+
+    .url-pdf {
+      top: 8/16+rem;
+      right: 8/16+rem;
+    }
+
+    .title-pdf {
+      font-weight: 300;
+      line-height: normal;
+      //letter-spacing: 0.35/16+rem;
+      left: 22/16+rem;
+
+      p {
+        margin: 0/16+rem (-7/16) +rem;
+        width: 180/16+rem;
+      }
+    }
+
+    .labelmail-address {
+      margin-top: 30/16+rem;
+    }
+
+    .fomr-send {
+      display: inline-flex;
+
+      [type="button"] {
+        border-top-left-radius: 0/16+rem;
+        border-bottom-left-radius: 0/16+rem;
+      }
+
+      [type="text"] {
+        border-top-right-radius: 0/16+rem;
+        border-bottom-right-radius: 0/16+rem;
+      }
+    }
+    @media (orientation:portrait) and (max-width:600px) {
+      .max-height {
+        display: unset !important;
+      }
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .check-box {
+      display: flex !important;
+      width: 80%;
+      cursor: pointer;
+    }
+
+    .fater{
+      display: flex;
+      flex-flow: wrap;
+  }
+    span.checks {
+      margin-right: 10px;
+    }
+
+    [component="titlesection"] {
+      .description {
+        width: 970px;
+      }
+    }
+
+    .item-check {
+      margin: 18px;
+      padding: 13px;
+      width: 47%;
+      border-radius: 4px;
+      border-width: 1px;
+    }
+
+    .url-pdf {
+      line-height: 2.5;
+      top: 0px;
+      right: 20px;
+    }
+
+    .title-pdf {
+      font-weight: 300;
+      line-height: 1.14;
+      //letter-spacing: 0.7px;
+      left: 22px;
+
+      p {
+        margin: 0px -7px;
+        width: 100%;
+      }
+    }
+
+    .choose-as-many-pdf {
+      width: 478px;
+      margin-bottom: 33px;
+    }
+
+    .labelmail-address {
+      margin-top: 50px;
+
+      p {
+        width: 426px;
+      }
+    }
+
+    .fomr-send {
+      display: inline-flex;
+
+      [type="button"] {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        height: 44px;
+      }
+
+      [type="text"] {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+    }
+  }
+}

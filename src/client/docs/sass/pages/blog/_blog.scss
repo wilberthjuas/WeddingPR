@@ -1,0 +1,26 @@
+[page="blog"]{
+    @media (max-width : 1024px) {
+        [component="titlesection"]{
+            width: (266/3.2)+vw;
+        }
+
+        [component="articlelist"]{
+            margin-top: (25/3.2)+vw;
+            padding-left: (7/3.2)+vw;
+            padding-right: (7/3.2)+vw;
+        }
+
+
+    }
+
+    @media (min-width : 1025px){
+
+        .lets{
+                width: fit-content;
+                height: fit-content;
+                position: absolute;
+                right: 21px;
+                margin-top: 39%;
+            }
+    }
+}

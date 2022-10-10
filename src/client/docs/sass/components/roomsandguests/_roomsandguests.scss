@@ -1,0 +1,69 @@
+[component ="roomsandguests"]{
+
+    .roomsadder{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 10px;
+    }
+
+    .minuscontroller{
+    display: block;
+    background: var(--rosy-pink);
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    margin-top: 12px;
+    cursor: pointer;
+        span{
+            font-family: Miso;
+            font-size: 32px;
+            position: absolute;
+            display: table-cell;
+            font-weight: bold;
+            margin-left: 3px;
+            margin-top: -13px;
+        }
+    }
+
+    .adults{
+        padding-left: 7px;
+        padding-right: 40px;
+        margin-top: 10px;
+    }
+    .normal{
+        padding-left: 7px;
+        margin-top: 10px;
+    }
+    .subindex{
+        margin-top: 12px;
+        font-size: 12px;
+        padding-right: 34px;
+        padding-left: 8px;
+    }
+    
+
+    .number{
+        margin-top: 10px;
+        padding: 0px 10px;
+    }
+
+    .pluscontroller{
+        display: block;
+        background: var(--rosy-pink);
+        width: 20px;
+        height: 20px;
+        /* text-align: center; */
+        border-radius: 2px;
+        margin-top: 12px;
+        cursor: pointer;
+            span{
+                font-family: Miso;
+                font-size: 32px;
+                position: absolute;
+                display: table-cell;
+                font-weight: bold;
+                margin-left: 3px;
+                margin-top: -11px;
+            }
+        }
+}

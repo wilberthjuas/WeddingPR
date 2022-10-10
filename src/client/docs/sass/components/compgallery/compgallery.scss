@@ -1,0 +1,158 @@
+[component="compgallery"] {
+
+  @media (min-width: 1025px) {
+
+    .movil {
+      display: none;
+    }
+
+    .center-section-real-gallery {
+      /*1292*/
+      width: 1292px;
+      margin: 0px auto;
+      height: auto;
+      display: flex;
+    }
+
+    .real-short {
+      float: left;
+      width: 320px;
+      margin-right: 20px;
+
+    }
+
+    .real-large {
+      float: left;
+      width: 612px;
+
+      .text-style-1 {
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+    }
+
+
+
+    .itemsGalery {
+      height: 517px;
+      background-color: var(--light-gray);
+      width: 320px;
+      position: relative;
+      /*margin-left: (6/3.2)+vw;
+              margin-right: (6/3.2)+vw;*/
+    }
+
+    .itemsGalery-large {
+      height: 517px;
+      background-color: var(--light-gray);
+      width: 612px;
+      position: relative;
+      /*margin-left: (6/3.2)+vw;
+              margin-right: (6/3.2)+vw;*/
+    }
+
+    .compliments-palace-resorts {
+      width: 100%;
+
+      object-fit: contain;
+    }
+
+    .seprator-itemsg {
+      height: (29/3.2)+vw;
+    }
+
+    .text-style-1 {
+      font-family: Parisienne;
+      font-size: 42px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: var(--dark-gray);
+
+    }
+
+    .description-item {
+      font-family: Avenir;
+      font-size: 21px;
+      font-weight: 300;
+      font-stretch: condensed;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      width: 251px;
+      margin: 0px auto auto auto;
+    }
+
+
+
+  }
+
+
+  @media (max-width: 1024px) {
+    .itemsGalery {
+      height: 100%;
+      background-color: var(--light-gray);
+      width: (150/3.2)+vw;
+      position: relative;
+      margin-left: (6/3.2)+vw;
+      margin-right: (6/3.2)+vw;
+
+      [component="inputwedd"] {
+        transform: translate(0%, 50%);
+        position: absolute;
+        bottom: 8%;
+        width: 100%;
+      }
+    }
+
+    .compliments-palace-resorts {
+      width: (150/3.2)+vw;
+      height: (120/3.2)+vw;
+      object-fit: contain;
+    }
+
+    .seprator-itemsg {
+      height: (29/3.2)+vw;
+    }
+
+    .text-style-1 {
+      font-family: Parisienne;
+      font-size: (21/3.2)+vw;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: var(--dark-gray);
+      padding-top: (8/3.2)+vw;
+      padding-bottom: (8/3.2)+vw;
+    }
+///    padding-top: 30px;
+    .description-item {
+      font-family: Avenir;
+      font-size: (16/3.2)+vw;
+      font-weight: 300;
+      font-stretch: condensed;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      width: 90%;
+      margin: 0px auto 11.5px auto;
+    }
+
+    .content-text-gallery {
+      height: 100%;
+    }
+
+  }
+}

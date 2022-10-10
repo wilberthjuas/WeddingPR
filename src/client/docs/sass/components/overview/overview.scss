@@ -1,0 +1,509 @@
+[page="overview"] {
+    @media (min-width : 1025px) {
+        @media (max-width : 1170px) {
+            p.amenitiText {
+                font-size: 12px;
+            }
+            .amenitiItem {
+                padding-left: unset;
+            } 
+            .amenitiItem {
+                width: 123px;
+            }
+        }
+        .contetn-galery{
+            position: relative;
+        }
+        .frametour {
+            width: 1019px;
+            height: 255px;
+        }
+
+        .contentSlider {
+            width: 1056px;
+        }
+
+        .ItemSlider {
+            width: 330px;
+            overflow: hidden;
+            margin-top: 45px;
+        }
+        .ItemSlider.active {
+            width: 396px;   
+            overflow: hidden;
+        }
+        .bg-carousel{
+            top: 62px;
+        }
+        .titletwo {
+           margin: auto;
+           position: relative;
+           text-align: left;
+           text-transform: capitalize;
+        }
+
+        .subtitletwo {
+            margin: auto;
+        }
+
+        .sliderTitle {
+            background-image: linear-gradient(450deg, var(--light-gray), #fff);
+            width: 100%;
+            padding: 13px 15px;
+            h2{
+                text-align: left;
+                margin: auto;
+
+            }
+        }
+
+        .wemakwuniqueContent {
+            padding-top: 20.5px;
+        }
+
+        .listTitle {
+            font-weight: bold;
+            text-align: left;
+            padding-top: 5px;
+        }
+
+        .listCont {
+            position: relative;
+            bottom: 24px;
+            left: 17px;
+        }
+
+        .listContExtra {
+            bottom: 21px;
+            position: relative;
+        }
+
+        .restaurantList {
+            text-align: left;
+            margin: unset;
+        }
+
+        .imgR {
+            padding-bottom: 25px;
+            padding-left: 3px;
+            padding-right: 7px;
+            padding-top: 25px;
+        }
+
+        .imgL {
+            padding-bottom: 25px;
+            padding-left: 7px;
+            padding-right: 3px;
+            padding-top: 25px;
+        }
+
+        .overviewL {
+            bottom: 14%;
+            position: absolute;
+            width: 100%;
+        }
+
+        .overviewR {
+            position: absolute;
+            padding-top: 11px;
+            width: 100%;
+            top: 8%;
+
+        }
+
+        .overviewTitle {
+            text-align: center;
+            color: var(--dark-melon);
+            margin: auto;
+        }
+
+        .overviewSubitle {
+            position: relative;
+            margin: auto;
+            max-width: 87.5%;
+        }
+
+        .amenitiText {
+            width: 136px;
+            height: 46px;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--dark-gray);
+            text-transform: uppercase;
+            bottom: 15px;
+            position: relative;
+            font-family: Avenir;
+        }
+
+        .amenitiItem {
+            padding-left: 10px;
+        }
+
+        .amenitiCont {
+            display: flex;
+            padding-top: 60px;
+        }
+
+        .learnMore {
+            width: 416px;
+            display: inline-flex;
+        }
+
+        .visitSite {
+            width: 416px;
+            height: 27px;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--rosy-pink);
+            display: inline;
+            position: relative;
+            left: 5px;
+            text-decoration: underline;
+        }
+
+        .learnMoreCont {
+            padding-top: 25px;
+            padding-bottom: 50px;
+        }
+
+        .galleryText {
+            color: #644a49;
+            color: var(--dark-gray);
+            //text-transform: uppercase;
+            position: absolute;
+            opacity: 0.8;
+            background-color: var(--white);
+            bottom: 49px;
+            padding: 4px 24px;
+            left: 31px;
+            font-family: PlayfairDisplay;
+        }
+
+        .roomGallery {
+            position: relative;
+            top: 5px;
+            left: 15px;
+
+            img {
+                width: 1019px;
+                height: 253px !important;
+            }
+        }
+
+        .virtualTour {
+            /*width: 176px;
+            height: 18px;*/
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: right;
+            color: var(--white);
+            text-transform: uppercase;
+            top: 60px;
+            right: 7px;
+            /* position: relative;*/
+        }
+
+        .virtual-tour {
+            position: relative;
+            top: 15px;
+        }
+
+        .grayBackground {
+            position: absolute;
+            width: 94.2%;
+            background-color: rgba(50, 50, 50, .6);
+            height: 255px;
+            left: 31px;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .amenitiTittle {
+            position: relative;
+            bottom: 0px;
+            width: 162px;
+            span{
+                display: block;
+            }
+            h2{
+                text-align: left;
+            }
+        }
+
+        .grayFade {
+            background-image: linear-gradient(450deg, #fff, var(--light-gray), #fff);
+            width: 2554px;
+            height: 139px;
+            position: absolute;
+            z-index: -1;
+            top: 1217px;
+            left: -462PX;
+        }
+
+     
+    }
+
+    @media (max-width : 1024px) {
+        .sliderTitle {
+            background-image: linear-gradient(450deg, var(--light-gray), #fff);
+
+            h2.title {
+                padding-top: 0.3125rem;
+                padding-bottom: 0.3125rem;
+                text-align: left;
+                padding-left: 0.9375rem;
+
+            }
+        }
+        
+
+        .wemakwuniqueContent {
+            padding-top: (20.5/16)+rem;
+        }
+
+        .listTitle {
+            width: (120/16)+rem;
+            /*height: (1/16)+rem;*/
+            font-family: Avenir;
+            font-size: (24/16)+rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--dark-gray);
+            padding-top: (5/16)+rem;
+        }
+
+        .restaurantList {
+            list-style-type: none;
+            width: (120/16)+rem;
+            font-family: Avenir;
+            font-size: (16/16)+rem;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--dark-gray);
+        }
+
+        .imgR {
+            width: 95%;
+            margin: auto;
+            display: block;
+            height: 100%;
+        }
+
+        .imgL {
+            width: 95%;
+            margin: auto;
+            display: block;
+            height: 100%;
+        }
+
+        .overviewL {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            background: var(--light-melon-full);
+
+            .subtitle {
+                margin-top: unset;
+            }
+        }
+
+        .overviewR {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            background: var(--light-melon-full);
+
+            .description {
+                margin-bottom: unset;
+            }
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .listCont {
+            .bold {
+                font-weight: bold !important;
+                margin-bottom: (5/16)+rem;
+            }
+
+            h2.subtitle {
+                text-align: left;
+            }
+
+            ul {
+                li {
+                    list-style-type: none;
+                }
+
+                padding-left: (20/16)+rem;
+            }
+        }
+
+        .overviewTitle {
+            /*width: (127/16)+rem;*/
+            font-family: Avenir;
+            font-size: (24/16)+rem;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--dark-melon);
+            text-transform: uppercase;
+            width: 94%;
+        }
+
+        .overviewSubitle {
+            /* width: (127/16)+rem;*/
+            /*height: (41.5/16)+rem;*/
+            position: relative;
+            bottom: (15/16)+rem;
+            margin: unset;
+        }
+
+        .amenitiCont {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: (30/16)+rem;
+
+            section {
+                width: 50%;
+            }
+        }
+
+        .amenitiItem {
+            p.paragraph {
+                margin-top: (10/16)+rem;
+                margin-bottom: (30/16)+rem;
+                padding-left: (15/16)+rem;
+                padding-right: (15/16)+rem;
+                text-transform: uppercase;
+            }
+        }
+
+        .amenitiContBottom {
+            padding-left: (50/16)+rem;
+        }
+
+        .learnMore {
+            /* width: (208/16)+rem;
+            height: (13.5/16)+rem;*/
+            margin-bottom: unset;
+        }
+
+        .frametour{
+            width: 100%;
+            height: (204/16)+rem;
+        }
+
+        .visitSite {
+            /*width: (208/16)+rem;
+            height: (13.5/16)+rem;*/
+            font-family: Avenir;
+            font-size: (16/16)+rem;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--rosy-pink);
+            left: (5/16)+rem;
+            text-decoration: underline;
+            margin-top: unset;
+            text-align: center;
+        }
+
+        .learnMoreCont {
+            display: grid;
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            margin-bottom: (30/16)+rem;
+
+            a {
+                text-decoration: underline;
+            }
+        }
+
+        .galleryText {
+            padding: (5/16)+rem;
+            color: var(--dark-melon);
+            opacity: 0.8;
+            background-color: #ffffff;
+            background-color: #ffffff;
+            background-color: var(--white);
+            position: absolute;
+            bottom: 20%;
+            z-index: 0;
+        }
+
+        .img-other-guest {
+            width: 100%
+        }
+
+        .roomGallery {
+            position: relative;
+            top: (5/16)+rem;
+        }
+
+        .virtualTour {
+            font-family: Avenir;
+            font-size: (16/16)+rem;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .virtual-tour {
+            position: relative;
+            top: (5/16)+rem;
+        }
+
+        .grayBackground {
+            position: absolute;
+            width: 100%;
+            height: 97%;
+            background-color: var(--dark-gray-opct);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        #otherguestRooms {
+            .active img {
+                //height: (140/16)+rem !important;
+            }
+        }
+
+        #otherguestRestaurant {
+            .active img {
+                //height: (140/16)+rem !important;
+            }
+        }
+    }
+}

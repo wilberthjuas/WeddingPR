@@ -1,0 +1,56 @@
+[page = "Offers"]{
+    @media (max-width : 1024px) {
+    [component = "wemakeunique"]{
+      
+            .galery-wemakeunique{
+                /*padding-left: (23/16)+rem;
+                padding-right: (23/16)+rem;
+                margin-right: (10/16)+rem;*/
+            }
+
+            .wemakeuniq-itmes-content {
+                height: auto;
+            }
+
+            .desctiption{
+                //text-transform: uppercase;
+                display: inline-flex;
+                align-items: center;
+                //height: (50/16)+rem;
+                margin-bottom: 10px;
+                margin-top: 5px;
+            }
+
+       
+        }
+
+        [component="titlesection"]{
+            margin-bottom: (25/16)+rem;
+        }
+    }
+
+    @media (min-width : 1025px) {
+        [component="wemakeunique"]{ 
+        
+         .galery-wemakeunique{
+               margin-left: 20px;
+        }
+
+         .info-item {
+            width: 230px;
+        }
+
+
+        .desctiption {
+         
+            font-family: Avenir;
+            text-align: center;
+
+            p{
+                font-size: 24px !important;
+                width: 230px;
+            }
+        }
+    }
+    }
+}

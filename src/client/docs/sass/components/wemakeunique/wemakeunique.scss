@@ -1,0 +1,333 @@
+[component="wemakeunique"] {
+    .bg-caption {
+        background-color: #ffffffcc;
+        color: var(--dark-melon);
+    }
+
+    @media (min-width: 1025px) {
+        .Grid-Row {
+            margin-right: 25px;
+        }
+
+        .content-galery {
+            overflow: hidden;
+            width: 1395px;
+        }
+
+        .description-btn {
+            position: absolute;
+            position: absolute;
+            top: 78px;
+            left: 450px;
+            width: 230px;
+            height: 161px;
+        }
+
+        .title {
+            height: 50px;
+        }
+
+        .subtitle {
+            //letter-spacing: 1.2px;
+            height: 51px;
+        }
+
+        .separator-ttl-sbttl {
+            height: 45px;
+        }
+
+        .separadorwemake {
+            height: 20px;
+        }
+
+        .separadorwemake-ttl-cont {
+            //height: 63px;
+        }
+
+        .wemakeuniq-itmes-content {
+            //width: 670px;
+            background-color: var(--light-gray);
+            position: relative;
+            border-radius: 4px;
+            box-shadow: 0 0 0px 0px #d9d8d8;
+            transition: .5s;
+            height: 240px;
+            display: inline-flex;
+        }
+
+        .wemakeuniq-itmes-content:hover {
+            box-shadow: 0 0 9px 1px #d9d8d8;
+        }
+
+           /*Para contact land*/ 
+        .img-wemake-contact {
+            width: 300px;
+            height: 240px;
+
+            img {
+                max-width: unset;
+            }
+        }
+
+        .img-wemake-contact-info {
+            width: 370px;
+            height: 240px;
+            font-size: 16px;
+
+            
+        }
+        .desctiption-contact {
+            width: 100%;
+            padding: 10px 5px;
+            text-align: center;
+            min-height: 180px;
+        }        
+
+        .paragraph-contact {
+            font-family: Avenir;
+            font-weight: 300;
+            color: var(--dark-melon);
+            font-size: 18px;
+        }
+        
+        .inputgallery-contact{
+            width: 100%;            
+        }
+
+        /*end Para contact land*/ 
+
+
+        .img-wemake {
+            width: 440px;
+            height: 240px;
+
+            img {
+                max-width: unset;
+            }
+        }
+
+        .bg-caption {
+            position: absolute;
+            top: 19px;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 5.5px;
+            padding-bottom: 6.5px;
+            margin: unset;
+            left: 0;
+            max-width: 430px;
+        }
+
+        .flex {
+            /*float: right;*/
+            display: flex !important;
+            flex-wrap: wrap;
+        }
+
+        .info-item {
+            display: grid;
+            height: 100%;
+        }
+
+        [component="inputwedd"] {
+            width: fit-content;
+            margin: auto;
+        }
+
+        .desctiption {
+            //font-family: Avenir;
+            //font-weight: 300;
+            width: 225px;
+            //margin-top: 50px;
+
+            p {
+                //font-family: avenir;
+                //font-size: 18px;
+                text-align: center;
+                //color: var(--dark-melon);
+                position: absolute;
+                top: auto;
+                transform: translate(0%, 50%);
+                margin: auto;
+                bottom: 60%;
+                max-height: 173px;
+                overflow: auto;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .inputgallery {
+            position: absolute;
+            left: 50%;
+            right: 17%;
+            transform: translate(50%, 100%);
+            bottom: 21%;
+        }
+    }
+
+    @media (max-width: 1024px) and (min-width: 0px) {
+
+         /*Para contact land*/ 
+
+         .info-item-contact {
+             width: 100%;
+             display: inline-flex;
+             flex-wrap: wrap;
+         }
+
+         .img-wemake-contact {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+
+        .img-wemake-contact-info {
+            width: 100%;
+            font-size: 16px;
+            width: 100%;
+            /* height: 240px; */
+            font-size: 16px;
+            padding: 0px 0px 50px 0px;
+
+            
+        }
+        .desctiption-contact {
+            width: 100%;
+            padding: 5px 10px;
+            text-align: center;
+            min-height: 180px;
+        }        
+
+        .paragraph-contact {
+            font-family: Avenir;
+            font-weight: 300;
+            color: var(--dark-melon);
+            font-size: 16px;
+        }
+        
+        .inputgallery-contact{
+            width: 100%;            
+        }
+
+        /*end Para contact land*/ 
+
+
+        .desctiption {
+            p {
+                font-family: avenir;
+                color: var(--dark-melon);
+            }
+        }
+
+        .img-wemake img {
+            width: 100%;
+        }
+
+        .subtitle {
+            margin-bottom: (30/16)+rem !important;
+        }
+
+        .separator-ttl-sbttl {
+            height: 9.375vw;
+            /*30px*/
+            width: 100%;
+        }
+
+        .titleWemake {
+            width: (210)vw;
+            height: (48)vw;
+        }
+
+        .separadorwemake {
+            width: 100%;
+            height: 9.375vw;
+        }
+
+        .item-img-galery {
+            width: 93.75vw;
+            /*300px*/
+            height: 34.375vw;
+            /*110px*/
+        }
+
+        .bg-caption {
+            padding-right: 3.125vw;
+            //height: 6.875vw;
+            position: absolute;
+            top: 3.125vw;
+            padding-left: 3.125vw;
+            padding-top: 3/3.2+vw;
+            padding-bottom: 2/3.2+vw;
+            margin: unset;
+        }
+
+        .wemakwuniqueContent {
+            margin-left: 3.125vw;
+            /*10px*/
+            margin-right: 3.125vw;
+            /*10px*/
+        }
+
+        .contenedor-descipt-galery {
+            position: relative;
+        }
+
+        .wemakeuniq-itmes-content {
+            height: max-content;
+            background-color: var(--light-gray);
+            position: relative;
+        }
+
+        .info-item {
+            display: flex;
+            position: relative;
+        }
+
+        [component="inputwedd"] {
+            /*  display: flex !important;
+            justify-content: center !important;*/
+        }
+
+        .desctiption {
+            //width: 60%;
+            padding-left: (10/16)+rem;
+            padding-right: (10/16)+rem;
+        }
+
+        .inputgallery {
+            position: relative;
+            margin: auto 10/3.2+vw auto auto;
+            height: max-content;
+        }
+    }
+
+    /**********************************************/
+    @media (min-width: 1025px) {
+        p.paragraph {
+            font-size: 18px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+
+        .divicion-section {
+            height: 60px;
+        }
+    }
+
+    @media (max-width: 1024px) and (min-width: 0px) {
+        .desktop {
+            display: none;
+        }
+
+        .divicion-section {
+            height: 9.375vw;
+        }
+    }
+}

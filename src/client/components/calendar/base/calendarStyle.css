@@ -1,0 +1,171 @@
+/**
+ * Estilos para el calendario de eventos
+*/
+/*
+* Encabezados con los días de la semana
+*/
+.clever-calendar th {
+   text-align: center !important;
+}
+
+/* Contenedor del calendario */
+table.clever-calendar {
+   table-layout: fixed;
+   margin-bottom: 1rem;
+}
+
+table.clever-calendar,
+table.clever-calendar tr,
+table.clever-calendar tr td {
+   word-wrap: break-word;
+   padding: 0;
+   margin: 0 auto;
+   text-align: left;
+}
+
+.clever-calendar .eventCellInfo {
+   width: 100%;
+   display: inline-block;
+}
+
+/* Estilo para los pickers */
+.value-container {
+   font-size: 2em;
+   user-select: none;
+   color: #ffc107;
+}
+
+/* Animacion para el select */
+.clever-calendar dialog.open {
+   animation: .1s inclinate ease;
+}
+
+@keyframes inclinate {
+   0% {
+      transform: rotate(-3deg);
+      box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+   }
+
+   20% {
+      transform: rotate(2deg);
+   }
+
+   90% {
+      transform: rotate(-1deg);
+   }
+
+   100% {
+      transform: rotate(0);
+      box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+   }
+}
+
+.clever-calendar thead {
+   background: var(--dark-melon);
+}
+
+.clever-calendar thead th {
+   padding: 5px 0;
+   color: #FFF;
+   /*border: 1px solid #c1c0c0;*/
+}
+
+/* #region CALENDAR */
+[component='calendar'].calendar-normal {}
+
+[component='calendar'].calendar-normal .calendar-day {}
+
+/* #endregion */
+
+/* #region DATEPICKER */
+.clever-calendar thead th {
+   font-size: 0.85em;
+}
+
+[component='calendar'].calendar-datepicker {
+   width: 100% !important;
+   height: 210px;
+   background-color: #FFF;
+}
+
+[component='calendar'].calendar-datepicker .calendar-day {
+   height: 1em;
+   width: 1em;
+}
+
+.clever-calendar .calendar-day .day-number {
+   font-size: 0.85em !important;
+}
+
+/* #endregion */
+
+
+/* #region CONTROLES DE CAMBIO DE FECHA */
+/*select.calendar-control[name="monthPicker"],
+select.calendar-control[name="yearPicker"] {
+  font-size: 2em !important;
+}*/
+.calendar-control{
+   min-width: 86px;
+   height: 40px;
+   font-size: 21px !important;
+   background: var(--rosy-pink);
+    border-radius: unset;
+    border: unset;
+    color: #FFF;
+}
+
+.calendar-control-arrows {
+   min-width: 30px;
+   height: 40px;
+   font-size: 21px !important;
+   border-radius: unset;
+       border: unset;
+       color: #FFF;
+}
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+
+   .calendar-control{
+      min-width: 40px;
+      height: 40px;
+      font-size: 13px !important;
+      background: var(--rosy-pink);
+       border-radius: unset;
+       border: unset;
+       color: #FFF;
+   }
+   
+   .calendar-control-arrows {
+      min-width: 30px;
+      height: 40px;
+      font-size: 14px !important;
+      border-radius: unset;
+       border: unset;
+       color: #FFF;
+   }
+
+
+}
+
+
+select.browser-default.calendar-control.form-control.search-out-text {
+   color: #ffffff;
+   border: 0 !important;
+   /* needed */
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   /* SVG background image */
+   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='white'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
+   background-size: 12px;
+   background-position: calc(100% - 20px) center;
+   background-repeat: no-repeat;
+   background-color:var(--rosy-pink);
+
+}
+
+
+
+
+/* #endregion */

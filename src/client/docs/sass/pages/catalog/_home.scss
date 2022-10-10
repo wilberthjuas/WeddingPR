@@ -1,0 +1,72 @@
+[page="catalog"]{
+   font-family: Miso;
+   font-weight: 300;
+
+   [component="dinamic-menu"]{
+      display: flex;
+      border: none;
+      justify-content: center;
+      margin-top: -8px;
+      @include shadow-classes(inset, 0px 0px, 44px, -15px, rgba(0,0,0,0.75));
+
+      .menu{
+         font-size: 1.7rem;
+      }
+   }
+
+   [component="navbar"]{
+      background-color: $dark-gray;
+   }
+
+   .catalog-menu{
+      margin-top: 4rem;
+
+      [component="col"]{
+         border: 1px solid black;
+      }
+      /* [component="row"]{
+         display: flex;
+         flex-wrap: wrap;
+      } */
+      .menus{
+         padding: 1rem;
+         position: relative;
+         background: url(/public/img/marco.png);
+         -webkit-background-size: 0 0;
+         -moz-background-size: 0 0;
+         -o-background-size: 0 0;
+         background-size: 0 0;
+
+         &:hover{
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+         }
+
+         img{
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+               -webkit-transform: scale(1.03);
+               -moz-transform: scale(1.03);
+               -o-transform: scale(1.03);
+               transform: scale(1.03);
+            }
+         }
+
+         + .title{
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 200;
+            font-size: 1.5625rem;
+            //letter-spacing: 1rem;
+            margin-top: 1.5rem;
+            margin-left: 14px;
+         }
+      }
+   }
+}

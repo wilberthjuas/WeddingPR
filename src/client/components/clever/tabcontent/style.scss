@@ -1,0 +1,108 @@
+.tab {
+    // overflow: hidden;   // CHECK
+    //border: none;
+    //color: red;
+}
+
+.container {
+    position: relative;
+    border-top: 0px solid #FFFFFF;
+}
+
+.triangle {
+    position: absolute;
+    //margin: auto;
+    top: 45px;
+    //left: 77px;
+    //right: 0;
+    // width: 25px;
+    // height: 25px;
+    /* transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 1px solid #F26293;
+    border-bottom: 1px solid #F26293; */
+
+
+    
+    // width: 0;
+    // height: 0;
+    border-style: solid;
+    border-width: 25px 25px 0 25px;
+    border-color: white #c5bebe00 transparent transparent;
+    filter: drop-shadow(0 1px 0 #F26293);
+    /* background-color: #000000; */
+    /* filter: invert(1); */
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: #F26293;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 14px 0;
+    transition: 0.3s;
+    border-radius: 4px;
+    color: white;
+}
+
+.back{
+    padding: 0 1px;
+    background: white;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    //padding-left: 10px;
+    background-color: #ff9dbe;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #FFFFFF;
+    border: 1px solid #F26293;
+    color: #F26293;
+
+    &::after {
+        content: ' ';
+        // background-color: blue;
+        // width: 0;
+        //left: 14%;
+        // position: absolute;
+        // border-style: inset;
+        // height: 0;
+        
+        // z-index: -1;
+        // transform: rotate(-135deg);
+        // top: 26%;
+        // border-width: 0 16px 40px 16px;
+
+        margin: 0 0 0 -40px;
+        position: absolute;
+        top: 45px;
+        border-style: solid;
+        border-width: 15px 15px 0 15px;
+        border-color: white #c5bebe00 transparent transparent;
+        filter: drop-shadow(0 1px 0 #F26293);
+    }
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #FFFFFF;
+    border-top: none;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */ /* Animation*/
+}
+
+  /* Go from zero to full opacity */ /* Animation*/
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

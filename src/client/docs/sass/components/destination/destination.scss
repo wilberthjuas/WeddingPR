@@ -1,0 +1,521 @@
+[page="destination"] {
+    @media (min-width : 1025px) {
+        .slider-destination-three {
+            width: 660px !important;
+
+            .contentSlider {
+                right: unset;
+                left: unset;
+                transform: unset;
+                position: relative;
+            }
+        }
+
+        .contet-text {
+            padding: 20px 20px 50px 20px;
+        }
+
+        p.paragraph {
+            font-weight: bold;
+            margin: auto;
+        }
+
+        .img-caption {
+            border-bottom: solid;
+            border-width: 1px;
+            width: fit-content;
+            padding-bottom: 3px;
+        }
+
+        #destination-one {
+            .ItemSlider {
+                width: (331.25)+px;
+                height: 221px;
+                padding-left: .5px;
+                padding-right: .5px;
+                text-align: center;
+                font-weight: bolder;
+            }
+
+            width: 1325px;
+        }
+
+        #destination-two {
+            
+                width: 1337px;
+            
+
+            .ItemSlider {
+                width: 427px;
+                //height: 493px;
+                margin-left: 10px;
+                margin-right: 10px;
+                text-align: center;
+                font-weight: bolder;
+                background-color: var(--light-gray);
+            }
+            [component="inputwedd"]{
+                position: absolute;
+                left: 50%;
+                right: 50%;
+                width: 100%;
+                bottom: 4%;
+                transform: translate(-50%, 0%)  
+            }
+        }
+
+        #destination-three {
+            width: 600px;
+
+            .ItemSlider {
+                width: (600)+px;
+                height: 400px;
+                padding-left: .5px;
+                padding-right: .5px;
+                text-align: center;
+                font-weight: bolder;
+            }
+        }
+
+        .smallDescription {
+            width: 410px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--dark-melon);
+        }
+
+        .sliderTwoTitle {
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            display: inline;
+            text-align: center;
+            color: var(--dark-melon);
+            position: relative;
+            top: 21px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid;
+        }
+
+        .sliderTwoSubtitle {
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--dark-melon);
+            top: 8px;
+            position: relative;
+        }
+
+        .viewMore {
+            width: 135px;
+            height: 26px;
+            font-weight: bold;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+           // letter-spacing: 0.7px;
+            text-align: center;
+            color: var(--rosy-pink);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .viewMoreContainer {
+            background-color: var(--light-gray);
+            height: max-content;
+        }
+
+        .ItemSlider {
+            .textHover {
+                position: absolute;
+                width: 100%;
+                max-height: 0;
+                background-color: var(--dark-gray-opct);
+                overflow: hidden;
+                transition: .5s;
+            }
+        }
+
+        /*.ItemSlider:hover{
+            .textHover{
+                max-height: 100%;
+                height: 97%;
+            }
+        }*/
+        .sliderOneHoverText {
+            width: 222px;
+            height: 61px;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            left: 48px;
+            top: 37px;
+        }
+
+        .sliderThreeCont {
+            /*  [component="iconwedd"] .svg-icon-pink {
+                color: white;
+                fill: white;
+            }*/
+
+            padding-top: 51px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .controlPoints {
+                position: relative;
+                top: 7px;
+            }
+
+            /* .chevron-carousel-left {
+                position: relative;
+                left: 160px;
+            }*/
+
+            .chevron-carousel-right {
+                position: relative;
+                /*left: -160px;*/
+            }
+
+            .title {
+                font-weight: normal !important;
+                font-stretch: normal !important;
+                font-style: normal !important;
+                line-height: normal !important;
+                letter-spacing: normal !important;
+                text-align: left !important;
+                color: var(--dark-melon) !important;
+                display: inline;
+            }
+
+            .subtitle {
+                font-weight: 300 !important;
+                color: var(--dark-melon) !important;
+                display: inline;
+                position: relative;
+                left: 10px;
+            }
+
+            .description {
+                font-weight: 300 !important;
+                font-stretch: condensed !important;
+                font-style: normal !important;
+                line-height: normal !important;
+                letter-spacing: normal !important;
+                text-align: center !important;
+                color: var(--dark-melon) !important;
+            }
+        }
+
+        .sliderTitle {
+            position: relative;
+            width: 466px;
+            margin: auto;
+        }
+
+        .viewResorts {
+            position: relative;
+            margin-left: 50px;
+        }
+
+        .sliderGris0 {
+            background-image: linear-gradient(450deg, #fff, var(--light-gray), #fff);
+            height: 308px;
+            width: 1542px;
+            position: absolute;
+            left: -364px;
+            z-index: -1;
+        }
+
+        .sliderGris1 {
+            background-image: linear-gradient(450deg, #fff, var(--light-gray), #fff);
+            height: 290px;
+            width: 1542px;
+            position: absolute;
+            left: -364px;
+            z-index: -1;
+        }
+
+        .sliderGris2 {
+            background-image: linear-gradient(450deg, #fff, var(--light-gray), #fff);
+            height: 290px;
+            width: 1542px;
+            position: absolute;
+            left: -364px;
+            z-index: -1;
+        }
+
+        .sliderGris3 {
+            background-image: linear-gradient(450deg, #fff, var(--light-gray), #fff);
+            height: 306px;
+            width: 1542px;
+            position: absolute;
+            left: -364px;
+            z-index: -1;
+        }
+
+        .sliderGris4 {
+            background-image: linear-gradient(450deg, #fff, var(--light-gray), #fff);
+            height: 318px;
+            width: 1542px;
+            position: absolute;
+            left: -364px;
+            z-index: -1;
+        }
+
+        .otherContainer {
+            .subtitle {
+                width: 1050px;
+                height: 28px;
+                font-weight: 300;
+                font-stretch: condensed;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: var(--dark-melon);
+                position: relative;
+            }
+
+            .separador {
+                color: var(--dark-gray);
+                left: 80px;
+                position: relative;
+            }
+
+            display:flex;
+        }
+
+        .desktopDestination {
+            padding-bottom: 120px;
+        }
+
+        .sliderGris {
+            background-image: linear-gradient(450deg, #fff, var(--light-gray), #fff);
+            height: 260px;
+            width: 1542px;
+            position: absolute;
+            top: 1391px;
+            left: -364px;
+        }
+
+        .otherGris {
+            background-image: linear-gradient(450deg, #fff, var(--light-gray), #fff);
+            width: 1921px;
+            height: 60px;
+            position: absolute;
+            left: -281px;
+            bottom: 122px;
+        }
+
+        .viewAllTours {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        #sliderOne {
+            .controlPoints {
+                padding-top: 40px !important;
+            }
+        }
+
+        #sliderTwo {
+            .controlPoints {
+                padding-top: 40px !important;
+            }
+        }
+
+
+        .botonResortsCont {
+
+            text-align: center;
+        }
+
+        .botonResortsContTwo {
+            display: inline-block;
+            padding-right: (7)+px;
+            padding-left: (7)+px;
+        }
+    }
+
+    @media (max-width : 1024px) {
+        .separadorGaleryPoints {
+            height: (5/16)+rem;
+        }
+
+        .controlPoints.destination-two {
+            margin-bottom: (10/16)+rem
+        }
+
+        .sliderOneHoverText {
+            width: (250/16)+rem;
+            height: (180/16)+rem;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--white);
+            display: inline;
+            right: (10/16)+rem;
+            top: (95/16)+rem;
+            position: relative;
+        }
+
+        .textHover {
+            position: absolute;
+            width: 100%;
+            max-height: 100%;
+            height: 100%;
+        }
+
+        #destination-one {
+            .ItemSlider {
+                width: (220/16)+rem;
+                height: (130/16)+rem;
+                padding-right: (20/16)+rem;
+                text-align: center;
+            }
+        }
+
+        #destination-two {
+            .ItemSlider {
+                width: (266/16)+rem;
+                /*   height: (200/16)+rem;*/
+                padding-right: (20/16)+rem;
+                text-align: center;
+                font-weight: bolder;
+            }
+        }
+
+        #destination-three {
+            .ItemSlider {
+                width: (200/16)+rem;
+                height: (130/16)+rem;
+                margin-right: (20/16)+rem;
+                text-align: center;
+                font-weight: bolder;
+            }
+
+            width: (1325/16)+rem;
+        }
+
+        .sliderTwoContainer {
+            position: relative;
+            bottom: (46/16)+rem;
+            left: (31/16)+rem;
+            width: (180/16)+rem;
+            opacity: 0.9;
+            border: solid 1px var(--rosy-pink);
+            background-color: var(--light-gray);
+            padding: (5/16)+rem;
+
+            span.bold {
+                font-family: Avenir;
+                color: var(--dark-melon);
+                font-weight: bold;
+                font-size: 1rem
+            }
+
+            p.paragraph {
+                margin: unset;
+                margin-top: (5/16)+rem;
+            }
+        }
+
+        .sliderTwoTitle {
+            font-family: Avenir;
+            font-size: (18/16)+rem;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--dark-melon);
+            position: relative;
+            top: -9px;
+        }
+
+        .sliderTwoSubtitle {
+            font-family: Avenir;
+            font-size: (18/16)+rem;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--dark-melon);
+            position: relative;
+        }
+
+        .sliderTwoCont {
+            padding-bottom: (60/16)+rem;
+        }
+
+        .sliderThreeCont {
+            [component="otherguest"] .separadorGaleryPoints {
+                height: 0.25vw;
+            }
+
+            padding-bottom: (57/16)+rem;
+
+            .wemakwuniqueContent {
+                padding-top: (16/16)+rem;
+            }
+
+            .destinationDesc {
+                position: relative;
+                bottom: (30/16)+rem;
+            }
+        }
+
+        .sliderTitle {
+            background-image: linear-gradient(450deg, var(--light-gray), #fff);
+            text-align: center;
+
+            h2.title {
+                padding-top: (5/16)+rem;
+                padding-bottom: (5/16)+rem;
+                text-align: left;
+                padding-left: (15/16)+rem;
+            }
+        }
+
+        .movilDestination {
+            padding-bottom: (50/16)+rem;
+        }
+
+        .botonResortsContFather {
+            width: 100%;
+        }
+
+        .botonResortsCont {
+
+            text-align: center;
+        }
+
+        .botonResortsContTwo {
+            display: inline-block;
+            padding-right: (7/16)+rem;
+            padding-left: (7/16)+rem;
+        }
+    }
+}

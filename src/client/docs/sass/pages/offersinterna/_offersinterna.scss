@@ -1,0 +1,199 @@
+[page = "OffersInterna"]{
+    @media (max-width : 1024px) {
+
+
+      
+        [component="sliderprincipal"]{ 
+            .content-trans {
+                top: (157.6/16)+rem;
+                width: auto;
+                height: (60/16)+rem;
+                background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 22%, #f2f2f2 176%);
+                background-color: unset;
+            }
+
+            .dream{
+                padding-top: (7/16)+rem;
+                padding-left: (7/16)+rem;
+                padding-right: unset;
+                margin: auto;
+                font-size: (24/16)+rem;
+            }
+
+            .wedding {
+                padding-top: (9/16)+rem;
+                padding-left: unset;
+                padding-right: unset;
+                margin: auto;
+                text-transform: uppercase;
+                color: var(--black);
+                font-size: (24/16)+rem;
+            }
+        }
+
+        [component="titlesection"]{
+            .arrow {
+                margin-top: (15/16)+rem;
+                margin-bottom: (20/16)+rem;
+                font-size: (15/16)+rem;
+                padding-left: (10/16)+rem;
+            }
+
+            .description{
+                padding-left: (10/16)+rem;
+                padding-right: (10/16)+rem;
+            }
+        }
+
+        [component = "complandingtabs"]{
+
+            @media (min-width:768px) {
+                img.desktop {
+                    display: block;
+                }
+                img.movil {
+                   display: none;
+                }
+                
+                }
+
+            margin-bottom: (30/16)+rem;
+            .list-items{
+                padding-left: (20/16)+rem;
+                font-size: (16/16)+rem;
+                font-family: Avenir;
+                padding-right: (20/16)+rem;
+            }
+            
+            .list-items.collapse {
+                height: auto
+            }
+
+            .img-background{
+              
+                z-index: -1;
+                height: 70%;
+                width: 100%;
+                right: 0;
+            }
+
+            .windows{
+                text-align: center;
+                margin-top: (32/16)+rem;
+
+                p{
+                    margin: unset;
+                }
+            }
+
+            .bookingwindow{
+                font-family: Avenir;
+                font-size: (16/16)+rem;
+                font-weight: normal;
+                font-stretch: normal;
+                //letter-spacing: 0.4px;
+                color: var(--dark-melon);
+            }
+
+            .travelwindow{
+                font-family: Avenir;
+                font-size: (16/16)+rem;
+                font-weight: 300;
+                font-stretch: condensed;
+                font-style: normal;
+                text-align: center;
+                color: var(--dark-melon);
+            }
+        }
+
+        .terms-content{
+            background-color: #efefef;
+            display: flex;
+            position: relative;
+            align-items: center;
+        }
+
+        .tabsterms{
+            display: flex;
+        }
+
+        .tabstermscontent{
+            width: 70%;
+            height: (170.5/16)+rem;
+            font-family: Avenir;
+            font-size: (12/16)+rem;
+            overflow:scroll;
+            text-align: left;
+        }
+
+        .tabstermsbuttons{
+            right: 0;
+            height: fit-content;
+            position: absolute;
+            float: right;
+            display:grid;
+            width: 30%;
+
+            a{
+                width: fit-content;
+                margin: auto;
+            }
+        }
+        
+
+        .fade {
+            width: 70%;
+            height: 90%;
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(73%, rgba(255, 0, 0, 0)), color-stop(103%, #f2f2f2));
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 73%, #f2f2f2 103%);
+            position: absolute;
+        }
+    }
+
+    @media (min-width : 1025px){
+            
+    [component="titlesection"]{
+        .description{
+          width:50%
+        }
+      }
+      
+
+      [component="sliderprincipal"]{ 
+        .content-trans {
+            width: auto;
+            background-image: linear-gradient(to left, rgba(255, 0, 0, 0) -7%, #f2f2f2 49%);
+            background-color: unset;
+            top: -186px;
+            left: 15px;
+        }
+
+        .margin-none{
+            display: grid;
+        }
+
+        .dream{
+            padding-right: unset;
+            margin: auto;
+            font-size: 58px;
+        }
+
+        .wedding {
+            padding-left: unset;
+            padding-right: unset;
+            margin: auto;
+            text-transform: uppercase;
+            color: var(--black);
+            font-size: 58px;
+        }
+    }
+
+    [component="sweptaway"]{
+    [component="titlesection"]{
+        .description{
+          width:70%
+        }
+      }
+    }
+    }
+}

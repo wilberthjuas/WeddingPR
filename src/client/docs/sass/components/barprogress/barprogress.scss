@@ -1,0 +1,124 @@
+[component="barprogress"] {
+  @media (min-width: 1025px) {
+    .progress-bar * {
+      transition: 0.5s;
+    }
+
+    .progress-container {
+      width: max-content !important;
+    }
+
+    .progress-bar {
+      display: inline-flex;
+      border-color: var(--light-melon);
+      border-style: solid;
+      border-radius: 13px;
+      border: solid 1px var(--light-melon);
+      background-color: var(--white);
+      height: 30px;
+      position: relative;
+      margin-top: 25px;
+      margin-bottom: 55px;
+    }
+
+    .block-progress {
+      width: 50px;
+      position: relative;
+
+      .pointer {
+        background-color: var(--light-melon);
+      }
+    }
+
+    .active-prg {
+      .pointer {
+        background-color: var(--white);
+      }
+    }
+
+    .progress {
+      height: 28px;
+      background-color: var(--light-melon);
+      width: 50px;
+      position: absolute;
+      border-radius: 13px;
+      border-style: solid;
+      border-color: var(--light-melon);
+    }
+
+    .pointer {
+      background-color: var(--white);
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      position: absolute;
+      top: 9px;
+      left: 17px;
+    }
+  }
+
+  @media (max-width: 1024px) and (min-width: 0px) {
+    .progress-bar * {
+      transition: 0.5s;
+    }
+
+    .progress-container {
+      width: max-content !important;
+      margin: auto;
+    }
+
+    .progress-bar {
+      display: inline-flex;
+      border-color: var(--light-melon);
+      border-style: solid;
+      border-radius: (6.5/16)+rem;
+      border: solid (1/16)+rem var(--light-melon);
+      background-color: var(--white);
+      height: (15/16)+rem;
+      position: relative;
+      @include vwvh("margin-top",10);
+      margin-top: (14/16)+rem;
+      margin-bottom: (25/16)+rem;
+    }
+
+    .block-progress {
+      width: (25/16)+rem;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .pointer {
+        background-color: var(--light-melon);
+      }
+    }
+
+    .active-prg {
+      .pointer {
+        background-color: var(--white);
+      }
+    }
+
+    .progress.movil {
+      top: 2.7px;
+      left: 3px;
+  }
+
+    .progress {
+      height: 60%;
+      background-color: var(--light-melon);
+      width: (25/16)+rem;
+      position: absolute;
+      border-radius: (6.5/16)+rem;
+      border-style: solid;
+      border-color: var(--light-melon);
+      box-shadow: 0 0 0 (1.5/16)+rem var(--light-melon);
+    }
+
+    .pointer {
+      background-color: var(--white);
+      width: (5/16)+rem;
+      height: (5/16)+rem;
+      border-radius: (10/16)+rem;
+    }
+  }
+}

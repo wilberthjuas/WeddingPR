@@ -1,0 +1,220 @@
+[component="realwedding"] {
+
+    /*.ItemSlider .title {
+        font-family: PlayfairDisplay;
+        color: var(--light-melon);
+    }*/
+    /*.ItemSlider .description {
+        font-family: Avenir;
+        color: var(--dark-melon);
+    }*/
+    [component="titlesection"] {
+        .divicion-section {
+            display: none;
+        }
+    }
+    .title-img {
+        font-weight: bold;
+    }
+    @media (min-width: 1025px) {
+        .paragraph {
+            width: max-content;
+            margin: auto;
+            text-align: center;
+            //text-transform: capitalize;
+        }
+
+        [component="titlesection"] {
+            .description {
+                width: 506px;
+                margin-bottom: 60px;
+            }
+        }
+
+        .contentSlider {
+            width: 1329px;
+            margin: auto;
+        }
+
+        .ItemSlider {
+            width: 443px;
+            padding-left: 21.5px;
+            padding-right: 21.5px;
+            height: 300px;
+        }
+
+        .description-content {
+            position: absolute;
+            bottom: 0px;
+            width: 400px;
+            height: 292px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 25%, var(--light-gray) 75%);
+        }
+
+        .ItemSlider .title {
+            min-width: 153px;
+            max-width: 400px;
+            height: 21px;
+            font-size: 28px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 37px;
+            margin-top: 21px;
+            text-transform: uppercase
+        }
+
+        .description {
+            width: 199px;
+            font-size: 20px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 0.92;
+            letter-spacing: normal;
+            text-align: center;
+            margin: auto;
+        }
+
+        .ItemSlider:hover {
+            .artilce-real {
+                bottom: -130px;
+            }
+        }
+
+        .artilce-real {
+            transition: .5s;
+            position: relative;
+            bottom: -200px;
+        }
+
+        .line-pink {
+            height: 2px;
+            background-color: var(--light-melon);
+            border-radius: 100px;
+            margin-top: 9px;
+            width: 43%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .separadorGaleryPoints {
+            height: 40px;
+        }
+
+        .controlPoints {
+            margin-bottom: 40px;
+        }
+
+        .divicion-section {
+            height: 60px;
+        }
+    }
+
+    /****Movil****/
+    @media (max-width: 1024px) and (min-width: 0px) {
+        .img-real-wedd {
+            @include vwvh("width", 244);
+        }
+
+
+        .contentSlider {
+            width: max-content;
+            /*right: 50%;
+            left: 50%;
+            transform: translate(-50%, 0px);
+            position: relative;*/
+        }
+
+        .gallery-bg {
+            position: absolute;
+            width: 100%;
+            //@include vwvh("left", 10);
+            @include vwvh("height", 85);
+            @include vwvh("top", 30.5);
+            background-color: var(--dark-gray);
+        }
+
+        [component="titlesection"] {
+            .description {
+                @include vwvh("width", 253);
+                margin: auto;
+            }
+        }
+
+        .ItemSlider {
+            @include vwvh("width", 254.25);
+            @include vwvh("padding-left", 4.75);
+            @include vwvh("padding-right", 4.75);
+            @include vwvh("height", 165);
+        }
+
+        .description-content {
+            @include vwvh("top", 0);
+            @include vwvh("margin-left", 4.5);
+            position: absolute;
+            @include vwvh("width", 140);
+            @include vwvh("height", 156.5);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, .1) 18%, var(--light-gray)66%);
+        }
+
+        .ItemSlider .title {
+            @include vwvh("max-width", 103);
+            height: auto;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+           // @include vwvh("letter-spacing", -0.4);
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            @include vwvh("margin-bottom", 2.5);
+            @include vwvh("margin-top", 0.5);
+            text-transform: capitalize;
+            line-height: 1;
+        }
+
+        .paragraph {
+            margin: auto;
+            text-align: center;
+            line-height: 15/16+rem;
+            font-size: 14/16+rem;
+        }
+
+        .artilce-real {
+            transition: .5s;
+            position: absolute;
+            bottom: 0vw;
+            width: 100%;
+        }
+
+        .line-pink {
+            @include vwvh("height", 1.5);
+            background-color: var(--light-melon);
+            @include vwvh("border-radius", 100);
+            @include vwvh("margin-top", 7);
+        }
+
+        .divicion-section {
+            height: 9.375vw;
+        }
+
+        .extra {
+            width: max-content;
+            margin: auto;
+        }
+
+        .separadorGaleryPoints {
+            @include vwvh("height", 20);
+        }
+    }
+
+    /**********************************************/
+
+}

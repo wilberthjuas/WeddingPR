@@ -1,0 +1,774 @@
+[page="quizresorts"] {
+
+    //@import '../../components/calendar/calendarStyle.css';
+    .separadorGaleryPoints {
+        height: unset;
+    }
+
+    .check-box {
+        cursor: pointer;
+    }
+
+    .checks {
+        display: inline-block;
+    }
+
+    .inputweddundefined {
+        padding: unset;
+    }
+
+    ._inputdateinput {
+        display: inline-flex;
+    }
+
+    .heading-active {
+        background-position: 0% 0% !important;
+        background-size: 4100% 200% !important;
+
+        * {
+            color: white;
+        }
+    }
+
+    ._inputdatepk {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .check-container {
+        display: flex;
+        margin: auto;
+
+        [component="inputwedd"]:first-child {
+            align-items: center;
+            display: flex;
+            width: -webkit-fill-available;
+        }
+
+        [component="inputwedd"]:last-child {
+            button {
+                width: max-content;
+            }
+        }
+    }
+
+    .main-heading {
+        display: flex;
+        min-height: 400px;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .content {
+            //padding: 0px 12px;
+            text-align: center;
+            background-color: #ffffffe6;
+            text-transform: uppercase;
+            margin-top: 45px;
+
+            h2 {
+                margin: 0;
+                font-size: 1.25rem;
+                text-align: center;
+                color: var(--light-melon);
+                margin-top: 0.9375rem !important;
+                margin-bottom: 0.9375rem !important;
+            }
+        }
+
+    }
+
+    .steps {
+        display: flex;
+        padding: 12px 0;
+        justify-content: center;
+        background-color: #f2f2f2;
+
+        ._container {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .indicator {
+            min-width: 80px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            .number {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background-color: #939393;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    color: white;
+                    font-size: 1rem;
+                }
+            }
+
+            .title {
+                p {
+                    color: #939393;
+                    font-size: 0.8rem;
+                }
+            }
+
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            padding-bottom: 21px;
+
+            .line {
+                width: 14px;
+                height: 4px;
+                background-color: #939393;
+            }
+        }
+
+        .active>.number {
+            background-color: var(--light-melon);
+        }
+
+        .active>.title p {
+            color: var(--light-melon);
+        }
+
+        @media screen and (max-width: 1200px) {
+
+            .indicator {
+                min-width: 70px;
+
+                .number {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+
+                .title {
+                    p {
+                        font-size: 0.7rem;
+                    }
+                }
+
+            }
+
+            .divider {
+                display: flex;
+                align-items: center;
+                padding-bottom: 32px;
+
+                .line {
+                    width: 14px;
+                    height: 4px;
+                    background-color: #939393;
+                }
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+
+            padding: 8px 0;
+            padding-bottom: 0px;
+
+            ._container {
+                width: 85%;
+            }
+
+            .indicator {
+                min-width: 60px;
+
+                .number {
+                    width: 40px;
+                    height: 40px;
+
+                    p {
+                        color: white;
+                    }
+                }
+
+                .title {
+                    p {
+                        font-size: 0.7rem;
+                    }
+                }
+
+            }
+
+            .divider {
+                display: flex;
+                align-items: center;
+                padding-bottom: 32px;
+
+                .line {
+                    width: 14px;
+                    height: 3px;
+                }
+            }
+
+        }
+
+        @media screen and (max-width: 576px) {
+
+            ._container {
+                width: 95%;
+            }
+
+            .indicator {
+                min-width: 60px;
+
+                .number {
+                    width: 32px;
+                    height: 32px;
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .title {
+                    p {
+                        font-size: 0.65rem;
+                    }
+                }
+
+            }
+
+            .divider {
+                padding-bottom: 32px;
+
+                .line {
+                    width: 13px;
+                    height: 3px;
+                }
+            }
+
+        }
+
+    }
+
+
+    @media (max-width: 1024px) {
+        .numn-step {
+            margin-bottom: 2/16+rem;
+        }
+        [component="media-object-section"] {
+                width: 7.1875rem;
+                text-align: center;
+        }
+
+        ._inputdateinput {
+            width: 100%;
+        }
+
+        [component="fullcalendar"] .containerbuttons {
+            align-items: center;
+        }
+
+        [component="p4_datepicker"] {
+            button {
+                font-size: unset;
+                border-radius: unset;
+                text-align: unset;
+                border-width: unset;
+                width: unset;
+                min-width: unset;
+                padding-top: unset;
+                height: unset;
+                padding-bottom: unset;
+                //padding-bottom: unset;
+                //padding-left: unset;
+                //padding-right: unset;
+            }
+        }
+
+        .main-heading {
+            .content {
+                width: 80%;
+            }
+        }
+
+        .tems-conditions {
+            width: 85%;
+            margin: auto;
+            padding: 40/16+rem 0px;
+
+        }
+
+        .heading {
+            background-image: linear-gradient(to right, var(--light-melon) 0%, var(--light-melon-full), rgba(255, 255, 255, 0));
+            transition: all .25s ease-in;
+            background-position: 100% 0%;
+            background-size: 200% 100%;
+        }
+
+        .form-finish {
+            width: 238/16+rem;
+            margin: auto;
+
+            .input-text-block,
+            .select-weddings,
+            .checkbox,
+            ._inputdateinput {
+                margin-top: 20/16+rem;
+            }
+
+            input {
+                width: 100%;
+            }
+        }
+
+        .content-text-padding-10-10,
+        .inputweddundefined {
+            padding: unset;
+        }
+
+        .content-father {
+            margin-bottom: 30/16+rem;
+        }
+
+        .padding3 {
+            padding-bottom: unset !important;
+            position: relative;
+
+            div img {
+                max-width: unset !important;
+            }
+        }
+
+        .pos-rel_bot-15 {
+            height: unset;
+            width: 111/16+rem;
+        }
+
+        ._rc_circle {
+            top: unset !important;
+            left: unset !important;
+            position: unset;
+
+            input {
+                height: 100%;
+            }
+
+            .checks {
+                height: 67/16+rem;
+                position: absolute;
+                margin: unset;
+                width: max-content;
+                right: 71.5%;
+                top: unset !important;
+                left: unset !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .thumbnail {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+
+            img {
+                width: 67/16+rem;
+                height: 67/16+rem;
+            }
+        }
+
+        ._inputdatebot {
+            padding: 2/16+rem 8/16+rem;
+            border-style: solid;
+            border-color: var(--light-melon);
+            border-width: 1/16+rem;
+            display: flex;
+            border-top-right-radius: 2/16+rem;
+            border-bottom-right-radius: 2/16+rem;
+        }
+
+        ._inputdatepk {
+            padding: 0/16+rem 10/16+rem !important;
+            border-top-right-radius: 0/16+rem !important;
+            border-bottom-right-radius: 0/16+rem !important;
+        }
+
+        label.check-box {
+            margin-bottom: 2/16+rem;
+        }
+
+        .steps {
+            margin-bottom: 30/16+rem;
+        }
+
+        .main-title {
+
+            .flower-left,
+            .flower-right {
+                position: absolute;
+                width: 53/16+rem;
+            }
+
+            .flower-left {
+                left: 0%;
+            }
+
+            .flower-right {
+                right: 0%;
+            }
+
+        }
+
+        .content-form {
+
+            width: 230/16+rem;
+
+            @media (orientation:landscape) {
+                width: 16.375rem;
+            }
+
+            margin: auto;
+            margin-bottom: 30/16+rem;
+        }
+
+        .to-center {
+            display: table;
+
+            button,
+            a {
+                display: inline-block;
+                margin: 20/16+rem 8/16+rem;
+            }
+
+            .aling-left {
+                display: inline-block;
+            }
+        }
+
+        [component="resortvenues"] .sliderimage {
+            position: relative;
+            width: unset;
+            display: unset;
+        }
+
+        [component="resortvenues"] .sliderinfo {
+            min-height: unset;
+            //overflow: auto;
+        }
+
+        [component="resortvenues"] .sliderimage .banner {
+            max-width: 160/16+rem;
+            bottom: 15%;
+            top: unset;
+        }
+
+        .to-center {
+            height: max-content;
+            margin: auto;
+            margin-top: 30/16+rem;
+            margin-bottom: 60/16+rem;
+            padding: 0px 20/16+rem;
+            position: relative;
+
+            .description {
+                width: 220/16+rem;
+                margin: auto;
+            }
+        }
+
+        .title .subtitle {
+            [component="resortvenues"] .sliderinfo .content {
+                width: unset !important;
+            }
+
+            text-align: left;
+            color: var(--light-melon);
+            margin-left:10/16+rem;
+        }
+
+        .slider-venues-slider {
+            margin-bottom: 30/16+rem;
+        }
+
+        .heading {
+            margin: 30/16+rem auto;
+        }
+
+        .check-container {
+            padding: 4/16+rem 7.5/16+rem;
+        }
+
+        @media (min-width: 676px) and (orientation:landscape) {
+            .resort-content {
+                width: 99%;
+                margin: auto;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .resort-content {
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+        .inicial {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .email-reply{
+            display: flex;
+        }
+        .main-heading {
+            .content {
+                width: 38%;
+            }
+        }
+
+        .inicial {
+            margin-bottom: 120px !important;
+            margin-top: 60px !important;
+        }
+
+        .slider-negocios {
+            .controlArrow {
+                top: 175.5px !important;
+            }
+        }
+
+        .white-space-16 {
+            height: 120px;
+        }
+
+        .checkbox {
+            position: relative;
+
+            input {
+                top: 50%;
+                bottom: 50%;
+                left: 50%;
+                right: 50%;
+            }
+
+            label {
+                span:last-child {
+                    /*margin-left: 7px;*/
+                }
+            }
+        }
+
+        .controlPoints {
+            margin-top: 40px;
+        }
+
+        [component="negocios"] {
+            p.description {
+                margin-bottom: auto;
+            }
+        }
+
+        [component="negocios"] [component="otherguest"],
+        [component="negocios"] {
+            margin-bottom: 30px;
+
+            .separadorGaleryPoints {
+                height: unset;
+            }
+        }
+
+        .sliderimage {
+            display: grid;
+        }
+
+        .resort-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        [component="resortvenues"] .sliderinfo {
+            width: 100%;
+            height: unset;
+            margin: unset;
+            padding: 10px;
+
+            p {
+                margin: 10px;
+            }
+        }
+
+        .tems-conditions {
+            margin: 40px auto;
+
+            .check-box {
+                text-align: center;
+                width: max-content;
+                margin: auto;
+                max-width: 100%;
+                display: flex;
+            }
+        }
+
+        [component="contactus"] {
+            .back-ground {
+                background-color: var(--light-melon-full);
+                padding: 40px 0px;
+                margin-bottom: 40px;
+            }
+        }
+
+        .content-father {
+            margin-bottom: 50px;
+        }
+
+        .pos-rel_bot-15 {
+            height: unset;
+        }
+
+        ._rc_circle {
+            position: relative;
+            top: 90px;
+            left: 29px;
+        }
+
+        .caption-desktop {
+            background-color: var(--light-melon-full);
+            padding: 40px 0px;
+            margin: 60px 0px;
+        }
+
+        ._inputdatepk {
+            padding: 0rem 0.625rem !important;
+            border-top-right-radius: 0rem !important;
+            border-bottom-right-radius: 0rem !important;
+        }
+
+        ._inputdatebot {
+            padding: 3.5px 14px;
+            border-style: solid;
+            border-color: var(--light-melon);
+            border-width: 1px;
+            display: flex;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            border-left-style: none;
+            background-color: white;
+        }
+
+        .firts-form-finish {
+            display: flex;
+
+            .check-box {
+                display: flex;
+                justify-content: center;
+                width: max-content;
+                margin: auto;
+                max-width: 100%;
+            }
+        }
+
+        [component="p4_datepicker"] {
+            width: max-content;
+            max-width: 100%;
+            margin-top: 33px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .p4_datepicker,
+        .firts-form-finish>[component="inputwedd"] {
+            width: 33.333333333333336%;
+        }
+
+        .heading {
+            background-image: linear-gradient(to right, var(--light-melon) 0%, var(--light-melon-full), rgba(255, 255, 255, 0));
+            transition: all .25s ease-in;
+            background-position: 100% 0%;
+            background-size: 200% 100%;
+        }
+
+        /*.not-sure{
+            background-image: linear-gradient(to right, hsla(0, 0%, 100%, 0), var(--light-melon-full), hsla(0, 0%, 100%, 0));
+        }*/
+
+        .title .subtitle {
+            text-align: left;
+            color: var(--light-melon);
+            margin-left: 25px;
+        }
+
+
+        .checks {
+            position: relative;
+            /*top: 6px;*/
+
+            [component="iconwedd"] {
+                display: flex;
+                margin-right: 11px;
+            }
+        }
+
+        .slider-venues-slider {
+            margin-bottom: 60px;
+        }
+
+        .heading {
+            margin: 25px 0px;
+        }
+
+        .check-container {
+            padding: 4px 7.5px;
+        }
+
+        .resort {
+            width: 587px;
+            display: inline-block;
+        }
+
+        .resort:nth-child(odd) {
+            margin-right: 55px;
+            margin-left: 26px;
+        }
+
+        .resort:nth-child(even) {
+            margin-left: 55px;
+            margin-right: 26px;
+        }
+
+        .to-center {
+            margin: auto;
+            width: max-content;
+            margin-bottom: 50px;
+            display: table;
+            max-width: 100%;
+
+            button,
+            a {
+                display: inline-block;
+                margin: 40px 40px 70px 40px;
+            }
+
+            .aling-left {
+                display: inline-block;
+            }
+        }
+    }
+
+    /*************/
+}

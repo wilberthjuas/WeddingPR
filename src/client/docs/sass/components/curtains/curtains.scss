@@ -1,0 +1,118 @@
+[component="curtains"] {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+
+  .img-item-which {
+    cursor: pointer;
+  }
+
+  .content-quiz.open {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding-top: 0;
+    margin-top: 0;
+    z-index: -1;
+    max-height: 100vh;
+    min-height: 50vh;
+    position: absolute;
+
+    .left-curtain {
+      background: url(https://e-commercepr.s3.amazonaws.com/assets/images/takethenextstep/desktop/bg-telon-left.jpg) no-repeat top 0px left;
+
+      position: fixed;
+      width: 390px;
+      height: 912px;
+      left: 0;
+
+
+      /* Small only */
+      /*/@media screen and (max-width: 39.9375em) {
+        background-position: 0 45px;
+      }
+
+      @media only screen and (min-width:768px) and (max-width:1024px) { 
+        background-position: 0 65px;
+
+    }
+
+    @media only screen and (min-width:640px) and (orientation:landscape) { 
+      background-position: 0px 45px;
+    }*/
+
+      width: 50vw;
+      background-size: contain;
+      
+
+
+    }
+
+    .right-curtain {
+      background: url(https://e-commercepr.s3.amazonaws.com/assets/images/takethenextstep/desktop/bg-telon-right.jpg) no-repeat top 0px right;
+      position: fixed;
+      width: 390px;
+      height: 912px;
+      right: 0;
+
+
+
+      /* Small only */
+      /* @media screen and (max-width: 39.9375em) {
+        background-position: 0 45px;
+      }*/
+
+      /*START PORTRAIT MOBILE */
+
+      /*@media only screen and (min-width:320px) and (max-width:359px) {
+        background-position: 0 45px;
+      }
+
+      @media only screen and (min-width:360px) and (max-width:767px) {
+        background-position: 0 45px;
+      }      
+
+      @media only screen and (min-width:768px) and (max-width:1024px) { 
+          background-position: 0 65px;
+
+      }*/
+    /*END PORTRAIT MOBILE */
+
+      /*@media only screen and (min-width:414px) and (max-width:568px) and (orientation:landscape) { 
+        background-position: 150px 45px;
+      }
+
+      @media only screen and (min-width:640px) and (orientation:landscape) { 
+        background-position: 175px 45px;
+      }
+
+      @media only screen and (min-width:736px) and (orientation:landscape) { 
+        background-position: 192px 45px;
+      }
+
+      @media only screen and (min-width:812px) and (orientation:landscape) { 
+        background-position: 246px 45px;
+      }
+
+      @media only screen and (min-width:1024px)  { 
+        background-position: 290px 45px;
+        }
+
+        @media only screen and (min-width:1025px)  { 
+          background-position: 330px 45px;
+          }*/
+
+
+
+
+      width: 50vw;
+      background-size: contain;
+    }
+  }
+}

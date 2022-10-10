@@ -1,0 +1,35 @@
+[component = "floatingMenu"]{
+    background-color: var(--light-melon);
+    @include vwvh("height",45);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+
+    button {
+        background-color: var(--light-melon);
+        border: none;
+    }
+
+    .btn-take-the-next-step{
+        font-family: Avenir;
+        color: var(--white);
+        @include vwvh("font-size",16);
+        background-color: var(--light-melon);
+        font-weight: bold;
+        border-color: var(--white);
+        @include vwvh("border-width",1);
+        @include vwvh("border-radius",2);
+        width: 100%;
+        display: block;
+        -webkit-appearance: unset;
+        padding-top: (3/16)+rem;
+        text-align: center;
+        padding-top: (5/16)+rem;
+    }
+
+    @media (min-width: 1025px){
+           display: none;
+     }
+     
+}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+#root{
+    overflow: hidden;
+}
+// Colors
+@import 'base/colors';
+
+// Helpers
+@import 'helpers/all';
+
+// Config Variables
+@import 'base/settings';
+
+// Icons
+@import 'icons/all';
+
+// All CSS base
+@import 'base/all';
+
+// Components
+@import 'components/all';
+
+// Pages
+@import 'pages/all';
+
+@import 'components/callus/callus';
+@import 'components/previewBox/previewBox'

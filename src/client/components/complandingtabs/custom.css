@@ -1,0 +1,17 @@
+.subListEspecial > .title, .titleEspecial {
+    font-size: 18px;
+    display: block;
+    font-family: PlayfairDisplay, serif;
+}
+.subListEspecial .item {
+    display: inline-table;
+}
+ul.subListEspecial {
+    margin-top: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

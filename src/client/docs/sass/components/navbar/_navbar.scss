@@ -1,0 +1,471 @@
+[component="navbar"] {
+    li.activeLi a {
+        color: $rosy-pink;
+        border-bottom: 2px solid $rosy-pink;
+        left: 0;
+        right: 0;
+    }
+    @media (min-width : 1300px) {
+    font-family: Avenir; //Opensans;
+    font-weight: 300;
+    display: flow-root !important;
+    position: fixed;
+    z-index: 13;
+    color: var( --gray-nav);//$white;
+    width: 100%;
+
+    .main-menu ul li {
+        height: fit-content;
+        padding: 0px 10px;
+        margin: 5px 0px 10px;
+    }
+
+    .main-menu {
+
+        ul {
+
+            .border-white-left {
+                border-right: 1px solid;
+                margin: 16px 0px 0px;
+            }
+
+            .margin-especial {
+                margin: 16px 0px 0px;
+            }
+
+            li{
+                a{
+                    font-size:16px
+                }
+            }
+        }
+    }
+}
+
+    @media only screen and  (min-width : 1025px) and (max-width : 1299px) {
+        font-family: Avenir; //Opensans;
+        font-weight: 300;
+        display: flow-root !important;
+        position: fixed;
+        z-index: 13;
+        color: var(--gray-nav); //$white;
+        width: 100%;
+
+        .btn.pink{
+            padding-left: 14px;
+            padding-right: 14px;
+            font-size: 14px;
+        }
+        .main-menu ul li {
+            height: fit-content;
+            padding: 0px 10px;
+            margin: 5px 0px 12px;
+            text-align: center;
+            height: auto;
+        }
+
+        .main-menu ul {
+            width: 80%;
+            float: right;
+        }
+
+    
+    .main-menu ul li a{
+      font-size: 14px;
+    }
+    }
+    .center {
+        margin: auto;
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+        color: var( --gray-nav);//$white;
+    }
+
+    .border-white-left {
+        border-right: 1px solid;
+    }
+
+    @media (max-width : 1024px) {
+        font-family: Avenir; //Opensans;
+        font-weight: 300;
+        display: flow-root !important;
+        position: fixed;
+        z-index: 13;
+        color: var(--gray-nav); //$white;
+        width: 100%;
+        height: 0px;
+        .mask {
+            width: 100%;
+            //background-color: #323232ed;
+            background-color: var(--gray-op09);
+            @include vwvh("height", 45);
+            position: fixed;
+        }
+        .navbar-brand *,
+        .navbar-brand2 *,
+        .ButtonToggler *,
+        .ButtonToggler2 *,
+        .ButtonToggler4 *,
+        .ButtonToggler3 *{
+            color: var(--light-melon);
+        }
+        .mask,
+        .navbar-brand,
+        .navbar-brand,
+        .navbar-brand2,
+        .ButtonToggler,
+        .ButtonToggler2,
+        .ButtonToggler4,
+        .ButtonToggler3 {
+            z-index: 4;
+            font-family: Avenir;
+        }
+
+        .navbar-brand img {
+            @include vwvh("width", 55);
+            @include vwvh("height", 34);
+            @include vwvh("margin-top", 7.5);
+            @include vwvh("margin-left", 7.5);
+        }
+
+        .navbar-brand2 img {
+            @include vwvh("width", 55);
+            @include vwvh("height", 34);
+            @include vwvh("margin-top", 7.5);
+            @include vwvh("margin-left", 7.5);
+        }
+
+        .navbar-brand {
+            position: absolute;
+        }
+
+        .navbar-brand2 {
+            position: absolute;
+            @include vwvh("margin-left", 38);
+        }
+
+
+
+        .ButtonToggler {
+            right: 0;
+            @include vwvh("margin-top", 10);
+            @include vwvh("margin-right", 8);
+            position: absolute;
+        }
+
+        .ButtonToggler2 {
+            outline: unset;
+            @include vwvh("right", 63);
+            @include vwvh("top", 9);
+            @include vwvh("font-size", 18);
+            position: absolute;
+        }
+
+        .ButtonToggler2 {
+            [component="iconwedd"] {
+                .chevron-down {
+                    position: relative;
+                    @include vwvh("top", -1);
+                }
+            }
+        }
+
+        .ButtonToggler4 {
+            [component="iconwedd"] {
+                .chevron-down {
+                    position: relative;
+                    top: 0px;
+                }
+            }
+        }
+
+        .ButtonToggler3 {
+            float: left;
+            @include vwvh("margin-top", 10);
+            @include vwvh("margin-right", 10);
+            @include vwvh("margin-left", 10);
+            position: absolute;
+        }
+
+        .ButtonToggler4 {
+            outline: unset;
+            position: absolute;
+            @include vwvh("right", 10);
+            @include vwvh("top", 12);
+            @include vwvh("font-size", 18);
+            position: absolute;
+        }
+
+
+        .menu_mobile {
+            position: absolute;
+            @include vwvh("top", -600);
+            left: 0;
+            transition: 1s;
+            width: 100%;
+            opacity: 2;
+            z-index: 2;
+        }
+
+        .menu_resorts {
+            width: 100%;
+            position: absolute;
+
+            @media only screen and (orientation: portrait) {
+                @include vwvh("top", -700);
+            }
+
+            @media only screen and (orientation: landscape) {
+                @include vwvh("top", -972);
+            }
+
+            @include vwvh("left", -25);
+            transition: 1s;
+            z-index: 2;
+        }
+
+        .menu_actions {
+            display: none;
+        }
+
+        .main-menu {
+            display: none;
+        }
+
+        .container {
+            //@include vwvh("height",45);
+        }
+
+        .nav-item {
+            @include vwvh("border-bottom-width", 1);
+            border-bottom-style: solid;
+            border-bottom-color: rgba(0, 0, 0, .1);
+        }
+
+        .nav-link-weddings {
+            color: var(--light-melon) !important;
+        }
+
+        .nav-link {
+            font-family: Avenir !important;
+            @include vwvh("font-size", 16);
+            font-weight: 300;
+            color: var(--light-melon) !important;
+            float: left;
+            @include vwvh("padding-top", 12);
+            width: 77%;
+            text-align: left;
+            padding-bottom: 0px;
+        }
+
+
+        .contact {
+            text-align: center;
+            background-color: $dark-gray;
+            @include vwvh("font-size", 12, "!important");
+            z-index: 99;
+        }
+
+        /* .list-links{
+        height: (484/16)+rem;/**/
+        /*max-height: (568/16)+rem;/**/
+        /*width: 100%;
+        overflow-y: scroll;
+    }*/
+    }
+
+    @media (min-width : 1025px) {
+
+        .btnLang{
+            border: unset;
+            background: var(--white);
+            color: var(--light-melon);
+            font-size: 14px;
+            font-family: Avenir;
+            text-transform: capitalize;
+        }
+
+
+        background-color: var(--gray-op09);//rgba(50, 50, 50, 0.93);
+
+        .mask {
+            display: none;
+
+        }
+
+        .navbar-brand {
+            position: absolute;
+            top: 15px;
+            padding-left: 20px;
+        }
+
+        .navbar-brand2 {
+            position: absolute;
+            top: 15px;
+            padding-left: 20px;
+        }
+
+        .wedding-sprite .bg-hamburger-icon {
+            display: none;
+        }
+
+        .ButtonToggler {
+            display: none;
+        }
+
+        .ButtonToggler2 {
+            display: none;
+        }
+
+        .ButtonToggler3 {
+            display: none;
+        }
+
+        .ButtonToggler4 {
+            display: none;
+        }
+
+        .menu_mobile {
+            display: none;
+        }
+
+        .menu_resorts {
+            display: none;
+        }
+
+        .menu_actions {
+            float: right;
+            width: auto;
+            font-family: Avenir;
+            font-size: 14px;
+            ul {
+                display: inline-flex;
+                list-style: none;
+                padding: unset;
+                margin: unset;
+
+                li {
+
+                    z-index: 10;
+                    margin: 10px 0px;
+                    padding: 0px 10px;
+                    color: var(--light-melon);
+                    a {
+                        font-size: 14px;
+                        position: relative;
+                        color: var(--light-melon);
+                        cursor: pointer;
+                    }
+
+                    a:hover {
+                        color: $rosy-pink;
+                    }
+
+                    a:hover:after {
+                        content: "";
+                        border-bottom: 1px solid $rosy-pink;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: -1px;
+                    }
+
+                    .active {
+                        color: $rosy-pink;
+                        border-bottom: 2px solid $rosy-pink;
+                        left: 0;
+                        right: 0;
+                        /*bottom: -2px;*/
+                    }
+
+                    span {
+                        cursor: pointer;
+                    }
+
+                }
+
+                .submenu {
+
+                    display: none;
+                    background-color: $white;
+                    position: absolute;
+
+                    li {
+                        a {
+                            color: var(--light-melon);//$black !important;
+                        }
+                    }
+                }
+
+                .phone {
+                   /* width: 223px;
+                    height: auto;*/
+                    text-align: right;
+                    right: 8px;
+                }
+
+                span.callus{
+                    color: var(--dark-melon);
+                    cursor:unset;
+                }
+            }
+        }
+
+        .main-menu {
+            float: right;
+            width: auto;
+
+            ul {
+                display: inline-flex;
+                list-style: none;
+                padding: unset;
+                margin: unset;
+
+                li {
+                 
+
+                    a {
+                   
+                        text-decoration: none;
+                        position: relative;
+                    }
+
+                    a.nav-link-weddings:hover {
+                        color: var(--gray-nav);
+                    }
+
+                    .active {
+                        color: var(--dark-melon);
+                        border-bottom: 2px solid var(--gray-nav);
+                        /*bottom: 3px;*/
+                    }
+
+                    a.nav-link-weddings:hover:after {
+                        content: "";
+                        border-bottom: 2px solid var(--gray-nav);
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0px;
+                    }
+
+                    button:hover {
+                        background-color: $white;
+                        /* Green */
+                        color: $rosy-pink;
+                        border-style: solid;
+                        border-width: 2px;
+                        border-color: var(--light-melon);
+                    }
+                }
+            }
+
+            .submenu {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,961 @@
+[component="step"] {
+
+    .invitation-arrow,
+    .budget-arrow,
+    .guestList-arrow,
+    .flowerdate-arrow,
+    .dress-arrow,
+    .ideas-arrow,
+    .deals-arrow,
+    .cordination-arrow,
+    .book-arrow,
+    .send-arrow,
+    .location-arrow {
+        filter: brightness(0.5);
+        position: absolute;
+    }
+
+    @media (max-width: 1024px) {
+        .extra{
+            text-align: left !important;
+        }
+        .title-aling{
+            display: inline-flex;
+        }
+        article.header-aling {
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .content-img-right {
+            float: left;
+        }
+        .ordenright {
+            color: white;
+            background-color: var(--dark-melon);
+            border-radius: 50%;
+            width: (25/16)+rem;
+            height: (25/16)+rem;
+            text-align: center;
+            position: relative;
+            font-size: (17/16)+rem;
+            font-family: Avenir;
+            
+        }
+        .ordenLeft {
+            color: white;
+            background-color: var(--dark-melon);
+            border-radius: 50%;
+            width: (25/16)+rem;
+            height: (25/16)+rem;
+            text-align: center;
+            font-size: (17/16)+rem;
+            font-family: Avenir;
+            position: absolute;
+            right: 0%;
+            top: 0.1rem;
+        }
+        .content-text-ttl{
+            min-width: 288px;
+            position: relative;
+            text-align: center;
+        }
+        .imageleft {
+            margin-right: 8px;
+        }
+
+        .imagerigth {
+            float: right;
+        }
+        
+        .description {
+            padding: 8px 0;
+            margin: auto;
+        }
+
+        .subtitle {
+            font-size: (18/16)+rem !important;
+        }
+
+        .textinLine {
+            display: inline;
+            transform: translate(11%, -6%);
+            width: 283px;
+            margin: unset !important;
+        }
+
+        .textRight {
+            padding-top: 16/16+rem;
+            padding-bottom: (30/16)+rem;
+            padding-left: (10/16)+rem;
+            padding-right: (10/16)+rem;
+            position: relative;
+            background: var(--light-gray);
+        }
+
+        .textLeft {
+            padding-top: (30/16)+rem;
+            padding-bottom: (30/16)+rem;
+            padding-left: (10/16)+rem;
+            padding-right: (10/16)+rem;
+            position: relative;
+        }
+
+        .ring {
+            margin-top: 0;
+            margin-left: 1rem;
+            height: (52/16)+rem;
+            width: (84/16)+rem;
+        }
+
+        .invitation {
+            margin-top: 0;
+            height: (93/16)+rem;
+            //width: (120/16)+rem;
+        }
+
+        .budget {
+            height: (44/16)+rem;
+            width: (76/16)+rem;
+        }
+
+        .guestList {
+            //width: (90/16)+rem;
+            height: (93/16)+rem;
+        }
+
+        .flowerdate {
+            width: 4rem;
+            height: 5rem;
+        }
+
+        .dress {
+            //width: (95/16)+rem;
+            height: 6rem;
+            top: 0;
+            position: relative;
+        }
+
+        .ideas {
+            width: (101/16)+rem;
+            height: (81/16)+rem;
+        }
+
+        .deals {
+            margin-top: 0;
+            height: (99/16)+rem;
+            //width: (100/16)+rem;
+        }
+
+        .cordination {
+            height: (106/16)+rem;
+            width: (84/16)+rem;
+        }
+
+        .book {
+            //width: (68/16)+rem;
+            height: (102/16)+rem;
+        }
+
+        .send {
+            height: (75/16)+rem;
+            width: (137/16)+rem;
+        }
+
+        .location {
+            height: (91/16)+rem;
+            //width: (100/16)+rem;
+        }
+
+        .endSpace {
+            padding-top: (30/16)+rem;
+            padding-bottom: (20/16)+rem;
+        }
+
+        .invitation-arrow {
+            top: (-36/16)+rem;
+            left: 69%;
+            width: (171/16)+rem;
+            height: (51/16)+rem;
+        }
+
+        .budget-arrow {
+            top: (-38/16)+rem;
+            width: (33/16)+rem;
+            height: (72/16)+rem;
+        }
+
+        .guestList-arrow {
+            top: (-32/16)+rem;
+            width: (150/16)+rem;
+            height: (46/16)+rem;
+            left: 75%;
+        }
+
+        .flowerdate-arrow {
+            top: (-40/16)+rem;
+            width: (40/16)+rem;
+            height: (90/16)+rem;
+        }
+
+        .dress-arrow {
+            top: (-40/16)+rem;
+            width: (55/16)+rem;
+            height: (61/16)+rem;
+            left: 85%;
+        }
+
+        .ideas-arrow {
+            top: (-15/16)+rem;
+            width: (208/16)+rem;
+            height: (53/16)+rem;
+            left: (40/16)+rem;
+        }
+
+        .deals-arrow {
+            top: (-30/16)+rem;
+            width: (148/16)+rem;
+            height: (65/16)+rem;
+            left: 70%;
+        }
+
+        .cordination-arrow {
+            top: (-25/16)+rem;
+            width: (68/16)+rem;
+            height: (69/16)+rem;
+        }
+
+        .book-arrow {
+            top: (-30/16)+rem;
+            width: (171/16)+rem;
+            height: (41.5/16)+rem;
+            left: 70%;
+        }
+
+        .send-arrow {
+            top: (-35/16)+rem;
+            width: (33.5/16)+rem;
+            height: (72/16)+rem;
+        }
+
+        .location-arrow {
+            top: (-25/16)+rem;
+            width: (172/16)+rem;
+            height: (44/16)+rem;
+            left: 70%;
+        }
+
+        .invitationCont {
+            padding-top: (15/16)+rem;
+            padding-bottom: (35/16)+rem;
+        }
+
+        .budgetCont {
+            padding-top: (10/16)+rem;
+            padding-bottom: (10/16)+rem;
+        }
+
+        .flowerdateCont {
+            padding-top: 100px;
+            padding-bottom: 150px;
+        }
+
+        .dressCont {
+            padding-top: 2.75rem;
+            padding-bottom: 1.3rem;
+
+        }
+
+        .freeCont {
+            padding-top: 2.25rem;
+
+
+        }
+
+        .ideasCont {
+            padding-top: 115px;
+            padding-bottom: 90px;
+        }
+
+        .cordinationCont {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .locationCont {
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+          
+        }
+
+        .dealsCont {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+    @media screen and (min-width: 415px) and (max-width: 768px) {
+        .textinLine { padding-left: 0.9rem; }
+        .ring {
+            margin-top: 0;
+            left: 19.5rem;
+        }
+        .invitation-arrow {
+            left: 62%;
+        }
+        .textinLineDesktop {
+            padding-left: 1rem;
+        }
+        .invitation { margin-top: 0; }
+        .guestList-arrow { left: 21.5rem; }
+        .flowerdate-arrow { top: -2.8rem; }
+        .flowerdate { height: 5.5rem; }
+        .dress-arrow { left: 26rem; }
+        .dress { height: 7rem; }
+        .deals-arrow { left: 19.75rem; }
+        .deals { margin-top: 0; }
+        .cordination { 
+            height: 4rem;
+            width: 3.5rem;
+        }
+        .book-arrow { left: 19.5rem; }
+        .location-arrow { left: 20rem; }
+    }
+
+    @media screen and (min-width: 376px) and (max-width: 414px) { 
+        .invitation-arrow {
+            left: (180/16)+rem;
+        }
+        .guestList-arrow {
+            left: (210/16)+rem;
+        }
+        .comingCont {            
+            padding-top: 3rem;
+            .ordenLeft {
+                top: -1.25rem;
+            }
+        }
+        .dress-arrow {
+            left: (280/16)+rem;
+        }
+        .textinLine {
+            padding-left: 0.55rem;
+        }
+        .deals-arrow {
+            left: (180/16)+rem;
+        }
+        .book-arrow {
+            left: (180/16)+rem;
+        }
+        .location-arrow {
+            left: (185/16)+rem;
+        }
+    }
+
+    // Iphones
+    @media screen and (max-width: 375px) {
+
+        .textinLine {
+            padding-left: 0;
+        }
+
+        .guestList-arrow {
+            left: 54%;
+        }
+
+        .ordenright {
+            top: 0;
+        }
+
+        .flowerdate-arrow {
+            top: -3rem;
+        }
+
+        .dress-arrow {
+            left: 77%;
+        }
+
+        .deals-arrow {
+            left: 50%;
+        }
+
+        .book-arrow {
+            left: 45%;
+        }
+
+        .location-arrow {
+            left: 47%;
+        }
+
+        .invitation-arrow {
+            left: (145/16)+rem;
+        }
+
+        .invitation {
+            margin-top: 0.5rem;
+        }
+
+        .budget-arrow {
+            top: (-50/16)+rem;
+        }
+
+        .cordination-arrow {
+            top: (-50/16)+rem;
+        }
+
+        .send-arrow {
+            top: (-50/16)+rem;
+        }
+
+    }
+
+    @media screen and (max-width: 360px){
+        .title-aling{
+            display: inline-flex;
+        }
+        article.header-aling {
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        .content-img-right {
+            float: left;
+        }
+        .ordenright {
+            color: white;
+            background-color: var(--dark-melon);
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+            font-size: (17/16)+rem;
+            font-family: Avenir;
+        }
+        .ordenLeft {
+            color: white;
+            background-color: var(--dark-melon);
+            border-radius: 50%;
+            text-align: center;
+            font-size: (17/16)+rem;
+            font-family: Avenir;
+            position: absolute;
+            right: 7%;
+            top: 0.1rem;
+            transform: translate(100%, 5%);
+        }
+        .content-text-ttl{
+            min-width: 288px;
+            position: relative;
+            text-align: center;
+        }
+        .imageleft {
+            margin-right: 8px;
+        }
+
+        .imagerigth {
+            float: right;
+        }
+        
+        .description {
+            padding: 8px 0;
+            margin: auto;
+        }
+
+        .subtitle {
+            font-size: (18/16)+rem !important;
+        }
+
+        .textinLine {
+            display: inline;
+            transform: translate(11%, -6%);
+            width: 283px;
+            margin: auto !important;
+        }
+
+        .textRight {
+            padding-top: 16/16+rem;
+            padding-bottom: (30/16)+rem;
+            padding-left: (10/16)+rem;
+            padding-right: (10/16)+rem;
+            position: relative;
+            background: var(--light-gray);
+        }
+
+        .textLeft {
+            padding-top: (30/16)+rem;
+            padding-bottom: (30/16)+rem;
+            padding-left: (10/16)+rem;
+            padding-right: (10/16)+rem;
+            position: relative;
+        }
+
+        .ring {
+            margin-top: 2rem;
+            margin-left: 1rem;
+            height: (52/16)+rem;
+            width: (84/16)+rem;
+        }
+
+        .invitation {
+            margin-top: 1rem;
+            height: (93/16)+rem;
+            //width: (120/16)+rem;
+        }
+
+        .budget {
+            height: (44/16)+rem;
+            width: (76/16)+rem;
+        }
+
+        .guestList {
+            //width: (90/16)+rem;
+            height: (93/16)+rem;
+        }
+
+        .flowerdate {
+            width: (75/16)+rem;
+            height: (122/16)+rem;
+        }
+
+        .dress {
+            //width: (95/16)+rem;
+            height: (173/16)+rem;
+            top: 0;
+            position: relative;
+        }
+
+        .ideas {
+            width: (101/16)+rem;
+            height: (81/16)+rem;
+        }
+
+        .deals {
+            margin-top: 1rem;
+            height: (99/16)+rem;
+            //width: (100/16)+rem;
+        }
+
+        .cordination {
+            height: (106/16)+rem;
+            width: (84/16)+rem;
+        }
+
+        .book {
+            //width: (68/16)+rem;
+            height: (102/16)+rem;
+        }
+
+        .send {
+            height: (75/16)+rem;
+            width: (137/16)+rem;
+        }
+
+        .location {
+            height: (91/16)+rem;
+            //width: (100/16)+rem;
+        }
+
+        .endSpace {
+            padding-top: (30/16)+rem;
+            padding-bottom: (20/16)+rem;
+        }
+
+        .invitation-arrow {
+            top: (-36/16)+rem;
+            left: (137/16)+rem;
+            width: (171/16)+rem;
+            height: (51/16)+rem;
+        }
+
+        .budget-arrow {
+            top: (-38/16)+rem;
+            width: (33/16)+rem;
+            height: (72/16)+rem;
+        }
+
+        .guestList-arrow {
+            top: (-32/16)+rem;
+            width: (150/16)+rem;
+            height: (46/16)+rem;
+            left: (167/16)+rem;
+        }
+
+        .flowerdate-arrow {
+            top: (-50/16)+rem;
+            width: (40/16)+rem;
+            height: (90/16)+rem;
+        }
+
+        .dress-arrow {
+            top: (-40/16)+rem;
+            width: (55/16)+rem;
+            height: (61/16)+rem;
+            left: (237/16)+rem;
+        }
+
+        .ideas-arrow {
+            top: (-15/16)+rem;
+            width: (208/16)+rem;
+            height: (53/16)+rem;
+            left: (40/16)+rem;
+        }
+
+        .deals-arrow {
+            top: (-30/16)+rem;
+            width: (148/16)+rem;
+            height: (65/16)+rem;
+            left: (140/16)+rem;
+        }
+
+        .cordination-arrow {
+            top: (-25/16)+rem;
+            width: (68/16)+rem;
+            height: (69/16)+rem;
+        }
+
+        .book-arrow {
+            top: (-30/16)+rem;
+            width: (171/16)+rem;
+            height: (41.5/16)+rem;
+            left: (140/16)+rem;
+        }
+
+        .send-arrow {
+            top: (-35/16)+rem;
+            width: (33.5/16)+rem;
+            height: (72/16)+rem;
+        }
+
+        .location-arrow {
+            top: (-25/16)+rem;
+            width: (172/16)+rem;
+            height: (44/16)+rem;
+            left: (145/16)+rem;
+        }
+
+        .invitationCont {
+            padding-top: (15/16)+rem;
+            padding-bottom: (35/16)+rem;
+        }
+
+        .budgetCont {
+            padding-top: (10/16)+rem;
+            padding-bottom: (10/16)+rem;
+        }
+
+        .flowerdateCont {
+            padding-top: 100px;
+            padding-bottom: 150px;
+        }
+
+        .dressCont {
+            padding-top: 2.75rem;
+            padding-bottom: 1.3rem;
+
+
+        }
+
+        .freeCont {
+            padding-top: 2.25rem;
+        }
+
+        .ideasCont {
+            padding-top: 115px;
+            padding-bottom: 90px;
+        }
+
+        .cordinationCont {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .locationCont {
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+          
+        }
+
+        .dealsCont {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+
+    /*destkop*/
+    @media (min-width: 1025px) {
+        [component="titlesection"] {
+            .description {
+                width: 700px;
+            }
+        }
+
+        .descrigth {
+            right: -481px;
+            position: relative;
+        }
+
+        .descleft {
+            left: 150px;
+            position: relative;
+        }
+
+        .containerright {
+            display: flex;
+            position: relative;
+            left: 200px;
+        }
+
+        .containerleft {
+            display: flex;
+            position: relative;
+            direction: rtl;
+            right: 200px;
+        }
+
+        .ordenright {
+            color: white;
+            background-color: var(--dark-melon);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 32px;
+            font-family: Avenir; //Miso;
+            line-height: 32px;
+            padding-top:5px
+        }
+
+        .ordenLeft {
+            color: white;
+            background-color: var(--dark-melon);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 32px;
+            font-family: Avenir;
+        }
+
+        .textLeft,
+        .textRight {
+            .title {
+                font-size: 30px !important;
+            }
+
+            .subtitle {
+                font-size: 30px !important;
+            }
+
+            .description {
+                font-size: 21px !important;
+                width: 728px;
+            }
+
+            .textinLine {
+                display: inline !important;
+            }
+        }
+
+        .fadeLeft {
+            background-image: linear-gradient(450deg, #fff, var(--light-gray), var(--light-gray));
+         
+        }
+
+        .faderight {
+            background-image: linear-gradient(450deg, var(--light-gray), var(--light-gray), #fff);
+           
+        }
+
+        .endSpace {
+            padding-bottom: 100px;
+        }
+
+        .textinLineRight {
+            padding-right: 15px;
+        }
+
+        .textinLineLeft {
+            padding-left: 15px;
+        }
+
+        .imageleft {
+            float: left;
+            left: 163px;
+            position: relative;
+        }
+
+        .imagerigth {
+            float: right;
+            right: 163px;
+            position: relative;
+        }
+
+        .textRight {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .textLeft {
+            padding-top: 40px;
+            padding-bottom: 80px;
+        }
+
+        .ring {
+            top: 4px;
+            right: 264px;
+        }
+
+        .invitation {
+            top: -30px;
+            left: 236px;
+        }
+
+        .budget {
+            top: 51px;
+            right: 264px;
+        }
+
+        .guestList {
+            top: -26px;
+            left: 199px;
+        }
+
+        .flowerdate {
+            bottom: 80px;
+            right: 231px;
+        }
+
+        .dress {
+            bottom: 90px;
+            left: 207px;
+        }
+
+        .ideas {
+            top: -48px;
+            right: 269px;
+        }
+
+        .deals {
+            bottom: 30px;
+            left: 230px;
+        }
+
+        .cordination {
+            bottom: 55px;
+            right: 264px;
+        }
+
+        .book {
+            top: 10px;
+            left: 315px;
+        }
+
+        .send {
+            top: 10px;
+            right: 224px;
+        }
+
+        .location {
+            top: 10px;
+            left: 215px;
+        }
+
+        .invitation-arrow {
+            top: -110px;
+            left: 765px;
+        }
+
+        .budget-arrow {
+            top: -151px;
+            left: -6px;
+        }
+
+        .guestList-arrow {
+            top: -134px;
+            left: 864px;
+        }
+
+        .flowerdate-arrow {
+            top: -179px;
+            left: -14px;
+        }
+
+        .dress-arrow {
+            top: -138px;
+            left: 1021px;
+        }
+
+        .ideas-arrow {
+            top: -134px;
+            left: 69px;
+        }
+
+        .deals-arrow {
+            top: -133px;
+            left: 817px;
+        }
+
+        .cordination-arrow {
+            top: -148px;
+            left: -15px;
+        }
+
+        .book-arrow {
+            top: -92px;
+            left: 866px;
+        }
+
+        .send-arrow {
+            left: -6px;
+            top: -155px;
+        }
+
+        .location-arrow {
+            top: -92px;
+            left: 827px;
+        }
+
+        .invitationCont {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .budgetCont {
+            padding-top: 40px;
+            padding-bottom: 120px;
+        }
+
+        .flowerdateCont {
+            padding-top: 100px;
+            padding-bottom: 150px;
+        }
+
+        .dressCont {
+            padding-top: 30px;
+            padding-bottom: 70px;
+        }
+
+        .ideasCont {
+            padding-top: 115px;
+            padding-bottom: 90px;
+        }
+
+        .cordinationCont {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .locationCont {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .dummy {
+            font-size: 1px;
+        }
+    }
+}

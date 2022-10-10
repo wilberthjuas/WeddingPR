@@ -1,0 +1,205 @@
+[component="otherguest"] {
+    .imgcaptions{
+        background-color: #ffffffcc;
+        margin: unset;
+        color: var(--dark-melon);
+    }
+    .active .description{
+        opacity: 1;
+    }
+    .description{
+        opacity: 0;
+    }
+    @media (min-width: 1025px) {
+
+        .contentSlider {
+            width: 1210px;
+            height: max-content;
+        }
+
+        .ItemSlider {
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 380px;
+            margin-top: 20px;
+        }
+
+        .ItemSlider.active {
+            width: 450px;
+            //margin-top: 0px;
+            margin-top: 0px;
+        }
+
+        .divicion-section {
+            height: 60px;
+        }
+
+        .titlesliderother {
+            position: absolute;
+            padding-left: 20px;
+            padding-right: 20px;
+            transform: translate(0px, -155%);
+            align-items: center;
+            display: flex;
+            padding-top: 9px;
+            padding-bottom: 9px;
+        }
+
+        .separadorGaleryPoints {
+            height: 40px;
+        }
+
+        .divisor-points-botton {
+            height: 40px;
+        }
+
+        .bg-carousel {
+            width: 60%;
+            height: 160px;
+            background-color: var(--dark-gray);
+            position: absolute;
+            left: 280px;
+            top: 61px;
+        }
+
+        .active .img-other-guest {
+            //height: 280px;
+        }
+
+        /***************/
+        [component="titlesection"] {
+            .divicion-section {
+                height: 16px;
+            }
+        }
+
+        .active .description-glry {
+            opacity: 1;
+        }
+
+        .active [component="inputwedd"] {
+            opacity: 1;
+        }
+
+        .description-glry {
+            opacity: 0;
+            transition: .5s;
+            width: 100%;
+            font-family: OpenSans;
+            font-size: 24px;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--dark-gray);
+        }
+
+        [component="inputwedd"] {
+            width: max-content;
+            margin: auto;
+            opacity: 0;
+            transition: .5s;
+            margin-top: 35px;
+        }
+    }
+
+    /**********************************************/
+    @media (max-width: 1024px) and (min-width: 0px) {
+        .img-other-guest {
+            width: (167/16)+rem;
+        }
+
+        .active .img-other-guest {
+            width: (210/16)+rem;
+        }
+
+        .contentSlider {
+            position: relative;
+            //left: (-133/16)+rem;
+            width: (589/16)+rem;
+        }
+
+        .ItemSlider {
+            width: (182/16)+rem;
+            margin-top: (12.5/16)+rem;
+            padding-left: (7.5/16)+rem;
+            padding-right: (7.5/16)+rem;
+        }
+
+        .ItemSlider.active {
+            width: (225/16)+rem;
+            margin-top: (0/16)+rem;
+        }
+
+      /*  .divicion-section {
+            height: (60/16)+rem;
+        }*/
+
+        .titlesliderother {
+            padding-right: (9.5/16)+rem;
+            padding-left: (11/16)+rem;
+            padding-top: (2.5/16)+rem;
+            padding-bottom: (2.5/16)+rem;
+            transform: translate(0%, -166%);
+            position: absolute;
+        }
+
+        .separadorGaleryPoints {
+            height: (20/16)+rem;
+        }
+
+        .divisor-points-botton {
+            height: (20/16)+rem;
+        }
+
+        .bg-carousel {
+            width: (320/16)+rem;
+            height: (80/16)+rem;
+            top: (30/16)+rem;
+            position: absolute;
+            background-color: var(--dark-gray);
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, 0%);
+        }
+
+        /***************/
+        [component="titlesection"] {
+            .divicion-section {
+                height: (16/16)+rem;
+            }
+        }
+        .active .description-glry {
+            opacity: 1;
+        }
+
+        .active [component="inputwedd"] {
+            opacity: 1;
+        }
+
+        .description-glry {
+            opacity: 0;
+            transition: .5s;
+            width: 100%;
+            font-family: OpenSans;
+            font-size: 16/3.2+vw;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--dark-gray);
+        }
+
+        [component="inputwedd"] {
+            width: max-content;
+            margin: auto;
+            opacity: 0;
+            transition: .5s;
+            margin-top: 25/3.2+vw;
+        }
+    }
+}

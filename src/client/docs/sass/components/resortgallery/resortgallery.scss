@@ -1,0 +1,154 @@
+[page="resortgallery"] {
+    @media (min-width : 1025px) {
+        .slider-slidmmln{
+            .ItemSlider{
+                //width: unset;
+                max-width: unset;
+                width: 100% !important;
+                margin-top: 0px;
+                img{
+                    max-width: unset;
+                    width: 85%;
+                }
+            }
+        }
+        center.PINTEREST {
+            margin-bottom: 119px;
+        }
+        .contentSlider {
+            width: 1056px;
+        }
+
+        .ItemSlider {
+            width: 330px;
+            overflow: hidden;
+            margin-top: 45px;
+        }
+        .ItemSlider.active {
+            width: 396px;   
+            overflow: hidden;
+        }
+        .bg-carousel{
+            top: 62px;
+        }y
+
+        .imgGalleryCont {
+            width: 242px;
+            height: 242px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .imgGallerySection {
+            display: flex;
+            width: 1098px;
+            height: 237px;
+            position: relative;
+            left: 56px;
+        }
+
+        .grisBack {
+            position: absolute;
+            background-color: var(--dark-gray);
+            width: 600px;
+            height: 130px;
+            z-index: -1;
+            right: 271px;
+            margin-top: 53px;
+        }
+
+        .subtitulo {
+            width: 407px;
+            height: 97px;
+            font-family: Miso;
+            font-size: 48px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--rosy-pink);
+        }
+
+
+        .controlPoints.gallery {
+            margin-top: 40px;
+        }
+
+        .bg-carousel {
+            left: 180px
+        }
+
+
+    }
+
+    @media (max-width : 1024px) {
+        .description {
+            padding: 0px (20/16)+rem;
+        }
+
+        .imgGallery {}
+
+        .imgGalleryCont {
+            width: (130.5/3.2)+vw;
+            height: (130.5/3.2)+vw;
+        }
+
+        .imgGalleryCont1 {
+            position: absolute;
+            left: (23/3.2)+vw;
+        }
+
+        .imgGalleryCont2 {
+            position: absolute;
+            right: (23/3.2)+vw;
+        }
+
+        .imgGalleryCont3 {
+            position: absolute;
+            left: (23/3.2)+vw;
+            margin-top: (140/3.2)+vw;
+        }
+
+        .imgGalleryCont4 {
+            position: absolute;
+            right: (23/3.2)+vw;
+            margin-top: (140/3.2)+vw;
+        }
+
+        .imgGallerySection {
+            width: (320/3.2)+vw;
+            padding-bottom: (270/3.2)+vw;
+            padding-top: (10/3.2)+vw;
+        }
+
+        .grisBack {
+            position: absolute;
+            background-color: var(--dark-gray);
+            width: (150/3.2)+vw;
+            height: (100/3.2)+vw;
+            z-index: -1;
+            right: (80/3.2)+vw;
+            margin-top: (95/3.2)+vw;
+        }
+
+        .subtitulo {
+            width: (203.5/3.2)+vw;
+            height: (50/3.2)+vw;
+            font-family: Miso;
+            font-size: (24/3.2)+vw;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--rosy-pink);
+        }
+
+        .controlPoints.gallery {
+            margin-top: (23/3.2)+vw;
+        }
+    }
+}

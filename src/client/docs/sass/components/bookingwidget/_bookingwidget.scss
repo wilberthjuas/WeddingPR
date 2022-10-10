@@ -1,0 +1,227 @@
+[component = "bookingwidget"]{
+
+    position: absolute;
+    margin-left:260px;
+    bottom: 0;
+    .booking{
+        width: auto;
+        height: 60px;
+        background-color: var(--dark-gray);
+        padding-left:20px;
+        display: flex;
+    }
+
+    .top-side{
+        font-family: Avenir;
+        font-size: 14px;
+        color: var(--white);
+        padding-top: 14px;
+        font-weight: 300;
+        font-stretch: condensed;
+        display: flex;
+
+
+        .selector{
+            margin-right: 25px;
+            height: fit-content;
+            cursor: pointer;
+            width: max-content;
+        }
+
+        .selector.dates{
+            margin-right: 54px;
+            width: 120px !important;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .selector2{
+            margin-right: 54px;
+            width: 128px;
+        }
+    }
+
+    .btn-booknow{
+        width: 150px;
+        background-color: var(--rosy-pink);
+        right: 0;
+        font-family: Avenir;
+        font-size: 21px;
+        font-weight: bold;
+        text-align: center;
+        color: var(--white);
+        padding-top:16px;
+        input{
+            -webkit-appearance: none;
+            border: none;
+            background: transparent;
+            color: white;
+            font-weight: bold;
+            font-family: Avenir;
+            cursor: pointer;
+        }
+    }
+    .dropdownresorts{
+    position: absolute;
+    list-style: none;
+    padding: unset;
+    top: 90px;
+    background-color: var(--white);
+    color: var(--dark-gray);
+    padding: 12px;
+    left: 200px;
+        li{
+         cursor: pointer;   
+         text-align: left;
+        }
+    }
+
+    .blackbackgroung{
+        width: 200%;
+        height: 100%;
+        background-color:#32323280;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+       }
+    .airportsearch{
+        background-color: unset;
+        border: unset;
+        color: white;
+        font-family: Avenir;
+        border: 1px solid var(--rosy-pink);
+        padding: 3px;
+    }
+
+    .resortsdropdown{
+        background-color: unset;
+        border: unset;
+        color: white;
+        font-family: Avenir;
+        border:none;
+        padding: 3px;
+    }
+
+    .dropdownairports{
+        position: absolute;
+        list-style: none;
+        padding: unset;
+        top: 90px;
+        background-color: var(--white);
+        color: var(--dark-gray);
+        padding: 12px;
+        width: max-content;
+        height: 200px;
+        overflow-y: scroll;
+        min-width: 277px;
+            li{
+                cursor: pointer;   
+                text-align: left;
+            }
+        }
+
+
+    .tabs{
+        display: flex;
+    }
+
+    .HOTEL{
+     font-family: Avenir;//Miso
+     font-size: 14px;
+     width: 100px;
+     height: 50px;
+     background-color: var(--rosy-pink);
+     display: grid;
+     align-items: flex-end;
+     color:var(--white);
+     border-top-left-radius: 4px;
+     border-top-right-radius: 4px;
+     margin-right: 2px;
+     cursor: pointer;
+    [component="iconwedd"]{
+        margin-top: 6px;
+    }
+
+     span{
+         margin: auto;
+     }
+    }
+
+    .HOTEL-AIR{
+     font-family: Avenir;//Miso
+     font-size: 14px;
+     width: 120px;
+     height: 50px;
+     background-color: var(--rosy-pink);
+     display: grid;
+     align-items: flex-end;
+     color:var(--white);
+     border-top-left-radius: 4px;
+     border-top-right-radius: 4px;
+     cursor: pointer;
+        [component="iconwedd"]{
+            margin-top: 6px;
+            margin-bottom: -5px;
+        }
+
+        span{
+            margin: auto;
+        }
+    }
+    .active{
+        color: var(--rosy-pink);
+        background-color: var(--white);
+    .tabs-arrow{
+        opacity: 1;
+        width: 10px;
+        height: 10px;
+        position: static;
+        background-color: var(--white);
+        border-width: 1px;
+        -webkit-transform: rotate(-45deg) !important;
+        transform: rotate(-45deg) !important;
+        border-left-style: unset;
+        border-bottom-style: unset;
+        margin: auto;
+        left: 0;
+        }
+    }
+    
+    [component="fullcalendar"]{
+        /*position: absolute;
+        left: 43%;
+        top: 95px;
+        background-color: var(--white);*/
+        position: absolute;
+        width: 232px;
+    }
+
+    [component="roomsandguests"]{
+        position: absolute; 
+        background-color: var(--dark-gray);
+        left: 37px;
+        border: 1px solid var(--rosy-pink);
+        top: 93px;
+        width: 990px;
+
+        .pluscontroller span{
+            font-family: Avenir;
+            font-size: 23px;
+            margin-left: 2px;
+            margin-top: -7px;
+        }
+
+        .minuscontroller span {
+            margin-left: 4px;
+        }
+        
+        .adults{
+            margin-bottom:20px;
+        }
+
+        .content{
+            display: -webkit-box;
+        }
+    }
+}

@@ -1,0 +1,406 @@
+[component="helpfulList"]{
+$checked-color: var(--rosy-pink);
+$unchecked-color: var(--rosy-pink);
+$checkbox-height: 26px;
+@media (max-width: 1024px){
+
+	.listContainer{
+		margin-bottom: 1.5rem;
+	}
+	.titleContainerClosed{
+	    background-color: var(--rosy-pink);
+	    border-radius: 2px;
+	    border: 1px var(--rosy-pink);
+		  color: var(--white) !important;
+		  margin-top:(15/16)+rem;
+		  padding: (5/16)+rem;
+	}article.helpfulContent {
+		width: 95%;
+		margin: auto;
+	}.titleContainerOpen{
+	    border-radius: 2px;
+	  	border-right: solid 1px var(--rosy-pink);
+	  	border-left: solid 1px var(--rosy-pink);
+	  	border-top: solid 1px var(--rosy-pink);
+	  	background-color: var(--light-gray);
+		margin-top:(15/16)+rem;
+		padding: (5/16)+rem;
+	}.folder-closed{
+		position: relative;
+		right:(5/16)+rem;
+		margin-top: .5rem;
+	}.folder-open{
+		text-align: -webkit-center;
+	}.paragraph{
+		margin: unset;
+	}
+	.containerOpen{
+		border-radius: 2px;
+	  	border-bottom: solid 1px var(--rosy-pink);
+	  	border-right: solid 1px var(--rosy-pink);
+	  	border-left: solid 1px var(--rosy-pink);
+		background-color: var(--white);
+		position: relative;
+	}.documentInfo{
+		display: flex;
+		position: relative;
+		padding-bottom: (20/16)+rem;
+	}.View-PDF {
+		font-family: OpenSans;
+		font-size: (12/16)+rem;
+		font-weight: bold;
+		font-stretch: condensed;
+		font-style: normal;
+		line-height: 2.5;
+		letter-spacing: normal;
+		text-align: left;
+		color: var(--rosy-pink);
+		text-transform:uppercase;
+		right:(10/16)+rem;
+		position: absolute;
+		text-decoration:underline;
+		cursor:pointer;
+	}
+	.subtitleClosed{
+		text-align: left !important;
+		margin: unset;
+		color: var(--white) !important;
+		padding-top: (5/16)+rem;
+		padding-bottom: (5/16)+rem;
+	}.subtitleOpen{
+		text-align: left !important;
+		margin: unset;
+		padding-top: (5/16)+rem;
+		padding-bottom: (5/16)+rem;
+	}.infoExtra{
+		color: var(--rosy-pink);
+	    font-family: Miso;
+	    font-size: (16/16)+rem;
+	    font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1;
+		letter-spacing: normal;
+	}.textHelpful{
+		width:(150/16)+rem;
+	    font-family: OpenSans;
+	    font-size: (14/16)+rem;
+	    font-weight: 300;
+	    font-stretch: condensed;
+	    font-style: normal;
+	    line-height: normal;
+	    //letter-spacing: (0.35/16)+rem;
+	    text-align: left;
+	    color: var(--dark-gray);
+	    text-transform:capitalize;
+	    margin-top: (4.5/16)+rem;
+	    position: absolute;
+	    left:(40/16)+rem;;
+	}.textHelpfulSend{
+		width:(200/16)+rem;
+	    font-family: OpenSans;
+	    font-size: (14/16)+rem;
+	    font-weight: 300;
+	    font-stretch: condensed;
+	    font-style: normal;
+	    line-height: normal;
+	    //letter-spacing: (0.35/16)+rem;
+	    text-align: left;
+	    color: var(--dark-gray);
+	    text-transform:capitalize;
+	}.descriptionPDF{
+		width: (250/16)+rem;
+		font-family: OpenSans;
+		font-size: (14/16)+rem;
+		font-weight: 300;
+		font-stretch: condensed;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: var(--dark-gray);
+		border-top-right-radius: 0rem;
+		border-bottom-right-radius: 0rem;
+	
+	
+	}
+	.folder-closed{
+	position: relative;
+    right: (5/16)+rem;
+	}.checks{
+    margin-top: (2/16)+rem;
+    margin-right: (9/16)+rem;
+    cursor:pointer;
+	}
+	.check-box {
+		padding-left: (10/16)+rem;
+  	}
+  	.check-box *{
+    //transition: .3s;
+  	}
+
+	  input[type=checkbox]:checked + .check-box,
+	  .check-box.checked{
+	    .checked{
+	      opacity: 0;
+	      position: absolute;
+	    }
+	    .un-checked{
+	      position: relative;
+	      opacity: 1;
+	    }
+	  }
+	  input[type=checkbox]+ .check-box,
+	  .check-box.checked{
+	    .checked{
+	      opacity: 1;
+	      position: relative;
+	    }
+	    .un-checked{
+	      opacity: 0;
+	      position: absolute;
+	    }
+	  }
+	  .inlineform{
+		width: 95%;
+		display: flex;
+		margin: auto;
+		margin-bottom: (20/16)+rem;
+
+		.inputweddemail{
+			width: 70%;
+			input{
+				width: 100%;
+			}
+		}
+
+		.inputweddsubmit{
+			width: 30%;
+
+			.type{
+				width: 100%;
+			}
+		}
+	  }
+
+	  .type{
+		padding-top: 0.2rem !important;
+		padding-bottom: 0.2rem !important;
+		border-radius: 0px !important;
+		border-bottom-right-radius: 5px !important;
+		border-top-right-radius: 5px !important;
+		margin-left: -1px;
+	}
+
+	input[type="text"]{
+		width: 100%;
+	}
+
+
+	.viewpdf{
+		padding-right:0.625rem;
+	}
+
+	.centerContent{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+/*Desktop*/
+@media (min-width: 1025px){
+
+
+	.listContainer{
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+		section.content{
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	}.titleContainerClosed{
+	    background-color: var(--rosy-pink);
+	    border-radius: 2px;
+	    border: 1px var(--rosy-pink);
+	    width: 600px;
+	  	height: 60px;
+	  	margin-top: 15px;
+		  color: var(--white);
+		  position: relative;
+	}
+	.titleContainerOpen{
+	    border-radius: 2px;
+	  	border-right: solid 1px var(--rosy-pink);
+	  	border-left: solid 1px var(--rosy-pink);
+	  	border-top: solid 1px var(--rosy-pink);
+	  	background-color: var(--light-gray);
+	    width: 600px;
+	  	height: 60px;
+	  	margin-top:15px;
+		  color: var(--rosy-pink);
+		  position:relative;
+	}.chevron-up{
+		position: absolute;
+	    left:545px;
+	    top: 23px;
+	}.chevron-down{
+		position: absolute;
+	    left:545px;
+	    top: 23px;
+	}.folder-closed{
+		position: relative;
+		right:5px;
+		margin-top: 18px;
+		margin-left: 18px;
+	}.folder-open{
+		margin-top: 18px;
+		margin-left: 18px;
+	}.containerOpen{
+		border-radius: 2px;
+	  	border-bottom: solid 1px var(--rosy-pink);
+	  	border-right: solid 1px var(--rosy-pink);
+	  	border-left: solid 1px var(--rosy-pink);
+		background-color: var(--white);
+		width: 600px;
+		position: relative;
+	}.View-PDF {
+		font-family: Avenir;
+		font-size: 24px;
+		font-weight: bold;
+		font-stretch: condensed;
+		font-style: normal;
+		line-height: 2.5;
+		letter-spacing: normal;
+		text-align: left;
+		color: var(--rosy-pink);
+		text-transform:uppercase;
+		position: relative;
+		text-decoration:underline;
+		padding-top: 28px;
+		left: 350px;
+		cursor:pointer;
+	}
+	.subtitleClosed{
+		padding-top:8px;
+		position: relative;
+		left:15px;
+	    text-align: left !important;
+	    margin: 0;
+		position: relative;
+	    left: 25px;
+		top: 7px;
+		color:var(--white) !important
+	}.subtitleOpen{
+		padding-top:8px;
+		position: relative;
+		left:15px;
+	
+	    text-align: left !important;
+	    margin: 0;
+		position: relative;
+	    left: 25px;
+	    top: 7px;
+		color:var(--rosy-pink) !important
+	}.infoExtra{
+		color: var(--rosy-pink);
+	 	width: 422px;
+		height: 156px;
+		font-family: Avenir;
+		font-size: 32px;
+		font-weight: 300;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1;
+		letter-spacing: normal;
+		text-align: center;
+		text-transform: uppercase;
+	}.textHelpful{
+		width:375px;
+	    font-family: Avenir;
+	    font-size: 28px;
+	    font-weight: 300;
+	    font-stretch: condensed;
+	    font-style: normal;
+	    line-height: normal;
+	    //letter-spacing: 0.35px;
+	    text-align: left;
+	    color: var(--dark-gray);
+	    text-transform:capitalize;
+	    margin-top: 4.5px;
+	    margin-bottom: 4.5px;
+	    right: 112px;
+	    padding-top: 28px;
+	    position: absolute;
+	}.Do-you-need-more-helpful{
+		width: 448px !important;
+		padding-top: 50px !important;
+		font-family: Avenir !important;
+		color: var(--light-melon) !important;
+	}.textHelpfulSend{
+		width:480px;
+	    font-family: Avenir;
+	    font-size: 28px;
+	    font-weight: 300;
+	    font-stretch: condensed;
+	    font-style: normal;
+	    line-height: normal;
+	    //letter-spacing: 0.35px;
+	    text-align: left;
+	    color: var(--dark-gray);
+	    text-transform:capitalize;
+	    margin-top: 50px;
+	    margin-bottom: 4.5px;
+	}
+	
+	.checks{
+		margin-right: 10px;
+		cursor:pointer;
+	}
+  	.check-box {
+		display: flex;
+		padding-left: 10px;
+		padding-top: 10px;
+  	}
+
+	.type div{
+		display: inline-flex;
+  	}
+	.type{
+		position: relative;
+		width: 100px !important;
+		height: 40px !important;
+		margin-bottom: 59px;
+		border-radius: 0px !important;
+		border-bottom-right-radius: 5px !important;
+    	border-top-right-radius: 5px !important;
+	}
+
+	.viewpdf{
+		padding-top:17px;
+	}
+
+	.inlineform{
+		display: flex;
+		width: 95%;
+		margin: auto;
+
+		.inputweddemail{
+			width: 70%;
+			input{
+				width: 100%;
+			}
+		}
+
+		.inputweddsubmit{
+			width: 30%;
+			input{
+				height: 44px !important;
+			}
+
+			.type{
+				width: 100%;
+			}
+		}
+	}
+}
+}

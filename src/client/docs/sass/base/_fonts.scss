@@ -1,0 +1,144 @@
+@font-face {
+   font-family: Miso;
+   // src: url('#{$font-url}/miso/Miso-Light.otf');
+   // src: url('#{$font-url}/miso/Miso-Light.otf') format('opentype'),
+   //    url('#{$font-url}/miso/Miso-Light.woff2') format('woff2');
+   // font-weight: 300;
+   // font-style: normal;
+   src: url('#{$font-url}/avenir/avenir-light.ttf');
+   src: url('#{$font-url}/avenir/avenir-light.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: Miso;
+   // src: url('#{$font-url}/miso/Miso-Regular.otf');
+   // src: url('#{$font-url}/miso/Miso-Regular.otf') format('opentype'),
+   //    url('#{$font-url}/miso/Miso-Regular.ttf') format('truetype');
+   // font-weight: normal;
+   // font-style: normal;
+   src: url('#{$font-url}/avenir/avenir-light.ttf');
+   src: url('#{$font-url}/avenir/avenir-light.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: Miso;
+   // src: url('#{$font-url}/miso/Miso-Bold.otf');
+   // src: url('#{$font-url}/miso/Miso-Bold.otf') format('opentype'),
+   //    url('#{$font-url}/miso/Miso-Bold.ttf') format('truetype');
+   // font-weight: bold;
+   // font-style: normal;
+   src: url('#{$font-url}/avenir/avenir-light.ttf');
+   src: url('#{$font-url}/avenir/avenir-light.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: Roboto;
+   src: url('#{$font-url}/roboto/Roboto-Light.ttf');
+   src: url('#{$font-url}/roboto/Roboto-Light.ttf') format('truetype');
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: Roboto;
+   src: url('#{$font-url}/roboto/Roboto-Regular.ttf');
+   src: url('#{$font-url}/roboto/Roboto-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: Roboto;
+   src: url('#{$font-url}/roboto/Roboto-Bold.ttf');
+   src: url('#{$font-url}/roboto/Roboto-Bold.ttf') format('truetype');
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: Opensans;
+   /*src: url('#{$font-url}/opensans/OpenSansCondensed-Light.ttf');
+   src: url('#{$font-url}/opensans/OpenSansCondensed-Light.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;*/
+   src: url('#{$font-url}/Avenir-Book/Avenir-Book.ttf');
+   src: url('#{$font-url}/Avenir-Book/Avenir-Book.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: Opensans;
+   // src: url('#{$font-url}/opensans/OpenSansCondensed-Bold.ttf');
+   // src: url('#{$font-url}/opensans/OpenSansCondensed-Bold.ttf') format('truetype');
+   src: url('#{$font-url}/Avenir-Book/Avenir-Book.ttf');
+   src: url('#{$font-url}/Avenir-Book/Avenir-Book.ttf') format('truetype');
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: Parisienne;
+   src: url('#{$font-url}/PlayfairDisplay-Regular/PlayfairDisplay-Regular.ttf');
+   src: url('#{$font-url}/PlayfairDisplay-Regular/PlayfairDisplay-Regular.ttf') format('truetype');
+   /*src: url('#{$font-url}/parisienne/Parisienne-Regular.ttf');
+   src: url('#{$font-url}/parisienne/Parisienne-Regular.ttf') format('truetype');*/
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: Avenir-Roman;
+   src: url('#{$font-url}/avenir/avenir-light.ttf');
+   src: url('#{$font-url}/avenir/avenir-light.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+/*************************/
+@font-face {
+   font-family: Avenir;
+   src: url('#{$font-url}/Avenir-Book/Avenir-Book.eot');
+   src: url('#{$font-url}/Avenir-Book/Avenir-Book.eot') format('embedded-opentype'),
+        url('#{$font-url}/Avenir-Book/Avenir-Book.woff2') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: Avenir-bold;
+   src: url('#{$font-url}/Avenir-Book/Avenir-black.otf');
+   src: url('#{$font-url}/Avenir-Book/Avenir-black.otf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: PlayfairDisplay;
+   src: url('#{$font-url}/PlayfairDisplay-Regular/PlayfairDisplay-Regular.ttf');
+   src: url('#{$font-url}/PlayfairDisplay-Regular/PlayfairDisplay-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: PlayfairDisplayItalic;
+   src: url('#{$font-url}/PlayfairDisplay-Italic/PlayfairDisplay-Italic.ttf');
+   src: url('#{$font-url}/PlayfairDisplay-Italic/PlayfairDisplay-Italic.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}

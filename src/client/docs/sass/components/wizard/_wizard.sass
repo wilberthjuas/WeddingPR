@@ -1,0 +1,180 @@
+$pink: #f86290
+$black: #000
+
+.wizard-component
+    // /* Large and up */
+    // @media screen and (min-width: 64em) 
+    //     margin-top: -100vh
+    // /* Medium and up */
+    // @media screen and (min-width: 40em)
+    //     margin-top: -125vh
+    // /* Small only */
+    // @media screen and (max-width: 39.9375em)
+    //     margin-top: -105vh
+    //width: 100%
+
+    //h1, h2, h3, h4, h5
+    //    color: $pink
+    //    font-family: OpenSans
+    //    font-weight: 300
+    //    font-stretch: condensed
+    //    font-style: normal
+    //    line-height: normal
+    //    letter-spacing: 0.21875vw
+    //    text-align: center
+
+    //    sub
+    //        font-family: Parisienne
+    //        font-size: 90%
+    //        font-weight: normal
+    //        font-style: normal
+    //        font-stretch: normal
+    //        line-height: normal
+    //       letter-spacing: normal
+    //        text-align: center
+    //        color: $black
+    input
+        width: 100%
+
+    //h1
+    //    font-size: 3.2em
+
+    //h2
+    //    font-size: 2.5em
+
+    //h3
+    //    font-size: 2em
+
+    //h4
+    //    font-size: 1.8em
+
+    //h5
+    //    font-size: 1.5em
+
+    .contentSlider
+        /* Small only */
+        @media screen and (max-width: 39.9375em)
+            transform: translateX(-13vw)
+
+    .black-text
+        color: $black
+
+    .wiz-step-container
+        /* Medium only */
+        @media screen and (min-width: 40em) and (max-width: 63.9375em)
+            //padding-bottom: 12em
+
+        /* Small only */
+        @media screen and (max-width: 39.9375em)
+            //padding-bottom: 8em
+
+        min-height: 25vh
+        min-height: 25vh;
+        //padding-top: 7em;
+        //padding-bottom: 5em;
+        color: $pink
+
+
+    .wiz-controls
+        /* Small only */
+        @media screen and (max-width: 39.9375em)
+            bottom: 0em
+        
+        /* Medium only */
+        @media screen and (min-width: 40em) and (max-width: 63.9375em)
+            bottom: 0em
+
+        position: fixed
+        left: 0
+        bottom: 0
+        width: 100%
+        background-color: #FFF
+        margin: 0 auto
+        display: grid
+        grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3)
+
+        .wiz-controls-buttons
+            grid-column: 1
+            text-align: center
+            margin-bottom: 1em
+
+            .back
+                text-align: right
+                grid-column: 1
+
+                input
+                    color: $pink
+                    background-color: white !important
+                    border: none
+                    color: var(--rosy-pink)
+
+            // .next
+            //     grid-column: 2
+            //     text-align: right
+
+        // Modificar el CSS de la barra de progreso
+        // .progress-bar
+        //     margin-top: 0
+        //     margin-bottom: 0
+        //     display: flex
+
+        [component="barprogress"]
+            grid-column: 2
+            display: grid
+
+            .progress-container
+
+                .progress-bar
+                    margin-bottom: .5em !important
+                    margin-top: .5em !important
+                    display: flex !important
+
+
+        // .wiz-progress-bar
+        //     text-align: center
+
+        //     div
+        //         border-radius: 0.9em
+        //         border: 1px solid $pink
+        //         margin: 0
+        //         padding: 0
+        //         display: grid
+
+        //     .wiz-progress-bar-button
+        //         line-height: 0.9em
+        //         font-size: 3em
+        //         line-height: 0.6em
+        //         height: 0.5em
+        //         grid-column: auto
+        //         grid-row: 1
+        //         color: $pink
+        //         display: inline-block
+
+        //         &.loader
+        //             display: none !important
+
+        //     .wiz-progress-bar-button
+        //         &.completed
+        //             grid-column: auto
+        //             grid-row: 1
+        //             color: #FFF
+        //             display: inline-block
+        //             background-color: $pink
+
+        //     .wiz-progress-bar-button:first-child
+        //         border-bottom-left-radius: 0.9em
+        //         border-top-left-radius: 0.9em
+
+        //     .wiz-progress-bar-button.completed:last-child
+        //         border-bottom-right-radius: 0.9em
+        //         border-top-right-radius: 0.9em
+
+
+// Ocultar controles
+.invisible
+    visibility: hidden
+
+
+// .round-right.completed
+//     border-bottom-right-radius: 0.9em
+//     border-top-right-radius: 0.9em

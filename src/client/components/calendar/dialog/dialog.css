@@ -1,0 +1,92 @@
+/* Estilos para el componente dialog */
+
+[component="dialog"] {
+   border: 8px solid #87719057;
+   position: fixed;
+   margin: auto;
+   top: 10vh;
+   bottom: 10vh;
+   height: 80vh;
+   width: 80vw;
+   max-width: 900px;
+   overflow: auto;
+   max-height: 800px;
+   padding: 0;
+   z-index: -1;
+}
+
+[component="dialog"]::backdrop {
+   background-color: #11123585;
+}
+
+[component="dialog"]>.grid>header,
+[component="dialog"]>.grid>main,
+[component="dialog"]>.grid>footer {}
+
+[component="dialog"]>.grid {
+   display: table-row-group;
+   width: 100%;
+   height: 100%;
+}
+
+/* #region HEADER Y FOOTER */
+[component="dialog"]>.grid>header,
+[component="dialog"]>.grid>footer {
+   display: table-cell;
+   position: sticky;
+   z-index: 10;
+   background-color: #FFF;
+}
+
+/* #endregion HEADER Y FOOTER */
+
+
+/* #region HEADER */
+[component="dialog"]>.grid>header {
+   top: 0;
+   text-align: end;
+   /* border-bottom: 4px groove #dbe2e26b; */
+}
+
+[component="dialog"]>.grid>header .dialog-controls {}
+[component="dialog"]>.grid>header .dialog-header {
+   padding-top: 0.5em;
+}
+
+[component="dialog"]>.grid>header .dialog-controls .close-button {
+   float: right;
+}
+
+[component="dialog"]>.grid>header .dialog-controls .close-button i {
+   font-size: 1.4em;
+   cursor: 'pointer';
+   padding: 0.3em 0.3em 0 0;
+}
+
+/* #endregion HEADER */
+
+/* #region MAIN CONTAINER */
+[component="dialog"].grid main {
+   display: table-row;
+   height: fit-content;
+   height: -webkit-fill-available;
+   height: inherit;
+}
+
+/* [component="dialog"]>.grid>main>.grid {
+   display: grid;
+} */
+
+/* #endregion MAIN CONTAINER */
+
+/* #region FOOTER */
+[component="dialog"]>.grid>footer {
+   /* border-top: 4px ridge #dbe2e26b; */
+   bottom: 0;
+}
+
+[component="dialog"]>.grid>footer span {
+   display: block;
+}
+
+/* #endregion FOOTER */

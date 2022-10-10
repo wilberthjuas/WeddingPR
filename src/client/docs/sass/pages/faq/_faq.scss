@@ -1,0 +1,23 @@
+[page = "faq"]{
+
+
+    @media (min-width : 1025px) {
+       li{
+			color: var(--light-gray);
+       }
+    }
+
+    @media (max-width : 1024px) {
+    	.subtitle{
+    		text-transform: none !important;
+    	}
+    	li{
+			color: var(--light-gray);
+		   }
+		.searchcont {
+			.inputwedd {
+				width: 90%;
+			}
+		}
+    }
+}

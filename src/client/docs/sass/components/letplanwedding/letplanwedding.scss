@@ -1,0 +1,765 @@
+[component="letplanwedding"] {
+
+  /*********************/
+  .content-flex {
+    display: inline-flex;
+  }
+
+  .quiz-bg {
+    transition: 0.5s;
+  }
+
+  /*.btn,.btn_w{z-index: 1;
+    }*/
+  .let-plan-wedding>div>div,
+  .content-img-wedding *,
+  .which-option-movil img {
+    transition-duration: 1s;
+    transition-property: all;
+  }
+
+  .let-plan-wedding {
+    /*overflow: hidden;
+    position: relative;*/
+    position: relative;
+  }
+
+  .quiz-bg {
+    left: 0px;
+    right: 0px;
+  }
+
+  .quiz-bg.right {
+    position: relative;
+    left: -100%;
+  }
+
+  .quiz-bg.close-100 {
+    left: -100%;
+    opacity: 0;
+  }
+
+  .quiz-bg.close-show {
+    left: 0%;
+    opacity: 1;
+  }
+
+  .lets-slider.active {
+    left: 0%;
+    /* width: 0px; */
+    /* overflow: hidden; */
+    height: auto;
+    margin: auto;
+  }
+
+  .lets-slider .close {
+    left: 100%;
+    width: 0px;
+    /* overflow: hidden; */
+    height: 0px;
+    margin: 0px;
+    opacity: 0;
+  }
+
+  .lets-slider {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+  }
+
+  /*.subtitle-option {
+    font-family: Avenir;
+    color: var(--dark-melon);
+  }*/
+
+  [component="inputwedd"] {
+    p {
+      font-family: Avenir;
+      color: var(--dark-melon);
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .succes-message {
+      span {
+        font-weight: bold;
+        display: block;
+      }
+
+      width: 50%;
+      margin: auto;
+
+      p:last-child {
+        margin-bottom: 60px;
+      }
+
+      .body-success{
+        [component="inputwedd"]{
+          .special_btn{
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 20px;
+        }
+        }
+      }
+    }
+
+    .success-thank-you {
+      top: -80px;
+    }
+
+    .subtitle-option {
+      text-align: center;
+    }
+
+    [component="inputwedd"] {
+      .checkbox {
+        margin-left: 24px;
+        margin-top: 18px;
+  position: relative;
+        label {
+          display: inline-flex;
+        }
+      }
+
+      .checks {
+        margin-right: 15px;
+      }
+
+      p {
+        //font-family: OpenSans;
+        font-size: 28px;
+        font-weight: 300;
+        font-stretch: condensed;
+        font-style: normal;
+        line-height: normal;
+       // letter-spacing: 0.7px;
+        text-align: center;
+        //color: var(--dark-gray);
+        margin-left: 15px;
+        margin-top: auto;
+        margin-bottom: 20px;
+      }
+    }
+
+    #type1 {
+      [component="inputwedd"] {
+        .btn {
+          margin-top: 19px;
+        }
+      }
+    }
+
+    #type2 {
+      [component="inputwedd"] {
+        .btn {
+          margin-top: 22px;
+        }
+      }
+    }
+
+    #type3 {
+      [component="inputwedd"] {
+        .btn {
+          margin-top: 22px;
+        }
+      }
+    }
+
+    .width-head {
+      width: 65%;
+    }
+
+    .circle-1 {
+      font-size: 48px;
+    }
+
+    /*.lista-div>div,
+    .lista-div>b {
+      float: left;
+    }*/
+
+    .container-desk-lets {
+      padding-left: 10px;
+    }
+
+    .row-two {
+      width: 94%;
+    }
+
+    .lets {
+      height: 45px;
+    }
+
+    .planyour {
+      height: 100%;
+      padding-top: 11px;
+    }
+
+    .Itsalmost {
+      width: 583px;
+      height: 110px;
+    }
+
+    .quiz-bg {
+      height: 79%;
+      background-color: var(--melon-op03);
+      width: 100%;
+      /*margin-top: 51px;*/
+      position: relative;
+      margin-right: 0px !important;
+      margin-bottom: 70px;
+    }
+
+    .separador {
+      width: 13.1772%;
+    }
+
+    .Elipse-3 {
+      position: relative;
+      top: 43px;
+      display: flex;
+    }
+
+    .point-back {
+      height: 55px;
+      background-color: var(--dark-melon);
+      width: 112px;
+      border-radius: 100px;
+      margin: 0px auto;
+
+      span {
+        display: flex;
+        width: max-content;
+        height: 100%;
+        margin: auto;
+        font-size: 40px;
+        justify-content: center;
+        align-items: center;
+        color: white !important;
+      }
+    }
+
+    .which-option {
+      padding-left: 28px;
+      padding-right: 119px;
+      width: 158%;
+      margin: 0px auto;
+    }
+
+    /*radioBtn*/
+    .inputCheck {
+      //padding-left: 16.2299%;
+      padding-top: 62px;
+    }
+
+    .radio-btn-content {
+      height: 62px;
+      display: flex;
+    }
+
+    .text-radio {
+      display: inline;
+    }
+
+    .btn-nextwhitch {
+      position: relative;
+      //left: 21%;
+      z-index: 3;
+      bottom: -19px;
+      margin: auto;
+    }
+
+    .btn-nextwhitch_1 {
+      position: relative;
+      left: 7%;
+      margin-right: 45px;
+      z-index: 3;
+      bottom: -19px;
+    }
+
+    .btn-nextwhitch_3 {
+      position: relative;
+      left: 1.5%;
+      z-index: 3;
+      bottom: -19px;
+    }
+
+    .img-wedd {
+      height: 30px;
+      padding-left: 10px;
+    }
+
+    .bride-1-img {
+      position: absolute;
+      right: 180px;
+      top: -170px;
+      width: 562px;
+      height: 607px;
+      -o-object-fit: contain;
+      object-fit: contain;
+    }
+
+    .bride-2-img {
+      position: absolute;
+      /* float: left; */
+      top: -70px;
+      width: 394px;
+      height: 651px;
+      -o-object-fit: contain;
+      /* object-fit: contain; */
+    }
+
+    .bride-3-img {
+      position: absolute;
+      top: -37px;
+      width: 497px;
+      height: 483px;
+      -o-object-fit: contain;
+    }
+
+    #type1 {
+      height: 351px;
+      //left: 28%;
+      position: relative;
+    }
+
+    #type2 {
+      height: 525px;
+      left: 28%;
+      position: relative;
+    }
+
+    #type3 {
+      height: 465px;
+      left: 28%;
+      position: relative;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1216px) {
+      .bride-1-img {
+        left: 49% !important;
+      }
+
+      .bride-2-img {
+        left: 49% !important;
+      }
+    }
+
+    .let-plan-wedding {
+      height: auto;
+    }
+
+    [component="titlesection"] {
+      width: 650px;
+    }
+  }
+
+  /****Movil****/
+  @media (max-width: 1024px) and (min-width: 0px) {
+    .body-success {
+      @media (orientation:portrait) {
+        .one {
+          @media (max-width: 767px){
+            width: 180/16+rem;
+          }
+        }
+      }
+
+      @media (orientation:landscape) {
+        width: 336/16+rem;
+        margin-bottom: 68/16+rem;
+        
+      }
+
+      @media (orientation:portrait) and (min-width:767px) {
+        width: 340/16+rem;
+      }
+    }
+
+    .succes-message-contact p:first-child {
+      margin-bottom:15/16+rem;
+      @media (orientation:portrait) {
+        width: 100%;
+        margin-bottom:15/16+rem
+      }
+
+      @media (orientation:portrait) and (min-width:767px) {
+        width: unset;
+      }
+    }
+
+    .succes-message * {
+      text-align: left;
+    }
+
+    .success-img {
+      float: right;
+      width: 195/16+rem;
+      position: absolute;
+      right: 0%;
+      top: 0rem;
+    }
+
+    @media (min-width:768px) {
+      .success-img {
+        width: 227/16+rem;
+        top: -7/16+rem;
+      }
+
+      .succes-message .succes-title {
+        width: 350/16+rem;
+        float: left;
+        margin-bottom: 15/16+rem;
+      }
+
+      .succes-message * {
+        //text-align: center;
+        margin-bottom: 15/16+rem;
+      }
+    }
+
+
+    .succes-message>div:first-child {
+      padding-left: 22/16+rem;
+      margin-top: 16/16+rem;
+    }
+
+    .succes-message {
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .paragraph {
+      text-align: center;
+    }
+
+    @media only screen and (orientation: landscape) {
+      p.description {
+        @include vwvh("width", 320);
+        margin: auto;
+      }
+
+      img.bride-1-img.movil {
+        display: none;
+      }
+
+      img.bride-2-img.movil {
+        display: none;
+      }
+
+      img.bride-3-img.desktop {
+        display: block;
+        @include vwvh("top", 41);
+        position: relative;
+        @include vwvh("height", 219);
+        @include vwvh("max-width", 395);
+        right: 50%;
+        transform: translate(-20%, 10%);
+        left: 50%;
+      }
+
+      img.bride-2-img.desktop {
+        display: block;
+        @include vwvh("height", 295);
+        right: 50%;
+        transform: translate(10%, 10%);
+        left: 50%;
+      }
+    }
+
+    @media only screen and (min-width:768px) {
+      img.bride-1-img.movil {
+        display: none;
+      }
+
+      img.bride-2-img.movil {
+        display: none;
+      }
+
+      img.bride-3-img.desktop {
+        display: block;
+        @include vwvh("top", 41);
+        position: relative;
+        @include vwvh("height", 219);
+        @include vwvh("max-width", 395);
+        right: 50%;
+        transform: translate(-40%, 28%);
+        left: 50%;
+      }
+
+      img.bride-2-img.desktop {
+        display: block;
+        @include vwvh("height", 295);
+        right: 50%;
+        transform: translate(-1%, 28%);
+        left: 50%;
+      }
+    }
+
+    .subtitle-option {
+      @include vwvh("font-size", 16);
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.13;
+      letter-spacing: normal;
+      text-align: center;
+    }
+
+    .inputCheck {
+      .radio-block {
+        [component="inputwedd"] {
+          @include vwvh("margin-bottom", 18);
+          @include vwvh("margin-top", 18);
+        }
+      }
+    }
+
+    [component="inputwedd"] {
+      .checkbox {
+        @include vwvh("margin-left", 2);
+        width: max-content;
+      }
+
+      .checks {
+        height: max-content;
+        @include vwvh("margin-top", 1.5);
+      }
+
+      p {
+        //font-family: OpenSans;
+        @include vwvh("font-size", 14);
+        font-weight: 300;
+        font-stretch: condensed;
+        font-style: normal;
+        line-height: normal;
+       // @include vwvh("letter-spacing", 0.35);
+        text-align: center;
+        //color: var(--dark-gray);
+        margin: auto;
+        @include vwvh("margin-left", 9.5);
+      }
+    }
+
+    .radio-block {
+      @include vwvh("padding-bottom", 15);
+    }
+
+    .margin-btn-1 {
+      //@include vwvh("margin-bottom", 74.8);
+      @include vwvh("height", 443);
+    }
+
+    .row-two {
+      width: 100% !important;
+    }
+
+    .lets {
+      @include vwvh("height", 4);
+    }
+
+    .movil-8vw {
+      @include vwvh("font-size", 5.6,  !important);
+    }
+
+    .planyour {
+      @include vwvh("height", 40);
+      @include vwvh("line-height", 1.6,  !important);
+    }
+
+    .Itsalmost {
+      @include vwvh("width", 60.5);
+    }
+
+    .quiz-bg {
+      background-color: var(--melon-op03);
+      width: 100%;
+      @include vwvh("margin-top", 3.5);
+      margin-right: 0 !important;
+      //@include vwvh("margin-bottom", 218.8);
+    }
+
+    /*.quiz-bg.margin-btn-0 {
+      @include vwvh("margin-bottom", 218.8,  !important);
+    }*/
+
+    .quiz-bg .container {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      max-width: 100% !important;
+    }
+
+    .separador {
+      @include vwvh("width", 9.7);
+    }
+
+    .point-back {
+      @include vwvh("width", 30.5);
+      @include vwvh("height", 30.5);
+      background-color: var(--dark-melon);
+      @include vwvh("border-radius", 100);
+      @include vwvh("left", 5);
+      //@include vwvh("padding-left", 8);
+      position: relative;
+      @include vwvh("top", 30);
+      @include vwvh("font-size", 24);
+      margin: unset;
+      span{
+        color: white !important;
+      }
+    }
+
+    .which-option {
+      @include vwvh("margin-top", -1);
+      @include vwvh("padding-left", 40.32);
+      @include vwvh("width", 276.8);
+      //@include vwvh("width", 250.8);
+      font-weight: unset;
+    }
+
+    .description-which {
+      font-family: PlayfairDisplay; //Miso
+      @include vwvh("font-size", 16);
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.13;
+      //letter-spacing: normal;
+      text-align: center;
+      color: var(--dark-gray);
+      font-weight: bold;
+    }
+
+    .let-plan-wedding {
+      height: auto;
+      height: 100%;
+    }
+
+    .let-plan-wedding .container {
+      display: flow-root;
+    }
+
+    .inputCheck {
+      padding-left: .7rem;
+      @include vwvh("padding-top", 6);
+    }
+
+    .radio-btn-content {
+      @include vwvh("height", 9.9);
+      display: flex;
+    }
+
+    .btn-nextwhitch {
+      left: 0vw;
+      position: relative;
+      @include vwvh("top", 10);
+    }
+
+    .Elipse-3 {
+      //@include vwvh("margin-top", -23);
+      margin-top: 1.5625rem;
+      width: max-content;
+      max-width: 200%;
+    }
+
+    .text-radio {
+      display: inline;
+      @include vwvh("padding-left", 9);
+      //@include vwvh("letter-spacing", 0.35);
+    }
+
+    .bride-0-img {
+      position: absolute;
+      @include vwvh("right", -.8);
+      @include vwvh("top", 108);
+      @include vwvh("height", 302.9);
+      @include vwvh("width", 166.7);
+    }
+
+    .bride-1-img.movil {
+      @include vwvh("width", 145.5);
+      @include vwvh("height", 320.5);
+      position: absolute;
+      right: 0px;
+      @include vwvh("top", 96.4);
+    }
+
+    .inputCheck2 {
+      @include vwvh("padding-left", 17);
+      margin-bottom: 10%;
+    }
+
+    .btn-nextwhitch_1 {
+      @include vwvh("left", 10.5);
+      position: absolute;
+      @include vwvh("margin-top", 6);
+      @include vwvh("width", 80);
+    }
+
+    .bride-2-img {
+      @include vwvh("width", 265.5);
+      @include vwvh("height", 233.4);
+      object-fit: contain;
+      position: absolute;
+      @include vwvh("right", -56);
+      @include vwvh("top", 64.5);
+    }
+
+    .margin-btn-2 {
+      @include vwvh("height", 398);
+    }
+
+    .btn-nextwhitch_3 {
+      @include vwvh("width", 80);
+      position: absolute;
+      @include vwvh("left", 100);
+      @include vwvh("margin-top", 6);
+    }
+
+    .margin-btn-0 {
+      @include vwvh("margin-bottom", 92);
+      @include vwvh("height", 322);
+    }
+  }
+
+  /**********************************************/
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 1025px) {
+    .succes-message-contact {
+      width: 50%;
+      margin: auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+
+    .movil {
+      display: none;
+    }
+
+    .divicion-section {
+      height: 60px;
+    }
+  }
+
+  @media (max-width: 1024px) and (min-width: 0px) {
+    .desktop {
+      display: none;
+    }
+
+    .divicion-section {
+      height: 9.375vw;
+    }
+  }
+}

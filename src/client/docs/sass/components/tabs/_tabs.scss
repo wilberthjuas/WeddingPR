@@ -1,0 +1,399 @@
+[component="tabs"]{
+    @media (max-width : 1024px) {
+        [component="inputwedd"]{
+            margin: auto;
+        }
+        margin-bottom:(20/3.20)+vw;
+        padding-bottom: (11.5/3.20)+vw;
+        font-family: PlayfairDisplay;//Miso
+        .singletab{
+            height: (115/16)+rem;
+            overflow: hidden;
+            background-color: var(--light-gray);
+            img{
+                position: static;
+                margin-top: -(34/16)+rem;
+                transition-duration: 1000ms;
+                transition-property: margin-top;
+                width: 100%;
+            }
+        }
+        .singletabcollapse{
+            background-color: var(--light-gray);
+
+        }
+        .moveBefore{
+            width: auto;
+            height: auto;
+        }
+        .controlArrow{
+            display: inline-flex;
+            font-size: (58/16)+rem;
+            height: auto;
+            /* letter-spacing: 50px; */
+            line-height: 0vw;
+            width: 100%;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; 
+            position: absolute !important;
+        }
+        /*.slider *{
+            transition:.5s;
+        }*/
+        .contentSlider{
+            display: -webkit-box !important;
+            //display: flex;
+            //justify-content: center;
+            overflow: hidden;
+        }
+        .ItemSlider.hideIzq{
+            //position: absolute;
+            opacity: 0;
+            left: -100%;
+            padding: 0px;
+            width: 0px;
+        }
+        .ItemSlider.hide{
+            opacity: 0 !important;
+            left: 0%;
+            padding: 0px !important;
+            width: 0px !important;
+        }
+        .ItemSlider.show{
+            //position: absolute;
+            opacity: 1;
+            left: 0%;
+            padding: (20/16)+rem;
+            width: (400/16)+rem;
+        }
+        .ItemSlider.hideDer{
+            //position: absolute;
+            opacity: 0;
+            left: 100%;
+            padding: 0px;
+            width: 0px;
+        }
+        /*.ItemSlider img{
+            width: 200px;
+        }*/
+        .ItemSlider{
+            padding: (15/16)+rem;
+            padding-top: (12/3.25)+vw;
+            position: relative;
+            left: 0%;
+            opacity: 1;
+            background-color: var(--gray-light);
+            width:100%
+        }
+        .controlPoints{
+            display: inline-flex;
+            /* position: relative; */
+            width: 100%;
+            justify-content: center;
+            /*cursor: pointer;*/
+        }
+        .controlPoints *{
+            width: 9px;
+            height: 9px;
+            background-color: var(--rosy-pink);
+            color: var(--rosy-pink);
+            margin: 9.5px;
+            border-radius: 50%;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; 
+        }
+        .active{
+            background-color: var(--light-gray);
+            border-radius: 5px;
+        }
+        .activePoint{
+            background-color: var(--dark-gray);
+            color: var(--dark-gray);
+        }
+        .contentSlider{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .pointActive{
+            background-color: var(--dark-gray);
+        }
+        .separadorGaleryPoints{
+            height: 10px;
+            width:100%;
+        }
+
+        .agrupados{
+            position: relative;
+        }
+
+
+        @media only screen and (min-width:320px) and (max-width:767px) {
+
+            /* CSS rules here */
+            .tabtitle {
+                top:30% 
+            }
+
+            .tabtitlecollapse{
+                top: 70%
+            }
+         
+         }
+
+        @media only screen and (min-width:768px) and (max-width:1024px) { 
+            /* CSS rules here */
+            .tabtitle {
+                top:20%
+            }
+
+            .tabtitlecollapse{
+                top: 80% 
+            }
+         }
+
+         @media only screen and (max-width: 767px) and (min-width: 414px) and (orientation: landscape){
+            .tabtitle {
+                top:20%
+            }
+         }
+
+         @media only screen and (max-width: 1023px) and (min-width: 768px) and (orientation: landscape){
+            .tabtitle {
+                top:17%
+            }
+         }
+
+
+        .tabtitle{ 
+            height: auto;
+            background-color: var(--light-melon-op8);
+            color: var(--white);
+            font-family: PlayfairDisplay;//Miso  
+            font-size: (16/16)+rem;
+            display: inline-flex;
+            position: absolute;
+            transition-duration: 1000ms;
+            transition-property: top;
+            padding-right:10px;
+
+            [component="iconwedd"]{
+                margin-top: (3/16)+rem;
+            }
+        }
+
+        .content-tabs{
+            padding-left: (12/16)+rem;
+            padding-right: (16/16)+rem;
+            text-align: left;
+        }
+
+        .titlebenefit{
+            font-size: (24/16)+rem;
+            font-style: normal;
+            line-height: normal;
+           // letter-spacing: -(0.65/16)+rem;
+            text-align: left;
+            margin: unset;
+            color: var(--dark-melon);
+        }
+        .titlebenefit2{
+            font-size: (16/16)+rem;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: norm/l;
+           // letter-spacing: -0.35px;
+            text-align: left;
+            color: var(--dark-melon);
+            font-family: Avenir;
+        }
+
+        .contentbenefit{
+            font-weight: normal;
+            font-size: (16/16)+rem;
+        }
+
+        .tabtitletext{
+            padding-left: (14/16)+rem;
+            padding-top: (7/16)+rem;
+            padding-bottom: (6.5/16)+rem;
+            display: flex;
+        }
+
+        .tabquestion{
+            font-size: (16/16)+rem;
+            padding-left: (10/16)+rem;
+            padding-bottom:(20/16)+rem;
+            font-family: Avenir;
+            text-align: center;
+            span{
+                padding-right: (10/16)+rem;
+                margin: auto;
+            }
+            display: grid;
+        }
+
+        .tabstermscollapsable{
+            font-size: (18/16)+rem;
+            color: var(--rosy-pink);
+            text-align: center;
+            font-family: Avenir;
+        }
+
+        .tabstermscontent{
+            padding-left: (17.5/16)+rem;
+            width: 70%;
+            height: (185/16)+rem;
+            overflow: scroll;
+            font-family: OpenSans;
+            font-size: (12/16)+rem;
+        }
+        .tabsterms{
+            position: relative;
+        }
+        .tabstermsbuttons{
+            float: right;
+            width: 20%;
+            display: grid;
+            position: relative;
+            margin-top: -(80/16)+rem;
+        }.tabsDesk{
+            display: none !important;
+        }.controlArrow{
+            display: none;
+        }.fade{
+            width: 70%;
+            height: 81%;
+            background-image: linear-gradient(to bottom, rgba(254, 223, 217,0)73%, rgba(254, 223, 217,1)103%);
+            position: absolute;
+        }.tourText{
+            width: (278/16)+rem;
+            font-family: OpenSans;
+            font-size: (14/16)+rem;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+           // letter-spacing: 0.35px;
+            text-align: left;
+            color: var(--dark-gray);
+        }.tourTextCont{
+            padding-left:(10/16)+rem;
+            ul{
+                position: relative;
+                bottom: (10/16)+rem;
+                right: (15/16)+rem;
+            }
+        }
+    }
+
+    @media (min-width : 1025px) {
+        [component="inputwedd"]{
+            display: inline;
+        }
+        .singletab{
+            display: none;
+        }
+
+        [component="otherguest"]{
+            display: none;
+        }
+
+        .tabtitle{
+            height: 70px;
+            border: solid 1px var(--pale-pink);
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px 4px 0px 0px; 
+            margin-right: 2px;
+            border-bottom: none;
+            a{
+
+                padding: 10px;
+                font-family: Avenir;//Miso
+                font-size: 28px;
+                font-weight: 300;
+                text-align: center;
+                color: var(--dark-melon);
+            }
+            cursor: pointer;
+        }
+
+        .blankspace{
+            width: 100%;
+            height: 27px;
+            background: white;
+            top: 46px;
+            z-index: 2
+        }
+
+        .tabtitles{
+            display: inline-flex;
+            padding: unset;
+        }
+
+        .titlebenefit{
+            font-family: PlayfairDisplay;//Miso
+            font-size: 28px;
+            font-weight: bold;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            //letter-spacing: 0.7px;
+            text-align: left;
+            color: var(--dark-melon);
+        }
+
+        .center{
+            margin: auto;
+        display: block;
+        }
+        
+
+        .contentbenefit{
+            font-family: Avenir;
+            font-size: 21px;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            //letter-spacing: 0.7px;
+            text-align: left;
+            color: var(--dark-melon);
+        }
+
+        .termstext{
+            font-family: Avenir;
+            font-size: 21px;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: normal;
+            //letter-spacing: 0.6px;
+            text-align: left;
+            color: var(--rosy-pink);
+            cursor: pointer;
+        }
+
+        .terms{
+            text-align:center;
+            height:60px;
+            overflow:hidden;
+            transition:.5s;
+        }
+
+        .questions{
+            [component="inputwedd"]{
+                display: inline-block;
+            }
+        }
+    }
+}

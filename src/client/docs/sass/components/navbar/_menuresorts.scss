@@ -1,0 +1,183 @@
+[component="menuresorts"] {
+
+    .row {
+        display: flex;
+        height: 32%;
+        z-index: 99;
+
+        @media only screen and (orientation: landscape) {
+            display: inline-block;
+            @include vwvh("margin-left", 15);
+            @include vwvh("margin-right", 15);
+        }
+    }
+
+    width: 100%;
+
+    .d-none {
+        display: none !important;
+    }
+
+    .img-our-resorts {
+        float: left;
+        @include vwvh("width", 63);
+        @include vwvh("margin-top", 5);
+        @include vwvh("margin-bottom", 5);
+        @include vwvh("margin-left", 4);
+        @include vwvh("margin-right", 4);
+    }
+
+    .bg-top-menu {
+        @include vwvh("height", 47);
+        background-color: var(--light-gray);
+        /*margin-left: -5%;*/
+        /*margin-right: -5%;*/
+        @include vwvh("padding-top", 16);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bg-top-menu span {
+        margin-left: 3%;
+    }
+
+    .button-switcher {
+        background: white;
+        font-family: Avenir;//Miso
+        padding-left: 5%;
+        color: var(--dark-gray) !important;
+        padding-right: 5%;
+        text-decoration: none;
+        @include vwvh("font-size", 16);
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.88;
+        letter-spacing: normal;
+    }
+
+    .button-switcher-inactive {
+        background: var(--light-melon);
+        color: white !important;
+    }
+
+    font-family: Avenir;
+    @include vwvh("font-size", 16);
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+   // @include vwvh("letter-spacing", 0.18);
+    text-align: center;
+    color: var(--white) !important;
+    @include vwvh("right", -25);
+    position: inherit;
+    background-color: white;
+
+    .img-by-dest {
+        @include vwvh("width", 100);
+        @include vwvh("height", 100);
+        @include vwvh("margin-top", -30);
+        max-width: 193px;
+        max-height: 193px;
+    }
+
+    .image {
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 2%;
+        /*clip-path: circle(36% at 50% 50%);*/
+    }
+
+    .floating-text {
+        font-family: Avenir;//Miso
+        @include vwvh("font-size", 14);
+        text-align: center;
+        color: var(--white);
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 6;
+        position: relative;
+        line-height: normal;
+        //@include vwvh("letter-spacing", -0.35);
+        @include vwvh("width", 100);
+        margin: auto;
+        top: 0;
+        @include vwvh("padding-top", 10);
+        max-width: 193px;
+        max-height: 193px;
+        display: block;
+    }
+
+    .top-pading-spl {
+        @include vwvh("padding-top", 6);
+        padding-bottom: 0;
+        padding-left: (12/16)+rem;
+        padding-right: (12/16)+rem;
+    }
+
+    .clip {
+        @include vwvh("width", 100);
+        @include vwvh("height", 100);
+        margin: auto;
+        clip-path: circle(50% at 50% 50%);
+        max-width: 193px;
+        max-height: 193px;
+    }
+
+    .items-Resorts {
+        display: grid;
+        list-style: none;
+        margin: unset;
+        padding: unset;
+        overflow-y: auto;
+        background-color: white;
+        margin-top: -.1rem;
+    }
+
+    .items-Destinations {
+        overflow-y: auto;
+        margin-top: -.1rem;
+        background-color: white;
+    }
+
+
+    .items-Destinations{
+        .contact{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+
+@media only screen and (min-width:414px) and (max-width:767px) and (orientation:landscape) { 
+    /* CSS rules here */
+    .landscape{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+ }
+ 
+ @media only screen and (min-width:768px) and (max-width:1023px) and (orientation:landscape) { 
+    /* CSS rules here */
+  
+    .landscape{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+ }
+ 
+ @media only screen and (min-width:1024px) and (max-width:1359px) and (orientation:landscape) { 
+    /* CSS rules here */
+
+    .landscape{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+ }
+
+
+}

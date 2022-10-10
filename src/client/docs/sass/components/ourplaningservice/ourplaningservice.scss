@@ -1,0 +1,83 @@
+[component = "ourplaningservice"]{
+    .uppercase{
+        text-transform: uppercase;
+    }
+    @media (min-width: 1025px){
+        .row{
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+        }
+        .text-our-planing{
+            position: relative;
+            right: 25%; 
+            padding-top: 7px;
+        }
+        .img-our-planing{
+        position: relative;
+        left: 220px;
+        }
+        .our-planing-service{
+            background-image: linear-gradient(450deg, #fff, var(--light-gray), var(--light-gray), #fff);
+        }
+         
+        .btn-getStarted{
+            position: relative;
+            top: 11px;    
+        }
+    
+    }
+    /****Movil****/
+    @media (max-width: 1024px) and (min-width: 0px){
+
+        .our-planing-service{
+            background-image: linear-gradient(450deg, var(--light-gray), var(--light-gray), #fff);
+            @include vwvh("padding-top", 11);
+            @include vwvh("padding-bottom", 11);
+        }
+        .our-planing-service .row{
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+            }
+            .text-our-planing{
+                position: relative;
+                @include vwvh("right", -13.4);
+            }
+            .our-planing-img{
+                @include vwvh("width", 110.5);
+                @include vwvh("height", 85.5);
+                @include vwvh("left", 10);
+                position: relative;
+            }
+            .our-planing-service .are-free-are b{
+                @include vwvh("font-size", 24,"!important");
+                @include vwvh("left", 10);
+            }
+            .our-planing-service .are-free-are{
+                width: max-content;
+            }
+            .Our-planning-services .Our-planning-text{
+                @include vwvh("font-size",21,"!important");
+            }
+            .text2{
+                @include vwvh("font-size",24,"!important");
+            }
+            .text5 {
+                @include vwvh("font-size",16,"!important");
+            }
+    }
+    /**********************************************/
+
+    .uppercase{
+        text-transform: uppercase;
+    }
+    @media (min-width: 1025px){
+        .divicion-section{
+            height: 60px;
+        }
+    }
+    @media (max-width: 1024px) and (min-width: 0px){
+        .divicion-section{
+            height: 9.375vw;
+        }
+    }
+}
